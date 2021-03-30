@@ -1,0 +1,24 @@
+# git-ftp の初期設定: 一生に一度だけやる
+
+# 1. 必要なツールのインストール (macOS の場合)
+#    brew install git-ftp lftp wget
+
+# 2. FTP サーバから 2021年用のデータをまとめてダウンロード (symp2021/)
+wget -r --user=symp@vsj.jp --password=0uQb1RZ3 ftp://ftp.vsj.jp/symp2021/
+mv ftp.vsj.jp/symp2021 .; rmdir ftp.vsj.jp
+
+# 3. git の初期リポジトリの作成
+cd symp2021
+git init
+git add .
+git commit -m '2021-03-19 initial snapshot'
+
+# 4. git ftp の初期設定
+
+## 4a. 接続情報の設定
+git config git-ftp.url "ftp://ftp.vsj.jp/symp2021"
+git config git-ftp.user "symp@vsj.jp"
+git config git-ftp.password "0uQb1RZ3"
+
+## 4b. FTP サーバとの同期情報(symp2021/.git-ftp.log)の構成
+git ftp catchup
