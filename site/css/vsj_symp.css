@@ -9,6 +9,9 @@
     font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
 }
 
+#title-block-header {
+  display: none;
+}
 
 .header {
   position: relative;
