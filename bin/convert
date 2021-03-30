@@ -1,5 +1,6 @@
 #!/bin/sh
 
 site=site
+if [ "$1" -a -d $1 ]; then site=$1; fi
 
 pandoc --defaults=lib/symp2021.yaml --output=$site/index.html md/index.md
