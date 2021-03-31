@@ -14,7 +14,7 @@ read -n 1 yn; echo
 
 case "$yn" in
   [Yy])
-    rsync -r site/ symp2021
+    rsync --exclude-from='lib/exclude.rsync' --recursive site/ symp2021
     cd symp2021
     git add . && git commit && git ftp push ;;
 esac
