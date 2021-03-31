@@ -3,4 +3,8 @@
 site=site
 if [ "$1" -a -d $1 ]; then site=$1; fi
 
-pandoc --defaults=lib/symp2021.yaml --output=$site/index.html md/index.md
+for md in md/*.md; do
+  md=`echo $md | sed -e 's|md/||' -e 's|\.md||'`
+  echo $md
+  pandoc --defaults=lib/symp2021.yaml --output=$site/$md.html md/$md.md
+done
