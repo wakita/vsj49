@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ "$USER" != wakita ]; then
+  echo "GitHub で pull request を発行し，脇田に publish をご依頼下さい．"
+  exit 0
+fi
+
+
 bin/convert symp2021
 /bin/echo -n 'Publish to the FTP server? (y/n): '
 read -n 1 yn; echo
