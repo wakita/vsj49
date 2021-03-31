@@ -2,11 +2,11 @@ to: html5
 css: css/vsj_symp.css
 standalone: true
 include-in-header:
-  - md/meta.html
-  - md/header.html
+  - lib/meta.html
+  - lib/header.html
 include-before-body:
-  - md/sidemenu.html
-  - md/banner.html
+  - lib/sidemenu.html
+  - lib/banner.html
 table-of-contents: false
 
 section-divs: true

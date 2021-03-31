@@ -3,8 +3,14 @@
 site=site
 if [ "$1" -a -d $1 ]; then site=$1; fi
 
+for md in lib/*.md; do
+  md=`echo $md | sed -e 's|lib/||' -e 's|\.md||'`
+  echo lib/$md
+  pandoc --from markdown+native_divs lib/$md.md --output=lib/$md.html
+done
+
 for md in md/*.md; do
   md=`echo $md | sed -e 's|md/||' -e 's|\.md||'`
-  echo $md
-  pandoc --defaults=lib/symp2021.yaml --output=$site/$md.html md/$md.md
+  echo md/$md
+  pandoc --defaults=lib/pandoc.yaml --from markdown+native_divs --output=$site/$md.html md/$md.md
 done
