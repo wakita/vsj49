@@ -1,3 +1,14 @@
 #!/bin/sh
 
 bin/convert symp2021
+/bin/echo -n 'Publish to the FTP server? (y/n): '
+read -n 1 yn; echo
+
+# echo "[$yn]"
+
+case "$yn" in
+  [Yy])
+    rsync -r site/ symp2021
+    cd symp2021
+    git add . && git commit && git ftp push ;;
+esac
