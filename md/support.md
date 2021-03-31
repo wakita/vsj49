@@ -2,8 +2,14 @@
 title: '共催・協賛・後援'
 ---
 
-Organization A
+::: {#main}
 
-Organization B
+# 共催・協賛・後援
 
-Organization C
+- Organization A
+
+- Organization B
+
+- Organization C
+
+:::

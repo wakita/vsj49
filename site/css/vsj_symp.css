@@ -1,153 +1,150 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 100%;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
 }
 
 #title-block-header {
   display: none;
 }
 
-.header {
-  position: relative;
-}
+#header figure figcaption { display: none }
 
-.header h2 {
-  position: absolute;
+#header {
+  position: relative;
   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
+}
+
+#header h2 {
+  position: absolute;
   font-size: 30pt;
   top: 20pt;
   left: 50pt;
   width: 700px;
 }
 
-.header h1 {
+#header h1 {
   position: absolute;
-  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
   font-size: 40pt;
   top: 50pt;
   left: 50pt;
   width: 700px;
 }
 
-.header h3 {
+#header h3 {
   position: absolute;
-  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-  font-weight: bold;
   line-height: 20pt;
-  color: rgba(255, 255, 255, 0.8);
   font-size: 18pt;
   top: 110pt;
   left: 50pt;
   width: 700px;
 }
 
-.header img {
+#header img {
   height: 250px;
   width: 100%;
   top: 0;
   left: 0;
   margin: 0;
+  left: 50pt;
   padding: 0;
 }
 
 #footer {
-    mergin: 10pt;
+  mergin: 10pt;
 }
 
 #sidemenu {
-    position: absolute;
-    top: 251px;
-    left: 0;
-    width: 200px;
+  position: absolute;
+  top: 251px;
+  left: 0;
+  width: 200px;
 }
 
-#sidemenu ul{
-    list-style-type: none;
+#sidemenu ul {
+  list-style-type: none;
 }
 
-#sidemenu li{
-    text-align: center;
+#sidemenu li {
+  text-align: center;
 }
 
-#sidemenu a{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: white;
-    background-color: #89ABE3;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 6px;
+#sidemenu a {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: white;
+  background-color: #89ABE3;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 6px;
 }
 
-#sidemenu a:hover{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #89ABE3;
-    border: 1px;
-    border-style: solid;
-    border-color: #89ABE3;
-    background-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 6px;
+#sidemenu a:hover {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #89ABE3;
+  border: 1px;
+  border-style: solid;
+  border-color: #89ABE3;
+  background-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 6px;
 }
 
 #banner {
-    position: absolute;
-    top: 766px;
-    left: 0;
-    width: 200px;
+  position: absolute;
+  top: 766px;
+  left: 0;
+  width: 200px;
 }
 
-#banner h3{
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
- }
-
-#banner p{
-   padding-top: 2px;
-   padding-left: 10px;
-   padding-bottom: 5px;
-   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 10pt;
+#banner h3 {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
 }
 
-#banner p.tiny{
-   padding-top: 5px;
-   padding-left: 15px;
-   padding-bottom: 5px;
-   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 8pt;
+#banner p {
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+#banner p.tiny {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8pt;
 }
 
 #banner img {
@@ -156,94 +153,94 @@
   padding-left: 0px;
 }
 
-#main{
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-bottom: 30px;
-    width: 700px;
+#main {
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  width: 700px;
 }
 
-#main h1{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14pt;
+#main h1 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+ #main h2 {
+   padding-top: 15px;
+   padding-bottom: 10px;
+   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12pt;
  }
 
-#main h2{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
+ #main h3 {
+   padding-top: 15px;
+   padding-bottom: 5px;
+   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 12pt;
  }
 
-#main h3{
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 12pt;
+ #main p {
+   margin-left: 5px;
+   padding: 2px;
+   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12pt;
  }
 
-#main p{
-    margin-left: 5px;
-    padding: 2px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12pt;
+#main p#parag {
+  margin-left: 5px;
+  padding-top: 5px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12pt;
 }
 
-#main p#parag{
-    margin-left: 5px;
-    padding-top: 5px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12pt;
+#main dl {
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  padding: 5px;
 }
 
-#main dl{
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    padding: 5px;
+#main dt {
+  padding-top: 5px;
+  font-weight: bold;
 }
 
-#main dt{
-    padding-top: 5px;
-    font-weight: bold;
+#main dt#emphasis {
+  padding-top: 5px;
+  font-weight: bold;
+  background-color: mistyrose;
 }
 
-#main dt#emphasis{
-    padding-top: 5px;
-    font-weight: bold;
-    background-color: mistyrose;
+#main dd {
+  padding-left: 50px;
 }
 
-#main dd{
-    padding-left: 50px;
+#main a {
+  /*    text-decoration: none;*/
+  text-decoration: normal;
+  color: #990033;
 }
 
-#main a{
-/*    text-decoration: none;*/
-    text-decoration: normal;
-    color: #990033;
-}
-
-#main p#forecast{
-    color: #777777;
+#main p#forecast {
+  color: #777777;
 }
 
 #main p#soon{
-    color: #3388FF;
+  color: #3388FF;
 }
 
-#main p#description{
+#main p#description {
   margin-left: 10px;
   padding: 2px;
   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
@@ -252,241 +249,241 @@
   font-size: 10pt;
 }
 
-#main p#right{
-    text-align: right;
+#main p#right {
+  text-align: right;
 }
 
-#main p#emphasis{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
+#main p#emphasis {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
 }
 
-#main strong{
-    padding-top: 5px;
-    font-weight: bold;
+#main strong {
+  padding-top: 5px;
+  font-weight: bold;
 }
 
-#main ol{
-    margin-left: 30px;
-    list-style-type: decimal;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+#main ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
 }
 
-#main ul{
-    margin-left: 30px;
-    list-style-type: circle;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+#main ul {
+  margin-left: 30px;
+  list-style-type: circle;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
 }
 
-#main ul#circle{
-    list-style-type: circle;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    margin-left: 20px;
+#main ul#circle {
+  list-style-type: circle;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  margin-left: 20px;
 }
 
-#main li{
-    padding: 5px;
+#main li {
+  padding: 5px;
 }
 
-#footer{
+#footer {
 }
 
-#main table#list{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    table-layout: auto;
-    frame: box;
-    rules: rows;
-    border: 2px;
-    border-collapse: collapse;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+#main table#list {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  table-layout: auto;
+  frame: box;
+  rules: rows;
+  border: 2px;
+  border-collapse: collapse;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
 }
 
-#main td#right{
-    text-align: right;
+#main td#right {
+  text-align: right;
 }
 
-#main a.button1:link{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #339933;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button1:link {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #339933;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button1:visited{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #339933;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button1:visited {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #339933;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button1:hover{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #339933;
-    border: 1px;
-    border-style: solid;
-    border-color: #339933;
-    background-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button1:hover {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #339933;
+  border: 1px;
+  border-style: solid;
+  border-color: #339933;
+  background-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button2:link{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #3366FF;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button2:link {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #3366FF;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button2:visited{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #3366FF;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button2:visited {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #3366FF;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button2:hover{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #3366FF;
-    border: 1px;
-    border-style: solid;
-    border-color: #3366FF;
-    background-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button2:hover {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #3366FF;
+  border: 1px;
+  border-style: solid;
+  border-color: #3366FF;
+  background-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button3:link{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #990033;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button3:link {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #990033;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button3:visited{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #FFFFFF;
-    background-color: #990033;
-    border: 1px;
-    border-style: solid;
-    border-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button3:visited {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #990033;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main a.button3:hover{
-    display: block;
-    width: 160px;
-    height: 24px;
-    color: #990033;
-    border: 1px;
-    border-style: solid;
-    border-color: #990033;
-    background-color: white;
-    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12pt;
-    text-decoration: none;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
+#main a.button3:hover {
+  display: block;
+  width: 160px;
+  height: 24px;
+  color: #990033;
+  border: 1px;
+  border-style: solid;
+  border-color: #990033;
+  background-color: white;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
 }
 
-#main em.attention{
-    color: #CC5555;
+#main em.attention {
+  color: #CC5555;
 }
 
-#main div.info{
-    margin-left: 6.0em;
-    text-indent: -5.5em;
+#main div.info {
+  margin-left: 6.0em;
+  text-indent: -5.5em;
 }
