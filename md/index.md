@@ -12,11 +12,19 @@ title: "可視化情報シンポジウム 2021"
 
 2021年9月9日(木)，10日(金)，11日(土)
 
+## 重要な期日
+
+講演申込開始日
+: 2021年4月16日
+
+本論文投稿締切日
+: 2021年7月9日
+
 ## 会場
 
 慶應義塾大学日吉キャンパス来往舎<br/>
 〒223-8521神奈川県横浜市日吉4丁目1-1<br/>
-[日吉キャンパス](http://www.hc.keio.ac.jp/ja/hiyoshi_campus/guide/) / [来往舎](https://lib-arts.hc.keio.ac.jp/ora/)
+[日吉キャンパス](http://www.hc.keio.ac.jp/ja/hiyoshi_campus/guide/) / 来往舎
 
 ## 方式
 
