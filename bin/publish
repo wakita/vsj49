@@ -7,14 +7,21 @@ fi
 
 
 bin/convert symp2021
-/bin/echo -n 'Publish to the FTP server? (y/n): '
+echo
+
+/bin/echo -n 'パブリッシュのためにコピーを更新しますか？ (y/n): '
 read -n 1 yn; echo
-
-# echo "[$yn]"
-
 case "$yn" in
   [Yy])
-    rsync --exclude-from='lib/exclude.rsync' --recursive site/ symp2021
+    rsync --verbose --exclude-from='lib/exclude.rsync' --recursive site/ symp2021/ ;;
+
+  *) exit 0 ;;
+esac
+
+/bin/echo -n 'ウェブサイトを更新しますか？ (y/n): '
+read -n 1 yn; echo
+case "$yn" in
+  [Yy])
     cd symp2021
     git add . && git commit && git ftp push ;;
 esac
