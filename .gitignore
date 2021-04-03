@@ -1,3 +1,5 @@
 /doc
+/lib/*.html
+!/lib/meta.html
 /symp20*
 /images
