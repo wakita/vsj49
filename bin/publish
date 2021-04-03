@@ -13,7 +13,7 @@ RSYNC_OPTIONS="--files-from=lib/rsync-files.txt site/ symp2021/"
 echo "rsync --dry-run --verbose $RSYNC_OPTIONS"
 rsync --dry-run --verbose $RSYNC_OPTIONS
 
-/bin/echo -n 'パブリッシュのためにコピーを更新しますか？ (y/n): '
+echo; /bin/echo -n 'パブリッシュのためにコピーを更新しますか？ (y/n): '
 read -n 1 yn; echo
 case "$yn" in
   [Yy]) rsync $RSYNC_OPTIONS ;;
@@ -21,7 +21,7 @@ case "$yn" in
   *) exit 0 ;;
 esac
 
-/bin/echo -n 'ウェブサイトを更新しますか？ (y/n): '
+echo; /bin/echo -n 'ウェブサイトを更新しますか？ (y/n): '
 read -n 1 yn; echo
 case "$yn" in
   [Yy])
