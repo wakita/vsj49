@@ -5,15 +5,18 @@ if [ "$USER" != wakita ]; then
   exit 0
 fi
 
-
-bin/convert symp2021
+cd $DROPBOX/doc/events/vsj49
+bin/convert
 echo
+
+RSYNC_OPTIONS="--files-from=lib/rsync-files.txt site/ symp2021/"
+echo "rsync --dry-run --verbose $RSYNC_OPTIONS"
+rsync --dry-run --verbose $RSYNC_OPTIONS
 
 /bin/echo -n 'パブリッシュのためにコピーを更新しますか？ (y/n): '
 read -n 1 yn; echo
 case "$yn" in
-  [Yy])
-    rsync --verbose --exclude-from='lib/exclude.rsync' --recursive site/ symp2021/ ;;
+  [Yy]) rsync $RSYNC_OPTIONS ;;
 
   *) exit 0 ;;
 esac
