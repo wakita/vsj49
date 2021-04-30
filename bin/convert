@@ -14,3 +14,6 @@ for md in md/*.md; do
   echo md/$md
   pandoc --defaults=lib/pandoc.yaml --from markdown+native_divs --output=$site/$md.html md/$md.md
 done
+
+rm -rf site/files
+cp -r files site/files
