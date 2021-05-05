@@ -1,4 +1,7 @@
 css/
+files/
 images/
 lib/
+authoring.html
 index.html
+submission.html
