@@ -1,6 +1,8 @@
 ::: {#header}
 
-![可視化情報シンポジウム2021](images/vsjsympTopYokohama.jpg)
+![可視化情報シンポジウム2021](../site/images/vsjsympTopYokohama1.jpg)
+![可視化情報シンポジウム2021](../site/images/vsjsympTopYokohama2.jpg)
+![可視化情報シンポジウム2021](../site/images/vsjsympTopYokohama3.jpg)
 
 ## 第49回
 
