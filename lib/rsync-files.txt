@@ -2,6 +2,7 @@ css/
 files/
 images/
 lib/
+art_contest.html
 authoring.html
 index.html
 submission.html
