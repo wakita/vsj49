@@ -3,9 +3,9 @@
 - [ホーム](index.html)
 - [発表申込](submission.html)
 - [原稿執筆要項](authoring.html)
+- [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
 <!--
-- [セッション一覧](session.html)
 - [原稿投稿](submission.html)
 - [参加登録など](registration.html)
 - [プログラム](program.html)
