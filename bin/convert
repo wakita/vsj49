@@ -15,5 +15,5 @@ for md in md/*.md; do
   pandoc --defaults=lib/pandoc.yaml --from markdown+native_divs --output=$site/$md.html md/$md.md
 done
 
-rm -rf site/files
-cp -r files site/files
+rm -rf site/js site/files
+cp -r js files site
