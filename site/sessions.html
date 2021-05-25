@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>実行委員会</title>
+  <title>セッション</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -93,34 +93,29 @@
 </div>
 </div>
 <header id="title-block-header">
-<h1 class="title">実行委員会</h1>
+<h1 class="title">セッション</h1>
 </header>
 <div id="main">
-<section id="実行委員長" class="level2">
-<h2>実行委員長</h2>
-<p>藤代 一成（慶應義塾大学）</p>
+<section id="一般講演" class="level1">
+<h1>一般講演</h1>
 </section>
-<section id="幹事" class="level2">
-<h2>幹事</h2>
-<p>伊藤 正彦（北海道情報大学）</p>
-</section>
-<section id="委員" class="level2">
-<h2>委員</h2>
-<p>A</p>
-<p>B</p>
-<p>C</p>
-</section>
-<section id="顧問" class="level2">
-<h2>顧問</h2>
-<p>D</p>
-</section>
-<section id="協力委員" class="level2">
-<h2>協力委員</h2>
-<p>E</p>
-</section>
-<section id="事務局" class="level2">
-<h2>事務局</h2>
-<p>F</p>
+<section id="オーガナイズドセッション-os" class="level1">
+<h1>オーガナイズドセッション (OS)</h1>
+<script type="text/x-template" id="x-organized-session-template">
+  <div>
+    <div v-for="os in organized_sessions" :key="os.name">
+      <h2><span class="os_id">{{os.name}}</span>: <span class="os_title">{{os.title}}</span></h2>
+      オーガナイザ：<span class="os_organizer" v-for="(p, i) in os.organizers" :key="p[0]">{{i > 0 ? '・' : ''}}{{p[0]}}（{{p[1]}}）</span>
+    </div>
+  </div>
+</script>
+<div id="list_of_organized_sessions">
+
+</div>
+<script type="text/javascript" src="js/sessions.js"></script>
+<!--
+# ワークショップ (WS)
+-->
 </section>
 </div>
 </body>

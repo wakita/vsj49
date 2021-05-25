@@ -205,7 +205,7 @@
   margin-top: 30px;
   margin-left: 200px;
   margin-bottom: 30px;
-  width: 700px;
+  //width: 700px;
 }
 
 #main h1 {
@@ -534,4 +534,8 @@
 #main div.info {
   margin-left: 6.0em;
   text-indent: -5.5em;
+}
+
+span.os_id {
+  font-weight: bold;
 }
