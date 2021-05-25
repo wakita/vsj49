@@ -21,10 +21,12 @@ case "$yn" in
   *) exit 0 ;;
 esac
 
-echo; /bin/echo -n 'ウェブサイトを更新しますか？ (y/n): '
+message=`git log --abbrev-commit --oneline | head -1`
+echo "\n$message"
+/bin/echo -n 'ウェブサイトを更新しますか？ (y/n): '
 read -n 1 yn; echo
 case "$yn" in
   [Yy])
     cd symp2021
-    git add . && git commit && git ftp push ;;
+    git add . && git commit -m "$message" && git ftp push ;;
 esac
