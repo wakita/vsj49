@@ -58,7 +58,7 @@ KEYS = '学会名,回答'.split(',')
 df = pd.read_excel('/Users/wakita/Downloads/第49回シンポ協賛依頼先_210528.xlsx', skiprows=1)[KEYS]
 coop_orgs = list(df[df['回答'].str.contains('承諾', na=False)]['学会名'])
 coop_orgs = [org.replace('\u3000', ' ') for org in coop_orgs]
-coop_orgs = [re.sub('.*法人 *', '', org) for org in coop_orgs]
+#coop_orgs = [re.sub('.*法人 *', '', org) for org in coop_orgs]
 
 PROLOGUE = '''---
 title: '共催・協賛・後援'
@@ -72,6 +72,13 @@ title: '共催・協賛・後援'
 
 with open('md/support.md', 'w') as w:
     w.write(PROLOGUE)
-    for org in sorted(coop_orgs, key=lambda name: ORGS[name]):
+    def key(org):
+        name = org.split(' ')
+        return name[0] if len(name) == 1 else name[1]
+
+    for org in coop_orgs:
+        print(key(org))
+
+    for org in sorted(coop_orgs, key=key):
         w.write(f'- {org}\n')
     w.write('\n:::\n')
