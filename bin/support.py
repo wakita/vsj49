@@ -1,9 +1,14 @@
 #!/Users/wakita/.venvs/vis/bin/python
 
 import re
+import tempfile
+
 import pandas as pd
 
+import gdown
+
 # 団体名とそのよみ
+
 ORGS = '''応用物理学会 おうようぶつりがっかい
 海洋調査技術学会 かいようちょうさぎじゅつがっかい
 計測自動制御学会 けいそくじどうせいぎょがっかい
@@ -51,14 +56,23 @@ ORGS = '''応用物理学会 おうようぶつりがっかい
 日本鋳造工学会 にほんちゅうぞうこうがくかい
 画像電子学会 がぞうでんしがっかい
 芸術科学会 げいじゅつかがくかい'''.split('\n')
+
 ORGS = dict([org.split(' ') for org in ORGS])
 
+def org_yomi(org):
+    name = org.split(' ')
+    return name[0] if len(name) == 1 else name[1]
+
+# 協賛依頼状況の Excel のダウンロードと読み込み
 KEYS = '学会名,回答'.split(',')
 
-df = pd.read_excel('/Users/wakita/Downloads/第49回シンポ協賛依頼先_210528.xlsx', skiprows=1)[KEYS]
+tmp = tempfile.NamedTemporaryFile()
+url='https://drive.google.com/uc?id=1uUW8TkjGownZSjnk4jfsifybIaj2QmL8'
+gdown.download(url, tmp.name, quiet=False)
+df = pd.read_excel(tmp.name, skiprows=1)[KEYS]
+
 coop_orgs = list(df[df['回答'].str.contains('承諾', na=False)]['学会名'])
 coop_orgs = [org.replace('\u3000', ' ') for org in coop_orgs]
-#coop_orgs = [re.sub('.*法人 *', '', org) for org in coop_orgs]
 
 PROLOGUE = '''---
 title: '共催・協賛・後援'
@@ -70,15 +84,10 @@ title: '共催・協賛・後援'
 
 '''
 
+# Markdown (md/support.md) の生成
 with open('md/support.md', 'w') as w:
     w.write(PROLOGUE)
-    def key(org):
-        name = org.split(' ')
-        return name[0] if len(name) == 1 else name[1]
 
-    for org in coop_orgs:
-        print(key(org))
-
-    for org in sorted(coop_orgs, key=key):
+    for org in sorted(coop_orgs, key=org_yomi):
         w.write(f'- {org}\n')
     w.write('\n:::\n')
