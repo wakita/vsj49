@@ -8,3 +8,4 @@ authoring.html
 index.html
 sessions.html
 submission.html
+support.html
