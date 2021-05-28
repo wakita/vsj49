@@ -245,6 +245,10 @@
    font-size: 12pt;
  }
 
+#main del {
+  color: #aaa;
+}
+
 #main p#parag {
   margin-left: 5px;
   padding-top: 5px;
