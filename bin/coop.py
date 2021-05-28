@@ -3,6 +3,7 @@
 import re
 import pandas as pd
 
+# 団体名とそのよみ
 ORGS = '''応用物理学会 おうようぶつりがっかい
 海洋調査技術学会 かいようちょうさぎじゅつがっかい
 計測自動制御学会 けいそくじどうせいぎょがっかい
@@ -51,7 +52,6 @@ ORGS = '''応用物理学会 おうようぶつりがっかい
 画像電子学会 がぞうでんしがっかい
 芸術科学会 げいじゅつかがくかい'''.split('\n')
 ORGS = dict([org.split(' ') for org in ORGS])
-#print(ORGS)
 
 KEYS = '学会名,回答'.split(',')
 
@@ -59,8 +59,6 @@ df = pd.read_excel('/Users/wakita/Downloads/第49回シンポ協賛依頼先_
 coop_orgs = list(df[df['回答'].str.contains('承諾', na=False)]['学会名'])
 coop_orgs = [org.replace('\u3000', ' ') for org in coop_orgs]
 coop_orgs = [re.sub('.*法人 *', '', org) for org in coop_orgs]
-
-#print(*sorted(ORGS, key=lambda name: ORGS[name]))
 
 PROLOGUE = '''---
 title: '共催・協賛・後援'
