@@ -62,7 +62,7 @@ ORGS = dict([org.split(' ') for org in ORGS])
 
 def org_yomi(org):
     name = org.split(' ')
-    return name[0] if len(name) == 1 else name[1]
+    return ORGS[name[0] if len(name) == 1 else name[1]]
 
 # 協賛依頼状況の Excel のダウンロードと読み込み
 KEYS = '学会名,回答'.split(',')
