@@ -69,12 +69,12 @@ KEYS = '学会名,回答'.split(',')
 
 download_xlsx = os.environ['HOME'] + '/Downloads/第49回シンポ協賛依頼先_210528.xlsx'
 if os.path.exists(download_xlsx):
-    df = pd.read_excel(download_xlsx, skiprows=1)[KEYS]
+    df = pd.read_excel(download_xlsx, skiprows=1, usecols=[1,4])[KEYS]
 else:
     tmp = tempfile.NamedTemporaryFile()
     url='https://drive.google.com/uc?id=1uUW8TkjGownZSjnk4jfsifybIaj2QmL8'
     gdown.download(url, tmp.name, quiet=False)
-    df = pd.read_excel(tmp.name, skiprows=1)[KEYS]
+    df = pd.read_excel(tmp.name, skiprows=1, usecols=[1,4])[KEYS]
 
 coop_orgs = list(df[df['回答'].str.contains('承諾', na=False)]['学会名'])
 coop_orgs = [org.replace('\u3000', ' ') for org in coop_orgs]
