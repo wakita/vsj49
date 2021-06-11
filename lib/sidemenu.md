@@ -5,7 +5,7 @@
 - [原稿執筆要項](authoring.html)
 - [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
-- [共催・協賛・後援](support.html)
+- [協賛](support.html)
 <!--
 - [原稿投稿](submission.html)
 - [参加登録など](registration.html)
