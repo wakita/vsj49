@@ -9,7 +9,7 @@ cd $DROPBOX/doc/events/vsj49
 bin/convert
 echo
 
-RSYNC_OPTIONS="--files-from=lib/rsync-files.txt site/ symp2021/"
+RSYNC_OPTIONS="--recursive --files-from=lib/rsync-files.txt site/ symp2021/"
 echo "rsync --dry-run --verbose $RSYNC_OPTIONS"
 rsync --dry-run --verbose $RSYNC_OPTIONS
 
