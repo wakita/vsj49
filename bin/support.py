@@ -82,7 +82,7 @@ coop_orgs = [org.replace('\u3000', ' ') for org in coop_orgs]
 for org in coop_orgs: print(org)
 
 PROLOGUE = '''---
-title: '共催・協賛・後援'
+title: '協賛'
 ---
 
 ::: {#main}
