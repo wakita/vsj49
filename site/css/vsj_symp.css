@@ -208,6 +208,10 @@
   margin-right: 50px;
 }
 
+.alert {
+  color: #a00;
+}
+
 #main h1 {
   padding-top: 15px;
   padding-bottom: 10px;
