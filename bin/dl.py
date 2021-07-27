@@ -11,12 +11,14 @@ from pyperclip import copy
 
 CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
 
+# 自動ダウンロードの設定
 needs_download = not os.path.exists(CACHE)
-mtime = datetime.datetime.fromtimestamp(os.path.getmtime(CACHE))
-today = datetime.datetime.today()
-needs_download |= mtime.year != today.year
-needs_download |= mtime.month != today.month
-needs_download |= mtime.day != today.day
+if not needs_download:
+    mtime = datetime.datetime.fromtimestamp(os.path.getmtime(CACHE))
+    today = datetime.datetime.today()
+    needs_download |= mtime.year != today.year
+    needs_download |= mtime.month != today.month
+    needs_download |= mtime.day != today.day
 
 if needs_download:
     gc = gspread.service_account()
