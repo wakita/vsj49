@@ -5,14 +5,20 @@ import os
 import time
 
 import pandas as pd
-
 import gspread
 
 from pyperclip import copy
 
 CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
 
-if not os.path.exists(CACHE):
+needs_download = not os.path.exists(CACHE)
+mtime = datetime.datetime.fromtimestamp(os.path.getmtime(CACHE))
+today = datetime.datetime.today()
+needs_download |= mtime.year != today.year
+needs_download |= mtime.month != today.month
+needs_download |= mtime.day != today.day
+
+if needs_download:
     gc = gspread.service_account()
     book = gc.open_by_key('1nAlOjtGwKWGbU_QE_JeiB__wJs6y46hUIi4erpRO-XM')
     df = pd.DataFrame(book.get_worksheet(0).get_all_records())
@@ -22,13 +28,14 @@ if not os.path.exists(CACHE):
 
 df = pd.read_excel(CACHE, index_col='PAPER_ID')
 
-遅延要望 = set([47, 110, 59, 87, 89, 69, 74, 144])
+遅延要望 = set(df[df['REMARK'] == 'delay'].index)
 
 未提出 = df[df['発表論文'].isna()]
 
-未提出連絡なし = sorted(set(未提出.index) - 遅延要望)
-print(未提出連絡なし)
-未提出連絡なし = 未提出.filter(未提出連絡なし, axis='index')
+print('未提出連絡なし')
+未提出連絡なし = 未提出.filter(sorted(set(未提出.index) - 遅延要望),
+                               axis='index')
 
 print(未提出連絡なし['Email Address'])
 copy(', '.join(list(未提出連絡なし['Email Address'])))
+print('\n未提出者たちのメールアドレスをコピーバッファにコピーしました。')
