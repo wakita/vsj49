@@ -41,3 +41,5 @@ print('未提出連絡なし')
 print(未提出連絡なし['Email Address'])
 copy(', '.join(list(未提出連絡なし['Email Address'])))
 print('\n未提出者たちのメールアドレスをコピーバッファにコピーしました。')
+
+# vi: ft=python

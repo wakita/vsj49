@@ -1,0 +1,66 @@
+#!/Users/wakita/.venvs/vis/bin/python
+
+import os
+import pickle
+
+import pandas as pd
+
+import gdown
+
+CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
+df = pd.read_excel(CACHE, index_col='PAPER_ID')
+
+# print(df.keys())
+
+df = df[['和文題目', '英文題目', '姓 (1)', '発表論文']]
+
+
+# 論文のダウンロード
+
+SUBMISSION = '/Users/wakita/Dropbox/doc/events/vsj/files/submission'
+SUBMISSION_PKL = f'{SUBMISSION}/pdf.pkl'
+
+if os.path.exists(SUBMISSION_PKL):
+    with open(SUBMISSION_PKL, 'rb') as f:
+        submissions = pickle.load(f)
+else:
+    submissions = {}
+
+for id, submission in df.iterrows():
+    pdfs = submission['発表論文']
+    if pd.isna(pdfs): continue
+    pdf = pdfs.split(', ')[-1]
+    pdf_id = pdf.split('id=')[-1]
+    if pdf_id != submissions.get(id, ''):
+        submissions[id] = pdf_id
+        print(f'Downloading paper_{id}')
+        gdown.download(f'https://drive.google.com/uc?id={pdf_id}',
+                       f'{SUBMISSION}/{id}.pdf')
+
+with open(SUBMISSION_PKL, 'wb') as w:
+    pickle.dump(submissions, w)
+
+
+# 論文の内容の確認
+#
+# タイトルが一致していること
+
+import subprocess
+
+和文題目 = df['和文題目']
+
+def check_title(id):
+    if not submissions.get(id, False): return
+
+    result = subprocess.run(f'pdftotext -l 1 {SUBMISSION}/{id}.pdf -'.split(' '),
+                            stdout=subprocess.PIPE)
+    page = result.stdout
+    try:
+        page = page[:500].decode('utf-8').replace(' ', '').replace('　', '')
+        if not (和文題目[id][:8].replace(' ', '') in page):
+            print(f'論文番号 {id}: {和文題目[id]}\n')
+    except:
+        print(f'Error: 論文番号 {id}: {和文題目[id]}\n')
+
+for id in submissions.keys():
+    check_title(id)
