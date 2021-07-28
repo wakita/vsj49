@@ -1,0 +1,76 @@
+#!/Users/wakita/.venvs/vis/bin/python
+
+import argparse
+import datetime
+import os
+import sys
+import time
+
+import pandas as pd
+import gspread
+
+from pyperclip import copy
+
+
+# Google Spreadsheet のダウンロード
+
+CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
+
+def download(args):
+    gc = gspread.service_account()
+    print('Google Spreadsheet のダウンロード中')
+    book = gc.open_by_key('1nAlOjtGwKWGbU_QE_JeiB__wJs6y46hUIi4erpRO-XM')
+    db = pd.DataFrame(book.get_worksheet(0).get_all_records())
+    db.drop(db[db['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
+    with open(CACHE, 'wb') as w:
+        db.to_excel(w)
+
+
+# スプレッドシートの読み込み
+
+db = None
+def load():
+    global db
+    db = pd.read_excel(CACHE, index_col='PAPER_ID')
+
+# 検索
+
+def search(A):
+    load()
+    print(db.keys())
+    if A.key in set(['id', 'PAPER_ID']):
+        paper = db.loc[int(A.value)]
+    elif A.key in set(['title', '和文題目']):
+        paper = db[db['和文題目'].str.contains(A.value)]
+    elif A.key in set(['name', '姓', '姓 (1)']):
+        paper = db[db['姓 (1)'].str.contains(A.value)]
+    paper = paper.to_dict()
+
+    print(f'氏名: {paper["姓 （例：山田）"]} {paper["名 （例：花子）"]}, 所属機関: {paper["所属機関"]}')
+    print(f'和文題目: {paper["和文題目"]}')
+    print(f'編集URL: {paper["EDIT_URL"]}')
+    uploads = paper["発表論文"]
+    print(type(uploads) == str)
+    if type(uploads) == str:
+        uploads = uploads.split(', ')
+        print(f'論文URL #{len(uploads)}: {uploads[-1]}')
+
+# コマンド行処理
+
+P = argparse.ArgumentParser(description='発表申し込みDBへのアクセス')
+
+SP = P.add_subparsers(help='サブコマンドを実行する')
+P_download = SP.add_parser('download', aliases=['dl'])
+P_download.set_defaults(handler=download)
+
+P_search = SP.add_parser('search')
+P_search.add_argument('key', choices='id PAPER_ID name title'.split(), help='検索対象の属性')
+P_search.add_argument('value', help='検索したい値')
+P_search.add_argument('show', nargs='+', help='表示するフィールド')
+P_search.set_defaults(handler=search)
+
+args = P.parse_args()
+if hasattr(args, 'handler'): args.handler(args)
+else: parser.print_help()
+
+# vi: ft=python

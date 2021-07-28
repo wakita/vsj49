@@ -1,0 +1,24 @@
+#!/Users/wakita/.venvs/vis/bin/python
+
+import os
+import sys
+
+import pandas as pd
+
+CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
+df = pd.read_excel(CACHE, index_col='PAPER_ID')
+print(df)
+print(df.keys())
+
+if len(sys.argv) < 3: exit(-1)
+
+key, val = sys.argv[1:3]
+if key in set(['id', 'PAPER_ID']):
+  #paper = df[df['PAPER_ID'] == val] #df.iloc[int(val)]
+  paper = df.loc[int(val)]
+elif key in set(['title', '和文標題']):
+  pass
+
+print(paper['和文題目, Email Address, 姓 (1), 名 (1), 所属機関 (1), EDIT_URL'.split(', ')])
+
+# vi: ft=python
