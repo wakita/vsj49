@@ -5,7 +5,7 @@ if [ "$USER" != wakita ]; then
   exit 0
 fi
 
-cd $DROPBOX/doc/events/vsj49
+cd $DROPBOX/doc/events/vsj
 bin/convert
 echo
 
