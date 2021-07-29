@@ -3,18 +3,24 @@
 import argparse
 import datetime
 import os
+from pathlib import Path
+import pickle
 import sys
 import time
 
 import pandas as pd
 import gspread
+import gdown
 
 from pyperclip import copy
 
 
 # Google Spreadsheet のダウンロード
 
+ROOT = Path(__file__).parent.parent.resolve()
+
 CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
+CACHE = ROOT.joinpath('files', 'submission', 'registration.xlsx')
 
 def download(args):
     gc = gspread.service_account()
@@ -24,6 +30,32 @@ def download(args):
     db.drop(db[db['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
     with open(CACHE, 'wb') as w:
         db.to_excel(w)
+
+
+def download_papers(args):
+    load()
+    SUBMISSION = ROOT.joinpath('files', 'submission')
+    SUBMISSION_PKL = SUBMISSION.joinpath('pdf.pkl')
+    if os.path.exists(SUBMISSION_PKL):
+        with open(SUBMISSION_PKL, 'rb') as f:
+            submissions = pickle.load(f)
+    else:
+        submissions = {}
+
+    for id, submission in db.iterrows():
+        pdfs = submission['発表論文']
+        if pd.isna(pdfs): continue
+        pdf = pdfs.split(', ')[-1]
+        pdf_id = pdf.split('id=')[-1]
+        if pdf_id != submissions.get(id, ''):
+            print(f'Downloading paper: #{id}')
+            gdown.download(f'https://drive.google.com/uc?id={pdf_id}',
+                           f'{SUBMISSION}/{id:03d}.pdf',
+                           quiet=True)
+            submissions[id] = pdf_id
+
+    with open(SUBMISSION_PKL, 'wb') as w:
+        pickle.dump(submissions, w)
 
 
 # スプレッドシートの読み込み
@@ -37,20 +69,17 @@ def load():
 
 def search(A):
     load()
-    print(db.keys())
     if A.key in set(['id', 'PAPER_ID']):
         paper = db.loc[int(A.value)]
     elif A.key in set(['title', '和文題目']):
-        paper = db[db['和文題目'].str.contains(A.value)]
+        paper = db[db['和文題目'].str.contains(A.value)].iloc[0]
     elif A.key in set(['name', '姓', '姓 (1)']):
-        paper = db[db['姓 (1)'].str.contains(A.value)]
-    paper = paper.to_dict()
+        paper = db[db['姓 (1)'].str.contains(A.value)].iloc[0]
 
     print(f'氏名: {paper["姓 （例：山田）"]} {paper["名 （例：花子）"]}, 所属機関: {paper["所属機関"]}')
     print(f'和文題目: {paper["和文題目"]}')
     print(f'編集URL: {paper["EDIT_URL"]}')
     uploads = paper["発表論文"]
-    print(type(uploads) == str)
     if type(uploads) == str:
         uploads = uploads.split(', ')
         print(f'論文URL #{len(uploads)}: {uploads[-1]}')
@@ -66,8 +95,10 @@ P_download.set_defaults(handler=download)
 P_search = SP.add_parser('search')
 P_search.add_argument('key', choices='id PAPER_ID name title'.split(), help='検索対象の属性')
 P_search.add_argument('value', help='検索したい値')
-P_search.add_argument('show', nargs='+', help='表示するフィールド')
 P_search.set_defaults(handler=search)
+
+P_papers = SP.add_parser('papers')
+P_papers.set_defaults(handler=download_papers)
 
 args = P.parse_args()
 if hasattr(args, 'handler'): args.handler(args)
