@@ -69,12 +69,16 @@ def load():
 
 def search(A):
     load()
-    if A.key in set(['id', 'PAPER_ID']):
-        paper = db.loc[int(A.value)]
-    elif A.key in set(['title', '和文題目']):
-        paper = db[db['和文題目'].str.contains(A.value)].iloc[0]
-    elif A.key in set(['name', '姓', '姓 (1)']):
-        paper = db[db['姓 (1)'].str.contains(A.value)].iloc[0]
+    try:
+        if A.key in set(['id', 'PAPER_ID']):
+            paper = db.loc[int(A.value)]
+        elif A.key in set(['title', '和文題目']):
+            paper = db[db['和文題目'].str.contains(A.value)].iloc[0]
+        elif A.key in set(['name', '姓', '姓 (1)']):
+            paper = db[db['姓 (1)'].str.contains(A.value)].iloc[0]
+    except:
+        print('該当する発表が見つかりませんでした。')
+        return
 
     print(f'氏名: {paper["姓 （例：山田）"]} {paper["名 （例：花子）"]}, 所属機関: {paper["所属機関"]}')
     print(f'和文題目: {paper["和文題目"]}')
@@ -83,6 +87,9 @@ def search(A):
     if type(uploads) == str:
         uploads = uploads.split(', ')
         print(f'論文URL #{len(uploads)}: {uploads[-1]}')
+
+def remarks(A):
+    print(db[~(db['REMARK'].isna())])
 
 # コマンド行処理
 
@@ -99,6 +106,9 @@ P_search.set_defaults(handler=search)
 
 P_papers = SP.add_parser('papers')
 P_papers.set_defaults(handler=download_papers)
+
+P_remarks = SP.add_parser('remarks')
+P_remarks.set_defaults(handler=remarks)
 
 args = P.parse_args()
 if hasattr(args, 'handler'): args.handler(args)
