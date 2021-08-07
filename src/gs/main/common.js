@@ -1,11 +1,12 @@
 const YEAR = "2021";
-const DEBUG = true;
+var DEBUG = true;
 
 const PROPS = PropertiesService.getScriptProperties();
-const PAGES = Math.floor(PROPS.getProperty('num_pages')) || 1;
+var PAGES = Math.floor(PROPS.getProperty('num_pages')) || 1;
 var page = 0;
 
 const SUBMISSION_URL = 'https://docs.google.com/forms/d/1iRefDHt1gP7NL7iVCMECPv2WOhYeBoyDcrsTXWllT2E/';
+const SUBMISSION_SAMPLE_URL = 'https://docs.google.com/forms/d/1Jf2qwfquWGsZ1Vj2wu122_6nd5olRFMXRHml7M5ldfg/';
 
 const ORGANIZED_SESSIONS = `ウェーブレットと知的可視化の応用
 レーザ利用の可視化と計測
@@ -33,7 +34,9 @@ const MEMBERSHIP = [
 class MyForm {
   constructor(form_url) {
     const form = this.form = FormApp.openByUrl(form_url);
-    form.setTitle('発表申込・原稿提出フォーム');
+    const title = DEBUG ? "発表申込フォーム（確認用）" : '発表申込フォーム';
+    form.setTitle(title);
+    this.log("\n\n" + `${title}の構成`);
     form.setCollectEmail(true);    // [x] Collect email addresses
                                        // [ ] Response receipts := Alwasy の API は存在しない。フォーム作成後に手動で調整すること。
     form.setAllowResponseEdits(true);  // [x] Edit after submit
@@ -47,14 +50,19 @@ class MyForm {
   }
 
   clear() {
-    this.form.getItems().forEach(item => form.deleteItem(item))
+    this.form.getItems().forEach(item => this.form.deleteItem(item));
   }
 
   page(title) {
-    page++;
-    title = `Page ${++page}/${PAGES}: ${title}`;
-    if (DEBUG) return this.form.addSectionHeaderItem().setTitle(title);
-    else return this.form.addPageBreakItem().setTitle(title);
+    if (DEBUG) {
+      title = `Section ${title}`;
+      this.log(title);
+      return this.form.addSectionHeaderItem().setTitle(title);
+    } else {
+      title = `Page ${++page}/${PAGES}: ${title}`;
+      this.log(title);
+      return this.form.addPageBreakItem().setTitle(title);
+    }
   }
 
   section(title, description) {

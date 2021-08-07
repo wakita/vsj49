@@ -19,17 +19,26 @@ from pyperclip import copy
 
 ROOT = Path(__file__).parent.parent.resolve()
 
-CACHE = f'{os.environ["HOME"]}/.cache/vsj49/registration.xlsx'
-CACHE = ROOT.joinpath('files', 'submission', 'registration.xlsx')
+CACHE_SUB = ROOT.joinpath('files', 'submission', 'submission.xlsx')
+CACHE_REG = ROOT.joinpath('files', 'registration', 'registration.xlsx')
 
 def download(args):
     gc = gspread.service_account()
-    print('Google Spreadsheet のダウンロード中')
+    print('投稿状況の Google Spreadsheet をダウンロード中')
     book = gc.open_by_key('1nAlOjtGwKWGbU_QE_JeiB__wJs6y46hUIi4erpRO-XM')
-    db = pd.DataFrame(book.get_worksheet(0).get_all_records())
-    db.drop(db[db['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
-    with open(CACHE, 'wb') as w:
-        db.to_excel(w)
+    sub = pd.DataFrame(book.get_worksheet(0).get_all_records())
+    sub.drop(sub[sub['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
+    with open(CACHE_SUB, 'wb') as w:
+        sub.to_excel(w)
+
+    '''
+    print('参加申込状況の Google Spreadsheet をダウンロード中')
+    book = gc.open_by_key('147n__4QXF_xIEfXjPEAzxQpJTx18QrQO80TTtQ6_7ts')
+    reg = pd.DataFrame(book.get_worksheet(0).get_all_records())
+    sub.drop(reg[reg['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
+    with open(CACHE_REG, 'wb') as w:
+        reg.to_excel(w)
+    '''
 
 
 def download_papers(args):
@@ -42,7 +51,7 @@ def download_papers(args):
     else:
         submissions = {}
 
-    for id, submission in db.iterrows():
+    for id, submission in sub.iterrows():
         pdfs = submission['発表論文']
         if pd.isna(pdfs): continue
         pdf = pdfs.split(', ')[-1]
@@ -60,10 +69,10 @@ def download_papers(args):
 
 # スプレッドシートの読み込み
 
-db = None
+sub = None
 def load():
-    global db
-    db = pd.read_excel(CACHE, index_col='PAPER_ID')
+    global sub
+    sub = pd.read_excel(CACHE_SUB, index_col='PAPER_ID')
 
 # 検索
 
@@ -71,11 +80,11 @@ def search(A):
     load()
     try:
         if A.key in set(['id', 'PAPER_ID']):
-            paper = db.loc[int(A.value)]
+            paper = sub.loc[int(A.value)]
         elif A.key in set(['title', '和文題目']):
-            paper = db[db['和文題目'].str.contains(A.value)].iloc[0]
+            paper = sub[sub['和文題目'].str.contains(A.value)].iloc[0]
         elif A.key in set(['name', '姓', '姓 (1)']):
-            paper = db[db['姓 (1)'].str.contains(A.value)].iloc[0]
+            paper = sub[sub['姓 (1)'].str.contains(A.value)].iloc[0]
     except:
         print('該当する発表が見つかりませんでした。')
         return
@@ -89,7 +98,7 @@ def search(A):
         print(f'論文URL #{len(uploads)}: {uploads[-1]}')
 
 def remarks(A):
-    print(db[~(db['REMARK'].isna())])
+    print(sub[~(sub['REMARK'].isna())])
 
 # コマンド行処理
 
