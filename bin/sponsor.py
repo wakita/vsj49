@@ -43,21 +43,27 @@ def sponsors():
     with open(MD_DIR.joinpath('exhibition.md'), 'w') as w:
         w.write(EXHIBITION_HEADER)
 
-        w.write('\n# 展示・広告\n')
+        w.write('\n# 展示・広告\n\n')
 
-        w.write('\n## ランチョンセミナー\n')
+        w.write('\n## ランチョンセミナー\n\n')
         companies = sponsors[sponsors['ランチョンセミナー'].notna()]
         for _, company in companies.iterrows():
-            w.write(company['企業名'] + '\n\n')
+            company_url = company['企業URL']
+            if type(company_url) == str and len(company_url) > 0:
+                w.write(f'- [{company["企業名"]}]({company_url})\n\n')
+            else: w.write(f'- {company["企業名"]}\n\n')
 
-        w.write('\n## 機器展示\n')
+        w.write('\n## 機器展示\n\n')
         companies = sponsors[sponsors['機器展示'].notna()]
         for _, company in companies.iterrows():
-            w.write(company['企業名'] + '\n\n')
+            company_url = company['企業URL']
+            if type(company_url) == str and len(company_url) > 0:
+                w.write(f'- [{company["企業名"]}]({company_url})\n\n')
+            else: w.write(f'- {company["企業名"]}\n\n')
 
         w.write(EXHIBITION_FOOTER)
 
 
 if __name__ == '__main__':
-    #download()
+    download()
     sponsors()
