@@ -223,7 +223,7 @@
   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
  #main h2 {
@@ -232,15 +232,15 @@
    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
    font-style: normal;
    font-weight: bold;
-   font-size: 12pt;
+   font-size: 14pt;
  }
 
  #main h3 {
    padding-top: 15px;
    padding-bottom: 5px;
    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-   font-style: italic;
-   font-weight: normal;
+   //font-style: italic;
+   font-weight: bold;
    font-size: 12pt;
  }
 
