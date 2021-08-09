@@ -22,6 +22,16 @@ def download():
         sponsors.to_excel(w)
     print(sponsors)
 
+def download_all():
+    SHEET_ID = '1oAeFUjSLKQJzNbBQLDDiasOKdMx3q0O0_BPLYc1qyIc'
+    gc = gspread.service_account()
+    dfs = {}
+    book = gc.open_by_key(SHEET_ID)
+    writer = pd.ExcelWriter(DATA_DIR.joinpath('webdata.xlsx'), engine='xlsxwriter')
+    for worksheet in book.worksheets():
+        pd.DataFrame(worksheet.get_all_records()).to_excel(writer, sheet_name=worksheet.title)
+    writer.save()
+
 ######################################################################
 # スポンサー
 
@@ -37,7 +47,7 @@ EXHIBITION_FOOTER = '''\n:::
 
 
 def sponsors():
-    sponsors = pd.read_excel(DATA_DIR.joinpath('sponsors.xlsx'))
+    sponsors = pd.read_excel(DATA_DIR.joinpath('webdata.xlsx'), sheet_name='スポンサー')
 
     # 展示・広告
     with open(MD_DIR.joinpath('exhibition.md'), 'w') as w:
@@ -65,5 +75,5 @@ def sponsors():
 
 
 if __name__ == '__main__':
-    download()
+    #download_all()
     sponsors()
