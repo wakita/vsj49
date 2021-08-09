@@ -10,7 +10,7 @@ bin/convert
 echo
 
 # site/ の下のファイルを symp2021/ に複製．複製対象のファイルは lib/rsync-files.txt に指定
-RSYNC_OPTIONS="--recursive --files-from=lib/rsync-files.txt site/ symp2021/"
+RSYNC_OPTIONS="--recursive --files-from=lib/rsync-files.txt --exclude-from=lib/rsync-exclude.txt site/ symp2021/"
 
 # 複製しようとしているファイル群を列挙し，ユーザに確認を促す
 rsync --dry-run --verbose $RSYNC_OPTIONS
