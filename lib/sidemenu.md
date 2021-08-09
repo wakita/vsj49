@@ -3,12 +3,11 @@
 - [ホーム](index.html)
 - [発表申込](submission.html)
 - [原稿執筆要項](authoring.html)
+- [参加登録など](registration.html)
 - [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
 - [協賛](support.html)
 <!--
-- [原稿投稿](submission.html)
-- [参加登録など](registration.html)
 - [プログラム](program.html)
 - [講演時間](presen_style.html)
 - [学生プレゼン](award.html)

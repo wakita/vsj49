@@ -8,15 +8,17 @@ function dailyReport() {
     '出展企業への情報提供': {}
   };
 
+  let entries = 0;
+
   for (let r = 0; r < DATA.length; r++) {
+    if (get(r, 'ID') <= 0) continue;
+    entries++;
     for (k in hist) {
       const v = get(r, k);
       const n = v in hist[k] ? hist[k][v] : 0;
       hist[k][v] = n + 1;
     }
   }
-
-  let entries = 0;
 
   let message = [];
 
@@ -27,17 +29,15 @@ function dailyReport() {
       message.push(`- ${j}: ${options[j]}`);
     }
     message.push('');
-    entries++;
-    // if (get(r, 'ID) >= 0) entries++;
   }
 
   let lead = [
     '本日の参加登録概況を報告します。', '',
-    `参加登録者数: ${DATA.length}名`, ''];
+    `参加登録者数: ${entries}名`, ''];
 
   message = lead.concat(message).join('\n');
   //log(message);
-  MailApp.sendEmail(EMAIL_DEBUG, subject, message);
+  MailApp.sendEmail(EMAIL_OC, subject, message);
 }
 
 

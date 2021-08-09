@@ -2,7 +2,9 @@ function onNewRegistration(e) {
   const r = e ? e.range.getRow() - 2 : 0;
 
   let id = get(r, 'ID');
+  let status = 'edit';
   if (id === '') {
+    status = 'newEntry';
     id = ++ID; P.setProperty('ID', id);
     set(r, 'ID', id);
 
@@ -19,5 +21,9 @@ function onNewRegistration(e) {
   const message = info(r);
 
   MailApp.sendEmail(from, subject, message);
-  MailApp.sendEmail(EMAIL_DEBUG, 'VSJS2021: 参加登録概況', message.replace(/.*--記-*\n/, ''));
+
+  MailApp.sendEmail(
+    EMAIL_DEBUG,
+    status === 'newEntry' ? 'VSJS2021: 参加登録の通知' : 'VSJS2021: 参加登録情報の修正',
+    message.split(/.*--記--*\n/)[1]);
 }

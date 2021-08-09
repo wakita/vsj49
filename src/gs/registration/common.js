@@ -11,7 +11,7 @@ const KEYS = ALL_DATA[0];
 const DATA = ALL_DATA.slice(1);
 
 function resetProperty() {
-  P.setProperty('ID', -995);
+  P.setProperty('ID', 0);
   log(P.getProperty('ID'));
 }
 
@@ -104,6 +104,7 @@ Thank you for your registration. Registration has been accepted.
 　2) 参加登録料の入金を確認した後，講演会参加方法等をEmailにてご連絡差し上げます．
 　　 第49回 可視化情報シンポジウム
 　　 実行委員長　藤代　一成
+
 ---------------------------記----------------------------------
   [参加登録番号] <ID>
   [氏名] <姓> <名>
