@@ -6,6 +6,7 @@ lib/
 art_contest.html
 authoring.html
 index.html
+keynote.html
 registration.html
 sessions.html
 submission.html

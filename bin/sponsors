@@ -1,0 +1,20 @@
+#!/Users/wakita/.venvs/vis/bin/python3
+
+import json
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).parent.parent
+
+NAMES = '企業名 出資額 id 略称 よみ 企業URL バナー 機器展示 ランチョンセミナー 広告 カタログ'.split(' ')
+
+df = pd.read_excel(ROOT.joinpath('data', 'webdata.xlsx'), usecols=NAMES)
+df['出資額'] = (df['出資額'] - 14141 * 4) / 31419
+df.rename(columns={'出資額': 'kw'}, inplace=True)
+print(df)
+
+with open(ROOT.joinpath('js', 'sponsors.js'), 'w', encoding='utf-8', newline='\n') as js:
+  js.write(f'const sponsors = \n{df.to_json(orient="records", force_ascii=False, indent=2)};')
+
+# vim: ft=python3

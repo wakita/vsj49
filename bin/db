@@ -76,19 +76,8 @@ def load():
 
 # 検索
 
-def search(A):
-    load()
-    try:
-        if A.key in set(['id', 'PAPER_ID']):
-            paper = sub.loc[int(A.value)]
-        elif A.key in set(['title', '和文題目']):
-            paper = sub[sub['和文題目'].str.contains(A.value)].iloc[0]
-        elif A.key in set(['name', '姓', '姓 (1)']):
-            paper = sub[sub['姓 (1)'].str.contains(A.value)].iloc[0]
-    except:
-        print('該当する発表が見つかりませんでした。')
-        return
-
+def show_paper(paper):
+    print(f'PAPER_ID: {paper.name}')
     print(f'氏名: {paper["姓 （例：山田）"]} {paper["名 （例：花子）"]}, 所属機関: {paper["所属機関"]}')
     print(f'和文題目: {paper["和文題目"]}')
     print(f'編集URL: {paper["EDIT_URL"]}')
@@ -96,6 +85,30 @@ def search(A):
     if type(uploads) == str:
         uploads = uploads.split(', ')
         print(f'論文URL #{len(uploads)}: {uploads[-1]}')
+
+def search(A):
+    load()
+    try:
+        if A.key in set(['id', 'PAPER_ID']):
+            show_paper(sub.loc[int(A.value)])
+        elif A.key in set(['title', '和文題目']):
+            show_paper(id, sub[sub['和文題目'].str.contains(A.value)].iloc[0])
+        elif A.key in set(['name', '姓', '姓 (1)']):
+            for _, paper in sub[sub['姓 (1)'].str.contains(A.value)].iterrows():
+                show_paper(paper); print()
+    except:
+        print('該当する発表が見つかりませんでした。')
+        return
+
+    '''
+    print(f'氏名: {paper["姓 （例：山田）"]} {paper["名 （例：花子）"]}, 所属機関: {paper["所属機関"]}')
+    print(f'和文題目: {paper["和文題目"]}')
+    print(f'編集URL: {paper["EDIT_URL"]}')
+    uploads = paper["発表論文"]
+    if type(uploads) == str:
+        uploads = uploads.split(', ')
+        print(f'論文URL #{len(uploads)}: {uploads[-1]}')
+    '''
 
 def remarks(A):
     print(sub[~(sub['REMARK'].isna())])

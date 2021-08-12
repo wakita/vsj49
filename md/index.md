@@ -20,7 +20,16 @@ title: "可視化情報シンポジウム 2021"
 
 ## 特別講演
 
-### Xiaoru Yuan 教授（北京大学）
+### [Xiaoru Yuan 教授（北京大学）](keynote.html#xiaoru)
+
+**Visualizations during the COVID-19 Pandemic**
+
+During the still ongoing COVID-19 pandemic, visualization has demonstrated its unique power in communication during the information era. In this talk, I will first present a series of visualizations done by my team and collaborators in the beginning of 2020 on the theme of COVID-19. Among them, some visualizations have been broadcasted by the media with a large audience. Then a visual analytical platform for collaboratively collecting, annotating, and analyzing a global collection of visualizations related to the COVID-19 pandemic will be introduced. The visualization samples we have collected through this platform could inspire further research in the direction of understanding how visualizations interact with the society. Key findings from this systematic approach will be discussed. [Read more.](keynote.html#xiaoru)
+
+### 小池 英樹 教授（東京工業大学）
+
+### 坪倉 誠 教授（神戸大） 
+**「富岳」を用いた飛沫・エアロゾルの可視化による新型コロナ感染リスクとその対策の社会啓発**)
 
 ### 小池 英樹 教授（東京工業大学）
 

@@ -162,7 +162,7 @@
   position: absolute;
   top: 766px;
   left: 0;
-  width: 200px;
+  width: 160;
 }
 
 #banner h3 {
@@ -550,4 +550,13 @@
 
 span.os_id {
   font-weight: bold;
+}
+
+#banner p.sponsor {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12pt;
+  color: gold;
+  background-color: black;
+  border-bottom: solid 0.5pt;
 }

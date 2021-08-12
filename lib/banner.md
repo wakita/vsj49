@@ -1,7 +1,33 @@
 ::: {#banner}
 ### 協力企業：
 
+<!--
+<script type="text/x-template" id="x-sponsors-template">
+  <div>
+    <ul v-for="sponsor in sponsors" :key="sponsor.id">
+      <p class="sponsor">{{sponsor.略称}}</p>
+    </ul>
+  </div>
+</script>
+
+<div id="sponsors"></div>
+
+<script src="js/sponsors.js"></script>
+
+<script type="text/javascript">
+new Vue({
+  el: '#sponsors',
+  data: {
+    sponsors: sponsors
+  },
+  template: '#x-sponsors-template'
+});
+</script>
+-->
+
 <font color="red">準備中</font>
+
+<!-- <p><a href="..."><img src="..." width=150/></a></p>
 
 <!--
   <p><a href="http://www.meshman.jp/"><img src="./images/banner/Insight-newLogo.jpeg" width=150/></a></p>
