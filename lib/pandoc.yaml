@@ -6,7 +6,6 @@ include-in-header:
   - lib/header.html
 include-before-body:
   - lib/sidemenu.html
-  - lib/banner.html
 table-of-contents: false
 
 section-divs: true

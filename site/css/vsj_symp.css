@@ -124,7 +124,7 @@
   text-align: center;
 }
 
-#sidemenu a {
+#sidemenu a, #sidemenu p {
   display: block;
   width: 160px;
   height: 24px;
@@ -138,7 +138,8 @@
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-  padding-top: 6px;
+  padding: 7px 5px 7px 5px;
+  //padding-top: 6px;
 }
 
 #sidemenu a:hover {
@@ -155,14 +156,15 @@
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-  padding-top: 6px;
+  padding: 7px 5px 7px 5px;
+  //padding-top: 6px;
 }
 
 #banner {
   position: absolute;
   top: 766px;
   left: 0;
-  width: 200px;
+  width: 160;
 }
 
 #banner h3 {
@@ -212,6 +214,10 @@
   color: #a00;
 }
 
+.alert2 {
+  color: #00a;
+}
+
 #main h1 {
   padding-top: 15px;
   padding-bottom: 10px;
@@ -219,7 +225,7 @@
   font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
  #main h2 {
@@ -228,15 +234,15 @@
    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
    font-style: normal;
    font-weight: bold;
-   font-size: 12pt;
+   font-size: 14pt;
  }
 
  #main h3 {
    padding-top: 15px;
    padding-bottom: 5px;
    font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, ＭＳ ゴシック, sans-serif;
-   font-style: italic;
-   font-weight: normal;
+   //font-style: italic;
+   font-weight: bold;
    font-size: 12pt;
  }
 
@@ -349,7 +355,7 @@
 }
 
 #main table#list {
-  margin-top: 10px;
+  //margin-top: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
   table-layout: auto;
@@ -546,4 +552,31 @@
 
 span.os_id {
   font-weight: bold;
+}
+
+#sponsors .sponsor {
+  padding: 7px 5px 0px 5px;
+  color: #a33;
+  font-size: 14pt;
+  height: 60px;
+  background-color: #eee;
+  border: 0pt 0pt 0pt 0pt solid;
+}
+
+#sponsors .sponsor-white {
+  color: #a33;
+  background-color: white;
+}
+
+#sponsors .sponsor-header {
+  //text-align: center;
+  font-size: 14pt;
+  height: auto;
+}
+
+#sponsors .sponsor-descr {
+  border: none;
+  text-align: end;
+  font-weight: normal;
+  font-size: 10pt;
 }
