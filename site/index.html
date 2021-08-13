@@ -51,44 +51,74 @@
   </div>
 </head>
 <body>
+<script src="https://kit.fontawesome.com/73e303f659.js" crossorigin="anonymous"></script>
 <div id="sidemenu">
 <ul>
 <li><a href="index.html">ホーム</a></li>
 <li><a href="submission.html">発表申込</a></li>
 <li><a href="authoring.html">原稿執筆要項</a></li>
+<li><a href="registration.html">参加登録など</a></li>
 <li><a href="sessions.html">セッション一覧</a></li>
 <li><a href="art_contest.html">アートコンテスト</a></li>
-<li><a href="exhibition.html">展示・広告</a></li>
 <li><a href="support.html">協賛</a> <!--
-- [参加登録など](registration.html)
 - [プログラム](program.html)
 - [講演時間](presen_style.html)
 - [学生プレゼン](award.html)
+- [展示・広告](exhibition.html)
 - [アクセス・会場案内](access.html)
 - [宿泊案内](hotel.html)
 - [実行委員](committee.html)
 --></li>
 <li><a href="index.html#contact">問い合わせ</a></li>
 </ul>
+<div id="sponsors">
+<script type="text/x-template" id="x-sponsors-template">
+  <ul id="sponsors">
+    <p class="sponsor sponsor-header">協力企業<br/><span style="font-size: 10pt">
+       <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
+       <i class="fas fa-flask"></i>: 機器展示</span>
+    </p>
+    <div v-for="sponsor in this.sorted()" :key="sponsor.id">
+      <template v-if="sponsor['バナー']">
+        <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+        <p class="sponsor-white" style="text-align: end;">
+          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span></span>
+        </p>
+      </template>
+      <template v-else>
+        <p class="sponsor">{{sponsor.略称}}
+          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span></span>
+        </p>
+      </template>
+    </div>
+  </ul>
+</script>
+<div id="sponsors">
+
 </div>
-<div id="banner">
-<h3 id="協力企業">協力企業：</h3>
-<p><font color="red">準備中</font></p>
-<!--
-  <p><a href="http://www.meshman.jp/"><img src="./images/banner/Insight-newLogo.jpeg" width=150/></a></p>
-  <p><a href="http://www.hpctech.co.jp/"><img src="./images/banner/HPCtech_Logo_W1000_RGB.jpg" width=150/></a></p>
-  <p><a href="http://www.gdep.co.jp/"><img src="./images/banner/rogo-GDEP.png" width=150/></a></p>
-  <p><a href="http://www.central-techno.co.jp/"><img src="./images/banner/centraltechno.gif" width=150/></a></p>
-  <p><a href="http://www.dantecdynamics.com/"><img src="./images/banner/dantecNewLogo.png" width=150/></a></p>
-  <p><a href="http://www.trs-jp.com"><img src="./images/banner/banner-TRS131-31.jpg" width=150/></a></p>
-  <p><a href="https://ni-gata.co.jp/"><img src="./images/banner/180417_niigata.png" width=150/></a></p>
-  <p><a href="http://fel.ne.jp/"><img src="./images/banner/FEL_banner.JPG" width=150/></a></p>
-  <p><a href="http://www.kanomax.co.jp/"><img src="./images/banner/KANOMAX_20130719.png" width=150/></a></p>
-  <p><a href="http://piv.japanlaser.co.jp/"><img src="./images/banner/jlc_logo_en.png" width=150/></a></p>
-  <p><a href="http://www.nobby-tech.co.jp/"><img src="./images/banner/newNobbytech_LOGO.jpg" width=150/></a></p>
-  <p><a href="https://www.photron.co.jp/"><img src="./images/banner/photron.png" width=150/></a></p>
-  <p class="tiny"><font size="5">（50音順）</font></p>
--->
+<script src="js/sponsors.js"></script>
+<script type="text/javascript">
+sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))
+
+console.log(sponsors);
+
+new Vue({
+  el: '#sponsors',
+  data: {
+    sponsors: sponsors
+  },
+  template: '#x-sponsors-template',
+  methods: {
+    sorted: function () {
+      const data = [];
+      this.sponsors.forEach((sponsor) => data.push(Object.assign({}, sponsor)))
+      return data.sort((a, b) => b.kw - a.kw);
+    }
+  }
+});
+</script>
 </div>
 </div>
 <header id="title-block-header">
