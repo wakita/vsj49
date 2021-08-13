@@ -113,7 +113,8 @@
   position: absolute;
   top: 251px;
   left: 0;
-  width: 200px;
+  width: 160px;
+  margin-right: 40px;
 }
 
 #sidemenu ul {
@@ -138,7 +139,7 @@
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-  padding: 7px 5px 7px 5px;
+  padding: 0px 5px 7px 0px;
   //padding-top: 6px;
 }
 
@@ -554,13 +555,18 @@ span.os_id {
   font-weight: bold;
 }
 
+#sponsors div.a_sponsor {
+  border-bottom: solid 0.3px;
+}
+
 #sponsors .sponsor {
-  padding: 7px 5px 0px 5px;
+  padding-top: 7px;
   color: #a33;
   font-size: 14pt;
+  text-indent: 5px;
   height: 60px;
   background-color: #eee;
-  border: 0pt 0pt 0pt 0pt solid;
+  border: 0pt solid;
 }
 
 #sponsors .sponsor-white {
@@ -569,14 +575,14 @@ span.os_id {
 }
 
 #sponsors .sponsor-header {
-  //text-align: center;
   font-size: 14pt;
   height: auto;
+  padding-bottom: 5px;
 }
 
 #sponsors .sponsor-descr {
   border: none;
   text-align: end;
   font-weight: normal;
-  font-size: 10pt;
+  font-size: 12pt;
 }

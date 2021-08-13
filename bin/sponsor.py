@@ -75,5 +75,5 @@ def sponsors():
 
 
 if __name__ == '__main__':
-    #download_all()
+    download_all()
     sponsors()

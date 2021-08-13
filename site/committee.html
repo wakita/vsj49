@@ -78,7 +78,7 @@
        <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
        <i class="fas fa-flask"></i>: 機器展示</span>
     </p>
-    <div v-for="sponsor in this.sorted()" :key="sponsor.id">
+    <div class="a_sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
       <template v-if="sponsor['バナー']">
         <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
         <p class="sponsor-white" style="text-align: end;">
