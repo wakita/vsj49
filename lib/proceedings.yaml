@@ -1,0 +1,12 @@
+to: html5
+css: css/vsj_symp.css
+standalone: true
+include-in-header:
+  - lib/meta.html
+  - lib/header.html
+table-of-contents: false
+
+section-divs: true
+
+email-obfuscation: javascript
+

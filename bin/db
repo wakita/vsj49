@@ -43,7 +43,7 @@ def download(args):
 
 def download_papers(args):
     load()
-    SUBMISSION = ROOT.joinpath('files', 'submission')
+    SUBMISSION = ROOT.joinpath('proceedings', 'papers')
     SUBMISSION_PKL = SUBMISSION.joinpath('pdf.pkl')
     if os.path.exists(SUBMISSION_PKL):
         with open(SUBMISSION_PKL, 'rb') as f:

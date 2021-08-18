@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# proc のなかの Markdown ファイルをそれぞれ HTML に変換
+# 変換の詳細は lib/pandoc.yaml に指定されている
+for md in proc/*.md; do
+  md=`basename -s .md $md`
+  echo $md
+  pandoc --defaults=lib/proceedings.yaml --from markdown+native_divs --output=proceedings/$md.html proc/$md.md
+done
+
+cp -r site/images proceedings
+
+rm -rf proceedings/js proceedings/files
+cp -r js files site
