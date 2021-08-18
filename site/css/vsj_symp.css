@@ -564,6 +564,7 @@ span.os_id {
   color: #a33;
   font-size: 14pt;
   text-indent: 5px;
+  height: 60px;
   background-color: #eee;
   border: 0pt solid;
 }
@@ -571,7 +572,6 @@ span.os_id {
 #sponsors .sponsor-white {
   color: #a33;
   background-color: white;
-  height: 60px;
 }
 
 #sponsors .sponsor-header {
