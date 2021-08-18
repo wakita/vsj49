@@ -113,7 +113,8 @@
   position: absolute;
   top: 251px;
   left: 0;
-  width: 200px;
+  width: 160px;
+  margin-right: 40px;
 }
 
 #sidemenu ul {
@@ -124,7 +125,7 @@
   text-align: center;
 }
 
-#sidemenu a {
+#sidemenu a, #sidemenu p {
   display: block;
   width: 160px;
   height: 24px;
@@ -138,7 +139,8 @@
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-  padding-top: 6px;
+  padding: 0px 5px 7px 0px;
+  //padding-top: 6px;
 }
 
 #sidemenu a:hover {
@@ -155,7 +157,8 @@
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-  padding-top: 6px;
+  padding: 7px 5px 7px 5px;
+  //padding-top: 6px;
 }
 
 #banner {
@@ -552,6 +555,7 @@ span.os_id {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 #banner p.sponsor {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -559,4 +563,36 @@ span.os_id {
   color: gold;
   background-color: black;
   border-bottom: solid 0.5pt;
+=======
+#sponsors div.a_sponsor {
+  border-bottom: solid 0.3px;
+}
+
+#sponsors .sponsor {
+  padding-top: 7px;
+  color: #a33;
+  font-size: 14pt;
+  text-indent: 5px;
+  height: 60px;
+  background-color: #eee;
+  border: 0pt solid;
+}
+
+#sponsors .sponsor-white {
+  color: #a33;
+  background-color: white;
+}
+
+#sponsors .sponsor-header {
+  font-size: 14pt;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+#sponsors .sponsor-descr {
+  border: none;
+  text-align: end;
+  font-weight: normal;
+  font-size: 12pt;
+>>>>>>> sponsors
 }
