@@ -18,7 +18,7 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 ::: {#koike}
 ## スポーツ技能獲得支援のためのVR/AR視覚的トレーニングシステム<br/>小池秀樹教授（東京工業大学）
 
-<img width="200px" src="https://lh3.googleusercontent.com/2ZF-Btk_Zqn0t4bDCv7I-G7VvDeYzFfeDagoqpn2oEMhDSb3aewYzwr2u_-mxviDVL8yLGwzyveBcYcj4fwwSH5DrLKN9y-j6NlCT1tULz4PBz1N=w1280" alt="小池秀樹教授（東京工業大学）"></img>
+<img width="200px" src="images/people/Hideki_Koike.jpg" alt="小池秀樹教授（東京工業大学）"></img>
 
 　多くのスポーツにおいて正しい運動姿勢を習得することは重要である．現在はビデオ撮影を行い，運動後にプレビューを行うのが一般的であるが，実時間でのフィードバックが理想的である．また，実際のスポーツは動作が高速なため正しい姿勢の把握が困難で，何度もトレーニングを行う必要がある．
 
