@@ -13,7 +13,7 @@ title: '展示・広告'
 
 - 株式会社ノビテック
 
-- （株）フォトロン
+- [（株）フォトロン](https://www.photron.co.jp/products/hsvcam/infinicam/)
 
 
 ## 機器展示
@@ -24,7 +24,7 @@ title: '展示・広告'
 
 - 株式会社ノビテック
 
-- （株）フォトロン
+- [（株）フォトロン](https://www.photron.co.jp/products/hsvcam/infinicam/)
 
 - ニイガタ株式会社
 
