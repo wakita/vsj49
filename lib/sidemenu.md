@@ -8,12 +8,12 @@
 - [参加登録など](registration.html)
 - [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
+- [学生プレゼン](studentaward.html)
 - [展示・広告](exhibition.html)
 - [協賛](support.html)
 <!--
 - [プログラム](program.html)
 - [講演時間](presen_style.html)
-- [学生プレゼン](award.html)
 - [アクセス・会場案内](access.html)
 - [宿泊案内](hotel.html)
 - [実行委員](committee.html)
