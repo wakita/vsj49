@@ -555,15 +555,6 @@ span.os_id {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-#banner p.sponsor {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 12pt;
-  color: gold;
-  background-color: black;
-  border-bottom: solid 0.5pt;
-=======
 #sponsors div.a_sponsor {
   border-bottom: solid 0.3px;
 }
@@ -573,7 +564,6 @@ span.os_id {
   color: #a33;
   font-size: 14pt;
   text-indent: 5px;
-  height: 60px;
   background-color: #eee;
   border: 0pt solid;
 }
@@ -581,6 +571,7 @@ span.os_id {
 #sponsors .sponsor-white {
   color: #a33;
   background-color: white;
+  height: 60px;
 }
 
 #sponsors .sponsor-header {
@@ -594,5 +585,4 @@ span.os_id {
   text-align: end;
   font-weight: normal;
   font-size: 12pt;
->>>>>>> sponsors
 }
