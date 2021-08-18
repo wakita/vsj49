@@ -21,6 +21,7 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 <img width="200px" src="https://lh3.googleusercontent.com/2ZF-Btk_Zqn0t4bDCv7I-G7VvDeYzFfeDagoqpn2oEMhDSb3aewYzwr2u_-mxviDVL8yLGwzyveBcYcj4fwwSH5DrLKN9y-j6NlCT1tULz4PBz1N=w1280" alt="小池秀樹教授（東京工業大学）"></img>
 
 　多くのスポーツにおいて正しい運動姿勢を習得することは重要である．現在はビデオ撮影を行い，運動後にプレビューを行うのが一般的であるが，実時間でのフィードバックが理想的である．また，実際のスポーツは動作が高速なため正しい姿勢の把握が困難で，何度もトレーニングを行う必要がある．
+
 　本講演では，我々の研究グループが開発したVR/ARを用いた視覚的トレーニング環境について述べる．1つ目はゴルフとスキーを対象とし，熟練者と学習者の差分を様々な視覚化手法を用いて実時間提示するシステムである．2つ目は卓球を対象とし，VR空間を用いてボールの速度を変化させることで高速なスピンボールの返球を効果的に習得させるシステムである．
 
 略歴
