@@ -9,7 +9,7 @@
 - [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
 - [学生プレゼン](studentaward.html)
-- [企業出展](exhibition.html)
+- [企業出展](sponsors.html)
 - [協賛](support.html)
 <!--
 - [プログラム](program.html)
