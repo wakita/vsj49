@@ -128,7 +128,7 @@
 #sidemenu a, #sidemenu p {
   display: block;
   width: 160px;
-  height: 24px;
+  //height: 24px;
   color: white;
   background-color: #89ABE3;
   border: 1px;
@@ -146,7 +146,7 @@
 #sidemenu a:hover {
   display: block;
   width: 160px;
-  height: 24px;
+  //height: 24px;
   color: #89ABE3;
   border: 1px;
   border-style: solid;
@@ -555,34 +555,57 @@ span.os_id {
   font-weight: bold;
 }
 
-#sponsors div.a_sponsor {
-  border-bottom: solid 0.3px;
+/*
+ * ul#sponsors
+ *   p.{sponsor sponsor-header}
+ *
+ *   div.sponsor
+ *     a { img.sponsor | a(企業名) }
+ *     p._sponsor-info {span(lunch)?; span(exhibit)? }
+ */
+
+#sponsors {
+  color: #a33;
+  background-color: white;
+  height: auto;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#sponsors .header {
+  background-color: white;
+  font-size: 14pt;
+  text-indent: .3em;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  margin-bottom: 5px;
+}
+
+#sponsors, #sponsors .header, #sponsors p, #sponsors div, #sponsors a {
+  color: #a33;
+  background-color: white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 #sponsors .sponsor {
-  padding-top: 7px;
-  color: #a33;
-  font-size: 14pt;
-  text-indent: 5px;
-  height: 60px;
-  background-color: #eee;
-  border: 0pt solid;
-}
-
-#sponsors .sponsor-white {
-  color: #a33;
+  font-weight: bold;
   background-color: white;
 }
 
-#sponsors .sponsor-header {
-  font-size: 14pt;
-  height: auto;
-  padding-bottom: 5px;
+#sponsors a:hover {
+  border: 0px;
+  border-color: transparent;
 }
 
-#sponsors .sponsor-descr {
-  border: none;
+#sponsors img {
+  background-color: transparent;
+  border: 0 0 0 0;
+}
+
+#sponsors p.info {
+  background-color: white;
   text-align: end;
-  font-weight: normal;
-  font-size: 12pt;
+  border-bottom: solid 0.5px;
+  margin-bottom: 5px;
 }

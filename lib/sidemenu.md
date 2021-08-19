@@ -24,24 +24,29 @@
 
 <script type="text/x-template" id="x-sponsors-template">
   <ul id="sponsors">
-    <p class="sponsor sponsor-header">協力企業<br/><span style="font-size: 10pt">
+    <p class="header">協力企業<br/><span style="font-size: small">
        <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
        <i class="fas fa-flask"></i>: 機器展示</span>
     </p>
-    <div class="a_sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
-      <template v-if="sponsor['バナー']">
-        <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
-        <p class="sponsor-white" style="text-align: end;">
-          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
-          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span></span>
-        </p>
+    <div class="sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
+      <template v-if="sponsor['企業URL']">
+        <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
+          <template v-if="sponsor['バナー']">
+            <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+          </template>
+          <template v-else>{{sponsor.略称}}</template>
+        </a>
       </template>
       <template v-else>
-        <p class="sponsor">{{sponsor.略称}}
-          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
-          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span></span>
-        </p>
+        <template v-if="sponsor['バナー']">
+          <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+        </template>
+        <template v-else>{{sponsor.略称}}</template>
       </template>
+      <p class="info">
+        <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+        <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+      </p>
     </div>
   </ul>
 </script>

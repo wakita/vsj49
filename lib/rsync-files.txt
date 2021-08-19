@@ -10,5 +10,6 @@ index.html
 keynote.html
 registration.html
 sessions.html
+studentaward.html
 submission.html
 support.html
