@@ -609,3 +609,7 @@ span.os_id {
   border-bottom: solid 0.5px;
   margin-bottom: 5px;
 }
+
+.fas {
+  color: #a33;
+}

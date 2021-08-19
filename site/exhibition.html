@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>展示・広告</title>
+  <title>企業出展</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -61,7 +61,7 @@
 <li><a href="sessions.html">セッション一覧</a></li>
 <li><a href="art_contest.html">アートコンテスト</a></li>
 <li><a href="studentaward.html">学生プレゼン</a></li>
-<li><a href="exhibition.html">展示・広告</a></li>
+<li><a href="exhibition.html">企業出展</a></li>
 <li><a href="support.html">協賛</a> <!--
 - [プログラム](program.html)
 - [講演時間](presen_style.html)
@@ -76,7 +76,9 @@
   <ul id="sponsors">
     <p class="header">協力企業<br/><span style="font-size: small">
        <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
-       <i class="fas fa-flask"></i>: 機器展示</span>
+       <i class="fas fa-flask"></i>: 機器展示<br/>
+       <i class="fas fa-book-open"></i>: カタログ<br/>
+       <i class="fas fa-ad"></i>: 広告</span>
     </p>
     <div class="sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
       <template v-if="sponsor['企業URL']">
@@ -94,8 +96,12 @@
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
-        <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+        <a :href="'sponsor_' + sponsor['id'] + '.html'">
+          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+          <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
+          <span v-if="sponsor['広告']"><i class="fas fa-ad"></i></span>
+        </a>
       </p>
     </div>
   </ul>
@@ -127,11 +133,34 @@ new Vue({
 </div>
 </div>
 <header id="title-block-header">
-<h1 class="title">展示・広告</h1>
+<h1 class="title">企業出展</h1>
 </header>
 <div id="main">
+<section id="企業出展" class="level1">
+<h1>企業出展</h1>
+<ul>
+<li><p><a href="sponsor_hpc.html">株式会社HPCテック</a>: <i class="fas fa-utensils"></i> <i class="fas fa-flask"></i></p></li>
+<li><p><a href="sponsor_nac.html">株式会社ナックイメージテクノロジー</a>: <i class="fas fa-flask"></i></p></li>
+<li><p><a href="sponsor_nobby.html">株式会社ノビテック</a>: <i class="fas fa-utensils"></i> <i class="fas fa-flask"></i></p></li>
+<li><p><a href="sponsor_photron.html">（株）フォトロン</a>: <i class="fas fa-utensils"></i> <i class="fas fa-flask"></i></p></li>
+<li><p><a href="sponsor_kanomax.html">日本カノマックス株式会社</a>: <i class="fas fa-ad"></i></p></li>
+<li><p><a href="sponsor_niigata.html">ニイガタ株式会社</a>: <i class="fas fa-flask"></i></p></li>
+<li><p><a href="sponsor_dantec.html">ダンテック・ダイナミクス株式会社</a>: <i class="fas fa-flask"></i> <i class="fas fa-ad"></i></p></li>
+<li><p><a href="sponsor_kk.html">カトウ光研株式会社</a>: <i class="fas fa-ad"></i></p></li>
+<li><p><a href="sponsor_hulinks.html">株式会社ヒューリンクス</a>: <i class="fas fa-ad"></i></p></li>
+<li><p><a href="sponsor_fel.html">株式会社西日本流体技研</a>: <i class="fas fa-flask"></i> <i class="fas fa-book-open"></i></p></li>
+<li><p><a href="sponsor_trs.html">ツクバリカセイキ株式会社</a>: <i class="fas fa-ad"></i></p></li>
+<li><p><a href="sponsor_laser.html">株式会社日本レーザー</a>: <i class="fas fa-book-open"></i></p></li>
+</ul>
+</section>
 <section id="展示広告" class="level1">
 <h1>展示・広告</h1>
+</section>
+<section id="広告" class="level1">
+<h1>広告</h1>
+</section>
+<section id="カタログ" class="level1">
+<h1>カタログ</h1>
 <section id="ランチョンセミナー" class="level2">
 <h2>ランチョンセミナー</h2>
 <ul>

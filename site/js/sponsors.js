@@ -62,7 +62,7 @@ const sponsors =
     "バナー":null,
     "機器展示":null,
     "ランチョンセミナー":null,
-    "広告":1,
+    "広告":1.0,
     "カタログ":null
   },
   {
@@ -88,20 +88,20 @@ const sponsors =
     "バナー":"https:\/\/drive.google.com\/file\/d\/1_haLLbT6PyNEAlkjTgNpGEcdSIrVYP4-\/view?usp=sharing",
     "機器展示":1.0,
     "ランチョンセミナー":null,
-    "広告":1,
+    "広告":1.0,
     "カタログ":null
   },
   {
     "企業名":"カトウ光研株式会社",
     "kw":3.0734269073,
-    "id":null,
+    "id":"kk",
     "略称":"カトウ光研",
     "よみ":"かとうこうけん",
     "企業URL":null,
     "バナー":null,
     "機器展示":null,
     "ランチョンセミナー":null,
-    "広告":1,
+    "広告":1.0,
     "カタログ":null
   },
   {
@@ -114,7 +114,7 @@ const sponsors =
     "バナー":"https:\/\/drive.google.com\/file\/d\/1AqBxWAM9C1BegD5eY34-MdKS1fs623mi\/view?usp=sharing",
     "機器展示":null,
     "ランチョンセミナー":null,
-    "広告":"https:\/\/drive.google.com\/drive\/u\/0\/folders\/1uUNgxAcDE4TMY1iIJKUP7CrV8-u-3Sjq",
+    "広告":1.0,
     "カタログ":null
   },
   {
@@ -128,7 +128,7 @@ const sponsors =
     "機器展示":1.0,
     "ランチョンセミナー":null,
     "広告":null,
-    "カタログ":"http:\/\/fel.ne.jp\/tsi\/"
+    "カタログ":1.0
   },
   {
     "企業名":"ツクバリカセイキ株式会社",
@@ -140,7 +140,7 @@ const sponsors =
     "バナー":"https:\/\/drive.google.com\/file\/d\/1R3Tbm5a6hf9s58TF9TBUx6lakYYTOPvh\/view?usp=sharing",
     "機器展示":null,
     "ランチョンセミナー":null,
-    "広告":"https:\/\/drive.google.com\/drive\/u\/0\/folders\/1fb_g-ZiY8t5lpMPfIfPpAz06PznQJRl7",
+    "広告":1.0,
     "カタログ":null
   },
   {
@@ -154,6 +154,6 @@ const sponsors =
     "機器展示":null,
     "ランチョンセミナー":null,
     "広告":null,
-    "カタログ":1
+    "カタログ":1.0
   }
 ];

@@ -36,10 +36,12 @@ def download_all():
 # スポンサー
 
 EXHIBITION_HEADER = '''---
-title: '展示・広告'
+title: '企業出展'
 ---
 
 ::: {#main}
+
+# 企業出展
 '''
 
 EXHIBITION_FOOTER = '''\n:::
@@ -53,7 +55,31 @@ def sponsors():
     with open(MD_DIR.joinpath('exhibition.md'), 'w') as w:
         w.write(EXHIBITION_HEADER)
 
+        def isna(s): return type(s) == str and len(s) > 0
+
+        for _, sponsor in sponsors.iterrows():
+            w.write(f'- [{sponsor["企業名"]}](sponsor_{sponsor["id"]}.html):')
+            if sponsor['ランチョンセミナー'] > 0: w.write(f' <i class="fas fa-utensils"></i>')
+            if sponsor['機器展示'] > 0: w.write(f' <i class="fas fa-flask"></i>')
+            if sponsor['カタログ'] > 0: w.write(f' <i class="fas fa-book-open"></i>')
+            if sponsor['広告'] > 0: w.write(f' <i class="fas fa-ad"></i>')
+            w.write('\n\n')
+
         w.write('\n# 展示・広告\n\n')
+
+        w.write('\n# 広告\n\n')
+        companies = sponsors[sponsors['広告'].notna()]
+        for _, company in companies.iterrows():
+            catalogue = company['広告']
+            if type(catalogue) == str and len(catalogue) > 0:
+                w.write(f'- [{company["企業名"]}](files/ad/{company["id"]})\n\n')
+
+        w.write('\n# カタログ\n\n')
+        companies = sponsors[sponsors['カタログ'].notna()]
+        for _, company in companies.iterrows():
+            catalogue = company['カタログ']
+            if type(catalogue) == str and len(catalogue) > 0:
+                w.write(f'- [{company["企業名"]}](files/catalogue/{company["id"]})\n\n')
 
         w.write('\n## ランチョンセミナー\n\n')
         companies = sponsors[sponsors['ランチョンセミナー'].notna()]

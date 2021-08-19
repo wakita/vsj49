@@ -9,7 +9,7 @@
 - [セッション一覧](sessions.html)
 - [アートコンテスト](art_contest.html)
 - [学生プレゼン](studentaward.html)
-- [展示・広告](exhibition.html)
+- [企業出展](exhibition.html)
 - [協賛](support.html)
 <!--
 - [プログラム](program.html)
@@ -26,7 +26,9 @@
   <ul id="sponsors">
     <p class="header">協力企業<br/><span style="font-size: small">
        <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
-       <i class="fas fa-flask"></i>: 機器展示</span>
+       <i class="fas fa-flask"></i>: 機器展示<br/>
+       <i class="fas fa-book-open"></i>: カタログ<br/>
+       <i class="fas fa-ad"></i>: 広告</span>
     </p>
     <div class="sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
       <template v-if="sponsor['企業URL']">
@@ -44,8 +46,12 @@
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
-        <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+        <a :href="'sponsor_' + sponsor['id'] + '.html'">
+          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+          <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
+          <span v-if="sponsor['広告']"><i class="fas fa-ad"></i></span>
+        </a>
       </p>
     </div>
   </ul>
