@@ -19,6 +19,5 @@ for md in md/*.md; do
   pandoc --defaults=lib/pandoc.yaml --from markdown+native_divs --output=$site/$md.html md/$md.md
 done
 
-# {js, files} を site に複製
-rm -rf site/js site/files
-cp -r js files site
+# js を site に複製
+rm -rf site/js; cp -r js site

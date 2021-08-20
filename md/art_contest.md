@@ -4,6 +4,12 @@ title: 'アートコンテスト'
 
 ::: {#main}
 
+<!--
+<div style="text-align: center; margin-top: 80px; margin-bottom: 80px;">
+<iframe src="https://player.vimeo.com/video/589619839?h=88bcd26661" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+-->
+
 # アートコンテスト
 
 可視化に関連するアート作品を顕彰するための「アートコンテスト」です．アートの視点から多彩な作品をお待ちしています．過去の受賞作品は，アートコンテストオリジナルサイト[外部サイト](https://www.facebook.com/Art-Award-of-VSJ-Symposium-254472111365506/) をご確認ください．
@@ -161,6 +167,20 @@ td {
 
 </table>
 
-:::
+# オーガナイザ
 
-</script>
+- 東洋大学総合情報学部 加藤 千恵子
+
+- 東洋大学総合情報学部 多田 光利
+
+- 早稲田大学人間総合研究センター 菅原 徹
+
+- 東京理科大工学部 元祐 昌廣
+
+- 東北大学工学研究科 菊地 謙次
+
+- 東洋大学総合情報学部 青木 滉一郎
+
+- 名古屋市立大学芸術工学部 高橋 信雄
+
+:::
