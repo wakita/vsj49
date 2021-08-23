@@ -8,6 +8,7 @@ authoring.html
 exhibition.html
 index.html
 keynote.html
+presentation.html
 registration.html
 sessions.html
 sponsor_dantec.html
