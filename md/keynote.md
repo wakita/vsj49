@@ -9,6 +9,8 @@ title: '特別講演'
 ::: {#xiaoru}
 ## Visualizations during the COVID-19 Pandemic<br/>Prof. Xiaoru Yuan （北京大学）
 
+<img width="200px" src="images/people/Xiaoru_Yuan.jpg" alt="Xiaoru Yuan教授（北京大学）"></img>
+
 During the still ongoing COVID-19 pandemic, visualization has demonstrated its unique power in communication during the information era. In this talk, I will first present a series of visualizations done by my team and collaborators in the beginning of 2020 on the theme of COVID-19. Among them, some visualizations have been broadcasted by the media with a large audience. Then a visual analytical platform for collaboratively collecting, annotating, and analyzing a global collection of visualizations related to the COVID-19 pandemic will be introduced. The visualization samples we have collected through this platform could inspire further research in the direction of understanding how visualizations interact with the society. Key findings from this systematic approach will be discussed.
 
 略歴
@@ -16,7 +18,7 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 :::
 
 ::: {#koike}
-## スポーツ技能獲得支援のためのVR/AR視覚的トレーニングシステム<br/>小池秀樹教授（東京工業大学）
+## スポーツ技能獲得支援のためのVR/AR視覚的トレーニングシステム<br/>小池 秀樹教授（東京工業大学）
 
 <img width="200px" src="images/people/Hideki_Koike.jpg" alt="小池秀樹教授（東京工業大学）"></img>
 
