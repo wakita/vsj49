@@ -1,12 +1,10 @@
 ---
-title: '企業出展：株式会社ナックイメージテクノロジー'
+title: '企業出展：ニイガタ株式会社'
 ---
 
 ::: {#main}
 
-<!-- ![株式会社ナックイメージテクノロジー](images/sponsors/niigata.png) -->
-
-# [株式会社ナックイメージテクノロジー](https://www.niigata.jp/)
+# [ニイガタ株式会社](https://www.niigata.jp/)
 
 # 機器展示 <i class="fas fa-flask"></i>
 
