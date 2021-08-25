@@ -1,7 +1,6 @@
 #!/bin/zsh
 
-cp -r md/sponsors proc
-
+# md/program.md; 竹島先生が作って下さる proceedings/program.html から、ウェブサイト用の program.md を生成
 rm -f md/program.md
 cat > md/program.md <<EOMD
 ---
@@ -17,13 +16,26 @@ sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
       -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' | lv >> md/program.md
 
 echo ':::' >> md/program.md
+# md/program.md
 
+# スポンサー情報はウェブサイトからまるっとコピー
+cp -r md/art_contest.md md/sponsors md/support.md proc
+cp md/program.md proc/__program__.md
+
+######################################################################
 # proc のなかの Markdown ファイルをそれぞれ HTML に変換
-# 変換の詳細は lib/pandoc.yaml に指定されている
-for md in proc/**/*.md; do
+# 変換の詳細は lib/proceedings.yaml に指定されている
+#
+for md in proc/*.md; do
   md=`echo $md | sed -e 's|proc/||' -e 's|\.md||'`
   echo $md
   pandoc --defaults=lib/proceedings.yaml --from markdown+native_divs --output=proceedings/$md.html proc/$md.md
+done
+
+for md in proc/sponsors/*.md; do
+  md=`echo $md | sed -e 's|proc/||' -e 's|\.md||'`
+  echo $md
+  pandoc --defaults=lib/sponsors.yaml --from markdown+native_divs --output=proceedings/$md.html proc/$md.md
 done
 
 cp -r site/images proceedings
@@ -34,3 +46,8 @@ cp -r js files site
 
 cp site/css/vsj_symp.css proceedings/css
 cp site/css/vsj_symp.css proceedings/sponsors/css
+
+rm proceedings/Icon*
+
+#rm -f proceedings.zip
+#zip -r proceedings.zip proceedings

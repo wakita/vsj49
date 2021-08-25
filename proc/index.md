@@ -12,7 +12,9 @@ title: 'プログラム'
 
 - [プログラム](program.html)
 
-- [参加企業・協賛学協会一覧](supporters.html)
+- [協賛学協会](support.html)
+
+- [参加企業](sponsors/index.html)
 
 - [実行委員会](committee.html)
 

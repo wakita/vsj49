@@ -1,22 +1,14 @@
 ::: {#sidemenu}
 
-- [ホーム](/symp2021/index.html)
-- [発表申込](/symp2021/submission.html)
-- [原稿執筆要項](/symp2021/authoring.html)
-- [参加登録など](/symp2021/registration.html)
-- [プログラム](/symp2021/program.html)
-- [講演時間](/symp2021/presentation.html)
-- [セッション一覧](/symp2021/sessions.html)
-- [アートコンテスト](/symp2021/art_contest.html)
-- [学生プレゼン](/symp2021/studentaward.html)
-- [企業出展](/symp2021/sponsors/index.html)
-- [協賛](/symp2021/support.html)
-<!--
-- [アクセス・会場案内](access.html)
-- [宿泊案内](hotel.html)
-- [実行委員](committee.html)
--->
-- [問い合わせ](index.html#contact)
+- [HOME](../index.html)
+- [会長挨拶](../pdf/President.pdf)
+- [実行委員長挨拶](../pdf/Chairman.pdf)
+- [プログラム](../__program__.html)
+- [アートコンテスト](../art_contest.html)
+- [協賛学協会](../support.html)
+- [参加企業](../sponsors/index.html)
+- [実行委員会](../committee.html)
+- [使用方法](../help.html)
 
 ::: {#sponsors}
 

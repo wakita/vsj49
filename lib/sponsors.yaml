@@ -5,7 +5,7 @@ include-in-header:
   - lib/meta.html
   - lib/p_header.html
 include-before-body:
-  - lib/p_sidemenu.html
+  - lib/s_sidemenu.html
 table-of-contents: false
 
 section-divs: true
