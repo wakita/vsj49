@@ -1,14 +1,36 @@
-#!/bin/sh
+#!/bin/zsh
+
+cp -r md/sponsors proc
+
+rm -f md/program.md
+cat > md/program.md <<EOMD
+---
+title: 'プログラム'
+---
+
+::: {#main}
+EOMD
+
+sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
+  sed -e 's/ *<section/<section/' \
+      -e 's/ *<\/section/<\/section/' \
+      -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' | lv >> md/program.md
+
+echo ':::' >> md/program.md
 
 # proc のなかの Markdown ファイルをそれぞれ HTML に変換
 # 変換の詳細は lib/pandoc.yaml に指定されている
-for md in proc/*.md; do
-  md=`basename -s .md $md`
+for md in proc/**/*.md; do
+  md=`echo $md | sed -e 's|proc/||' -e 's|\.md||'`
   echo $md
   pandoc --defaults=lib/proceedings.yaml --from markdown+native_divs --output=proceedings/$md.html proc/$md.md
 done
 
 cp -r site/images proceedings
+cp -r site/images proceedings/sponsors
 
 rm -rf proceedings/js proceedings/files
 cp -r js files site
+
+cp site/css/vsj_symp.css proceedings/css
+cp site/css/vsj_symp.css proceedings/sponsors/css

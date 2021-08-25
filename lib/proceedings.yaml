@@ -3,7 +3,7 @@ css: css/vsj_symp.css
 standalone: true
 include-in-header:
   - lib/meta.html
-  - lib/header.html
+  - lib/p_header.html
 table-of-contents: false
 
 section-divs: true
