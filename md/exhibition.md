@@ -58,7 +58,7 @@ title: '企業出展'
 
 - [（株）フォトロン](https://www.photron.co.jp/products/hsvcam/infinicam/)
 
-- ニイガタ株式会社
+- [ニイガタ株式会社](https://ni-gata.co.jp/)
 
 - [ダンテック・ダイナミクス株式会社](https://www.dantecdynamics.com/ja/)
 

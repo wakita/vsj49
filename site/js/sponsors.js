@@ -71,7 +71,7 @@ const sponsors =
     "id":"niigata",
     "略称":"ニイガタ",
     "よみ":"にいがた",
-    "企業URL":null,
+    "企業URL":"https:\/\/ni-gata.co.jp\/",
     "バナー":1,
     "機器展示":1.0,
     "ランチョンセミナー":null,
