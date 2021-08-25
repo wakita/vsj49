@@ -23,10 +23,4 @@ title: '企業出展：日本カノマックス株式会社'
 
 - <i class="fas fa-ad"></i> [インテリジェント レーザイメージングシステム ～ FlowMaster System with DaVis](files/sponsors/kanomax/ad.pdf) (TBA)
 
-<!--
-# カタログ
-
-- <i class="fas fa-book-open"></i> [広告](files/sponsors/kanomax/device.pdf) (TBA)
--->
-
 :::

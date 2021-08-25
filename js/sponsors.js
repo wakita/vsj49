@@ -97,7 +97,7 @@ const sponsors =
     "id":"kk",
     "略称":"カトウ光研",
     "よみ":"かとうこうけん",
-    "企業URL":null,
+    "企業URL":"https:\/\/www.kk-co.jp\/",
     "バナー":1,
     "機器展示":null,
     "ランチョンセミナー":null,
