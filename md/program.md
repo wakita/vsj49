@@ -4,6 +4,42 @@ title: 'プログラム'
 
 ::: {#main}
 
+<style>
+    code {
+        white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+        font-variant: small-caps;
+    }
+
+    span.underline {
+        text-decoration: underline;
+    }
+
+    div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+    }
+
+    ul.task-list {
+        list-style: none;
+    }
+
+    .display.math {
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+    }
+
+</style>
+
 <section id="program" class="level2">
     <h1>第49回 可視化情報シンポジウム 全体プログラム</h1>
     <table class="time-table">
@@ -215,6 +251,7 @@ title: 'プログラム'
     </p>
     <table class="t01">
         <tr>
+            <th>[PDF]&#8195;</th>
             <td><strong>プラズマ対向壁上の高速トリトン粒子衝突点のバーチャルリアリティ可視化</strong><br>
                 〇大谷 寛明(NIFS)、増﨑 貴(NIFS)、小川 国大(NIFS)、石黒 静児(NIFS)</td>
         </tr>
