@@ -4,7 +4,7 @@ title: '企業出展：日本カノマックス株式会社'
 
 ::: {#main}
 
-<!-- ![日本カノマックス株式会社](images/sponsors/kanomax.png) -->
+![日本カノマックス株式会社](images/sponsors/kanomax.png)
 
 # [日本カノマックス株式会社](http://kanomax...)
 

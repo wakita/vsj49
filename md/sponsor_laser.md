@@ -6,7 +6,7 @@ title: '企業出展：株式会社日本レーザー'
 
 ![株式会社日本レーザー](images/sponsors/laser.png)
 
-# [株式会社日本レーザー](https://www.laserinc.jp/)
+# [株式会社日本レーザー](http://piv.japanlaser.co.jp)
 
 # カタログ
 

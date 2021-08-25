@@ -18,6 +18,6 @@ title: '企業出展：ダンテック・ダイナミクス株式会社'
 
 # カタログ
 
-- <i class="fas fa-book-open"></i> [Dantecdynamics社 流体計測カタログ（総合簡易版）](files/sponosrs/dantec/catalog.pdf)
+- <i class="fas fa-book-open"></i> [Dantecdynamics社 流体計測カタログ（総合簡易版）](files/sponsors/dantec/catalog.pdf)
 
 :::
