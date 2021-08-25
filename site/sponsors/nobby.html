@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>企業出展：（株）フォトロン</title>
+  <title>企業出展：株式会社ノビテック</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -14,7 +14,7 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="css/vsj_symp.css" />
+  <link rel="stylesheet" href="/symp2021/css/vsj_symp.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -37,7 +37,7 @@
   <!-- production version, optimized for size and speed -->
   <!-- script src="https://cdn.jsdelivr.net/npm/vue@2"></script -->
   <div id="header">
-  <p><img src="images/vsjsympTopYokohama1.jpg" alt="可視化情報シンポジウム2021" /> <img src="images/vsjsympTopYokohama2.jpg" alt="可視化情報シンポジウム2021" /> <img src="images/vsjsympTopYokohama3.jpg" alt="可視化情報シンポジウム2021" /></p>
+  <p><img src="/symp2021/images/vsjsympTopYokohama1.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama2.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama3.jpg" alt="可視化情報シンポジウム2021" /></p>
   <div class="header_1">
   <h2 id="第49回">第49回</h2>
   <h1 id="可視化情報シンポジウム">可視化情報シンポジウム</h1>
@@ -54,17 +54,17 @@
 <script src="https://kit.fontawesome.com/73e303f659.js" crossorigin="anonymous"></script>
 <div id="sidemenu">
 <ul>
-<li><a href="index.html">ホーム</a></li>
-<li><a href="submission.html">発表申込</a></li>
-<li><a href="authoring.html">原稿執筆要項</a></li>
-<li><a href="registration.html">参加登録など</a></li>
-<li><a href="program.html">プログラム</a></li>
-<li><a href="presentation.html">講演時間</a></li>
-<li><a href="sessions.html">セッション一覧</a></li>
-<li><a href="art_contest.html">アートコンテスト</a></li>
-<li><a href="studentaward.html">学生プレゼン</a></li>
-<li><a href="sponsors.html">企業出展</a></li>
-<li><a href="support.html">協賛</a> <!--
+<li><a href="/symp2021/index.html">ホーム</a></li>
+<li><a href="/symp2021/submission.html">発表申込</a></li>
+<li><a href="/symp2021/authoring.html">原稿執筆要項</a></li>
+<li><a href="/symp2021/registration.html">参加登録など</a></li>
+<li><a href="/symp2021/program.html">プログラム</a></li>
+<li><a href="/symp2021/presentation.html">講演時間</a></li>
+<li><a href="/symp2021/sessions.html">セッション一覧</a></li>
+<li><a href="/symp2021/art_contest.html">アートコンテスト</a></li>
+<li><a href="/symp2021/studentaward.html">学生プレゼン</a></li>
+<li><a href="/symp2021/sponsors/index.html">企業出展</a></li>
+<li><a href="/symp2021/support.html">協賛</a> <!--
 - [アクセス・会場案内](access.html)
 - [宿泊案内](hotel.html)
 - [実行委員](committee.html)
@@ -84,19 +84,19 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <a :href="'sponsor_' + sponsor['id'] + '.html'">
+        <a :href="'sponsors/' + sponsor['id'] + '.html'">
           <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
           <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
           <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
@@ -109,7 +109,7 @@
 <div id="sponsors">
 
 </div>
-<script src="js/sponsors.js"></script>
+<script src="/symp2021/js/sponsors.js"></script>
 <script type="text/javascript">
 sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))
 
@@ -133,35 +133,27 @@ new Vue({
 </div>
 </div>
 <header id="title-block-header">
-<h1 class="title">企業出展：（株）フォトロン</h1>
+<h1 class="title">企業出展：株式会社ノビテック</h1>
 </header>
 <div id="main">
 <figure>
-<img src="images/sponsors/photron.png" alt="（株）フォトロン" /><figcaption aria-hidden="true">（株）フォトロン</figcaption>
+<img src="images/sponsors/nobby.png" alt="株式会社ノビテック" /><figcaption aria-hidden="true">株式会社ノビテック</figcaption>
 </figure>
-<section id="株フォトロン" class="level1">
-<h1><a href="https://www.photron.co.jp/products/hsvcam/infinicam/">（株）フォトロン</a></h1>
-<!--
-# 機器展示 <i class="fas fa-flask"></i>
-
-機器展示の情報 (TBA)
-
--->
+<section id="株式会社ノビテック" class="level1">
+<h1><a href="https://www.nobby.jp/">株式会社ノビテック</a></h1>
 </section>
-<section id="ランチョンセミナー" class="level1">
-<h1>ランチョンセミナー <i class="fas fa-utensils"></i></h1>
-<p>ランチョンセミナーの予定（TBA）</p>
-<!--
-# 広告
-
-- <i class="fas fa-ad"></i> [広告](files/sponosrs/photron/ad.pdf)
-
--->
-</section>
-<section id="カタログ" class="level1">
-<h1>カタログ</h1>
+<section id="ランチョンセミナー-ls-3" class="level1">
+<h1>ランチョンセミナー (LS-3) <i class="fas fa-utensils"></i></h1>
 <ul>
-<li><i class="fas fa-book-open"></i> <a href="files/sponsors/photron/infinicam.pdf">Photron INFINICAM</a></li>
+<li><p>第2日目 12:00-12:40</p></li>
+<li><p>第3日目 12:40-13:20</p></li>
+</ul>
+</section>
+<section id="機器展示" class="level1">
+<h1>機器展示 <i class="fas fa-flask"></i></h1>
+<ul>
+<li><p>第1日目 15:30-15:50 D室</p></li>
+<li><p>第2日目 11:10-11:30 D室</p></li>
 </ul>
 </section>
 </div>

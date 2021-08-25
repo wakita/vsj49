@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>企業出展：日本カノマックス株式会社</title>
+  <title>企業出展：ニイガタ株式会社</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -14,7 +14,7 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="css/vsj_symp.css" />
+  <link rel="stylesheet" href="/symp2021/css/vsj_symp.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -37,7 +37,7 @@
   <!-- production version, optimized for size and speed -->
   <!-- script src="https://cdn.jsdelivr.net/npm/vue@2"></script -->
   <div id="header">
-  <p><img src="images/vsjsympTopYokohama1.jpg" alt="可視化情報シンポジウム2021" /> <img src="images/vsjsympTopYokohama2.jpg" alt="可視化情報シンポジウム2021" /> <img src="images/vsjsympTopYokohama3.jpg" alt="可視化情報シンポジウム2021" /></p>
+  <p><img src="/symp2021/images/vsjsympTopYokohama1.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama2.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama3.jpg" alt="可視化情報シンポジウム2021" /></p>
   <div class="header_1">
   <h2 id="第49回">第49回</h2>
   <h1 id="可視化情報シンポジウム">可視化情報シンポジウム</h1>
@@ -54,17 +54,17 @@
 <script src="https://kit.fontawesome.com/73e303f659.js" crossorigin="anonymous"></script>
 <div id="sidemenu">
 <ul>
-<li><a href="index.html">ホーム</a></li>
-<li><a href="submission.html">発表申込</a></li>
-<li><a href="authoring.html">原稿執筆要項</a></li>
-<li><a href="registration.html">参加登録など</a></li>
-<li><a href="program.html">プログラム</a></li>
-<li><a href="presentation.html">講演時間</a></li>
-<li><a href="sessions.html">セッション一覧</a></li>
-<li><a href="art_contest.html">アートコンテスト</a></li>
-<li><a href="studentaward.html">学生プレゼン</a></li>
-<li><a href="sponsors.html">企業出展</a></li>
-<li><a href="support.html">協賛</a> <!--
+<li><a href="/symp2021/index.html">ホーム</a></li>
+<li><a href="/symp2021/submission.html">発表申込</a></li>
+<li><a href="/symp2021/authoring.html">原稿執筆要項</a></li>
+<li><a href="/symp2021/registration.html">参加登録など</a></li>
+<li><a href="/symp2021/program.html">プログラム</a></li>
+<li><a href="/symp2021/presentation.html">講演時間</a></li>
+<li><a href="/symp2021/sessions.html">セッション一覧</a></li>
+<li><a href="/symp2021/art_contest.html">アートコンテスト</a></li>
+<li><a href="/symp2021/studentaward.html">学生プレゼン</a></li>
+<li><a href="/symp2021/sponsors/index.html">企業出展</a></li>
+<li><a href="/symp2021/support.html">協賛</a> <!--
 - [アクセス・会場案内](access.html)
 - [宿泊案内](hotel.html)
 - [実行委員](committee.html)
@@ -84,19 +84,19 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <a :href="'sponsor_' + sponsor['id'] + '.html'">
+        <a :href="'sponsors/' + sponsor['id'] + '.html'">
           <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
           <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
           <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
@@ -109,7 +109,7 @@
 <div id="sponsors">
 
 </div>
-<script src="js/sponsors.js"></script>
+<script src="/symp2021/js/sponsors.js"></script>
 <script type="text/javascript">
 sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))
 
@@ -133,29 +133,17 @@ new Vue({
 </div>
 </div>
 <header id="title-block-header">
-<h1 class="title">企業出展：日本カノマックス株式会社</h1>
+<h1 class="title">企業出展：ニイガタ株式会社</h1>
 </header>
 <div id="main">
-<figure>
-<img src="images/sponsors/kanomax.png" alt="日本カノマックス株式会社" /><figcaption aria-hidden="true">日本カノマックス株式会社</figcaption>
-</figure>
-<section id="日本カノマックス株式会社" class="level1">
-<h1><a href="http://kanomax...">日本カノマックス株式会社</a></h1>
-<!--
-# 機器展示 <i class="fas fa-flask"></i>
-
-機器展示の情報 (TBA)
-
-# ランチョンセミナー <i class="fas fa-utensils"></i>
-
-ランチョンセミナーの予定（TBA）
-
--->
+<section id="ニイガタ株式会社" class="level1">
+<h1><a href="https://www.niigata.jp/">ニイガタ株式会社</a></h1>
 </section>
-<section id="広告" class="level1">
-<h1>広告</h1>
+<section id="機器展示" class="level1">
+<h1>機器展示<i class="fas fa-flask"></i></h1>
 <ul>
-<li><i class="fas fa-ad"></i> <a href="files/sponsors/kanomax/ad.pdf">インテリジェント レーザイメージングシステム ～ FlowMaster System with DaVis</a> (TBA)</li>
+<li><p>第1日目 11:30-11:50 D室</p></li>
+<li><p>第2日目 15:30-15:50 D室</p></li>
 </ul>
 </section>
 </div>

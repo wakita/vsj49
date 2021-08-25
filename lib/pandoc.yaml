@@ -1,5 +1,5 @@
 to: html5
-css: css/vsj_symp.css
+css: /symp2021/css/vsj_symp.css
 standalone: true
 include-in-header:
   - lib/meta.html

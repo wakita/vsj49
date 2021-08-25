@@ -8,9 +8,11 @@ title: '企業出展：ダンテック・ダイナミクス株式会社'
 
 # [ダンテック・ダイナミクス株式会社](https://www.dantecdynamics.com/ja/)
 
-# 機器展示 <i class="fas fa-flask"></i>
+# 機器展示<i class="fas fa-flask"></i>
 
-機器展示の情報 (TBA)
+- 第1日目 11:10-11:30 D室
+
+- 第2日目 15:10-15:30 D室
 
 # 広告
 

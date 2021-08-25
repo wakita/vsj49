@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 site=site
 if [ "$1" -a -d $1 ]; then site=$1; fi
@@ -13,7 +13,7 @@ done
 
 # md のなかの Markdown ファイルをそれぞれ HTML に変換
 # 変換の詳細は lib/pandoc.yaml に指定されている
-for md in md/*.md; do
+for md in md/**/*.md; do
   md=`echo $md | sed -e 's|md/||' -e 's|\.md||'`
   echo md/$md
   pandoc --defaults=lib/pandoc.yaml --from markdown+native_divs --output=$site/$md.html md/$md.md

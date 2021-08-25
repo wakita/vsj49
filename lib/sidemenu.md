@@ -2,17 +2,17 @@
 
 ::: {#sidemenu}
 
-- [ホーム](index.html)
-- [発表申込](submission.html)
-- [原稿執筆要項](authoring.html)
-- [参加登録など](registration.html)
-- [プログラム](program.html)
-- [講演時間](presentation.html)
-- [セッション一覧](sessions.html)
-- [アートコンテスト](art_contest.html)
-- [学生プレゼン](studentaward.html)
-- [企業出展](sponsors.html)
-- [協賛](support.html)
+- [ホーム](/symp2021/index.html)
+- [発表申込](/symp2021/submission.html)
+- [原稿執筆要項](/symp2021/authoring.html)
+- [参加登録など](/symp2021/registration.html)
+- [プログラム](/symp2021/program.html)
+- [講演時間](/symp2021/presentation.html)
+- [セッション一覧](/symp2021/sessions.html)
+- [アートコンテスト](/symp2021/art_contest.html)
+- [学生プレゼン](/symp2021/studentaward.html)
+- [企業出展](/symp2021/sponsors/index.html)
+- [協賛](/symp2021/support.html)
 <!--
 - [アクセス・会場案内](access.html)
 - [宿泊案内](hotel.html)
@@ -34,19 +34,19 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <a :href="'sponsor_' + sponsor['id'] + '.html'">
+        <a :href="'sponsors/' + sponsor['id'] + '.html'">
           <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
           <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
           <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
@@ -59,7 +59,7 @@
 
 <div id="sponsors"></div>
 
-<script src="js/sponsors.js"></script>
+<script src="/symp2021/js/sponsors.js"></script>
 
 <script type="text/javascript">
 sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))
