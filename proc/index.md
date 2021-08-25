@@ -4,7 +4,7 @@ title: 'プログラム'
 
 ::: {#main}
 
-- [HOME](https://www.vsj.jp/symp2021/)
+- [ホーム](https://www.vsj.jp/symp2021/)
 
 - [会長挨拶](pdf/President.pdf)
 

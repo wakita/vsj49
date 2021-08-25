@@ -4,7 +4,7 @@ title: '企業出展：株式会社ナックイメージテクノロジー'
 
 ::: {#main}
 
-![株式会社ナックイメージテクノロジー](images/sponsors/nac.png)
+![株式会社ナックイメージテクノロジー](images/nac.png)
 
 # [株式会社ナックイメージテクノロジー](https://www.nacinc.jp/)
 

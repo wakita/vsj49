@@ -4,7 +4,7 @@ title: '企業出展：ダンテック・ダイナミクス株式会社'
 
 ::: {#main}
 
-![ダンテック・ダイナミクス株式会社](images/sponsors/dantec.png)
+![ダンテック・ダイナミクス株式会社](images/dantec.png)
 
 # [ダンテック・ダイナミクス株式会社](https://www.dantecdynamics.com/ja/)
 

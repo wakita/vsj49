@@ -4,7 +4,7 @@ title: '企業出展：株式会社　西日本流体技研'
 
 ::: {#main}
 
-<!-- ![株式会社　西日本流体技研](images/sponsors/fel.png) -->
+![株式会社　西日本流体技研](images/fel.png)
 
 # [株式会社　西日本流体技研](http://fel.ne.jp/)
 

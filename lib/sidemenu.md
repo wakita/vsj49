@@ -32,14 +32,14 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'images/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'images/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>

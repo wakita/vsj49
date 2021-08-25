@@ -4,7 +4,7 @@ title: '企業出展：株式会社フォトロン'
 
 ::: {#main}
 
-![（株）フォトロン](images/sponsors/photron.png)
+![（株）フォトロン](images/photron.png)
 
 # [株式会社フォトロン](https://www.photron.co.jp/products/hsvcam/infinicam/)
 

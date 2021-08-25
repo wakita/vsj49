@@ -84,14 +84,14 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'images/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'images/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>
@@ -137,7 +137,7 @@ new Vue({
 </header>
 <div id="main">
 <figure>
-<img src="images/sponsors/kk.png" alt="カトウ光研株式会社" /><figcaption aria-hidden="true">カトウ光研株式会社</figcaption>
+<img src="images/kk.png" alt="カトウ光研株式会社" /><figcaption aria-hidden="true">カトウ光研株式会社</figcaption>
 </figure>
 <section id="カトウ光研株式会社" class="level1">
 <h1><a href="https://www.kk-co.jp/">カトウ光研株式会社</a></h1>

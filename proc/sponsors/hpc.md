@@ -4,7 +4,7 @@ title: '企業出展：株式会社HPCテック'
 
 ::: {#main}
 
-![株式会社HPCテック](images/sponsors/hpc.png)
+![株式会社HPCテック](images/hpc.png)
 
 # [株式会社HPCテック](http://www.hpctech.co.jp)
 

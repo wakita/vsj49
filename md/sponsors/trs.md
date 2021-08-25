@@ -4,7 +4,7 @@ title: '企業出展：ツクバリカセイキ株式会社'
 
 ::: {#main}
 
-![ツクバリカセイキ株式会社](images/sponsors/trs.png)
+![ツクバリカセイキ株式会社](images/trs.png)
 
 # [ツクバリカセイキ株式会社](https://www.trs-jp.com/)
 

@@ -5,7 +5,7 @@ title: '企業出展：カトウ光研株式会社'
 
 ::: {#main}
 
-![カトウ光研株式会社](images/sponsors/kk.png)
+![カトウ光研株式会社](images/kk.png)
 
 # [カトウ光研株式会社](https://www.kk-co.jp/)
 

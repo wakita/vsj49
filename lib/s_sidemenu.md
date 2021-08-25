@@ -24,14 +24,14 @@
       <template v-if="sponsor['企業URL']">
         <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
           <template v-if="sponsor['バナー']">
-            <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+            <img :src="'images/' + sponsor.id + '.png'"></img>
           </template>
           <template v-else>{{sponsor.略称}}</template>
         </a>
       </template>
       <template v-else>
         <template v-if="sponsor['バナー']">
-          <img :src="'/symp2021/images/sponsors/' + sponsor.id + '.png'"></img>
+          <img :src="'images/' + sponsor.id + '.png'"></img>
         </template>
         <template v-else>{{sponsor.略称}}</template>
       </template>
@@ -49,7 +49,7 @@
 
 <div id="sponsors"></div>
 
-<script src="/symp2021/js/sponsors.js"></script>
+<script src="../js/sponsors.js"></script>
 
 <script type="text/javascript">
 sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))

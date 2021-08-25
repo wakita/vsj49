@@ -1,7 +1,12 @@
 #!/bin/zsh
 
 # md/program.md; 竹島先生が作って下さる proceedings/program.html から、ウェブサイト用の program.md を生成
+
 rm -f md/program.md
+
+edition=`date '+（%m月%d日版）'`
+echo $edition
+
 cat > md/program.md <<EOMD
 ---
 title: 'プログラム'
@@ -13,7 +18,9 @@ EOMD
 sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
   sed -e 's/ *<section/<section/' \
       -e 's/ *<\/section/<\/section/' \
-      -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' | lv >> md/program.md
+      -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' \
+      -e "s/全体プログラム/全体プログラム$edition/" \
+      | lv >> md/program.md
 
 echo ':::' >> md/program.md
 # md/program.md
@@ -38,12 +45,16 @@ for md in proc/sponsors/*.md; do
   pandoc --defaults=lib/sponsors.yaml --from markdown+native_divs --output=proceedings/$md.html proc/$md.md
 done
 
-cp -r site/images proceedings
-cp -r site/images proceedings/sponsors
+rm -rf proceedings/js
+mkdir -p proceedings/js
+cp js/sponsors.js proceedings/js
 
-rm -rf proceedings/js proceedings/files
-cp -r js files site
+rm -rf proceedings/images 
+mkdir -p proceedings/images proceedings/sponsors/images
+cp -r site/images/vsjsympTopYokohama*.jpg proceedings/images
+cp -r site/sponsors/images/*.png proceedings/sponsors/images
 
+mkdir -p proceedings/css 
 cp site/css/vsj_symp.css proceedings/css
 cp site/css/vsj_symp.css proceedings/sponsors/css
 
