@@ -6,7 +6,7 @@ title: '企業出展：株式会社ノビテック'
 
 ![株式会社ノビテック](images/nobby.png)
 
-# [株式会社ノビテック](https://www.nobby.jp/)
+# [株式会社ノビテック](https://www.nobby-tech.co.jp)
 
 # ランチョンセミナー (LS-3) <i class="fas fa-utensils"></i>
 
