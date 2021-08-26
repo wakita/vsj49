@@ -17,7 +17,7 @@ title: '企業出展'
 
 - [ニイガタ株式会社](sponsor_niigata.html): <i class="fas fa-flask"></i>
 
-- [ダンテック・ダイナミクス株式会社](sponsor_dantec.html): <i class="fas fa-flask"></i> <i class="fas fa-ad"></i>
+- [ダンテック・ダイナミクス株式会社](sponsor_dantec.html): <i class="fas fa-flask"></i> <i class="fas fa-book-open"></i> <i class="fas fa-ad"></i>
 
 - [カトウ光研株式会社](sponsor_kk.html): <i class="fas fa-ad"></i>
 
