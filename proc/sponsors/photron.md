@@ -22,6 +22,6 @@ title: '企業出展：株式会社フォトロン'
 
 # カタログ
 
-- <i class="fas fa-book-open"></i> [Photron INFINICAM](files/sponsors/photron/infinicam.pdf)
+- <i class="fas fa-book-open"></i> [Photron INFINICAM](photron/infinicam.pdf)
 
 :::

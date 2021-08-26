@@ -10,6 +10,6 @@ title: '企業出展：株式会社ヒューリンクス'
 
 # 広告
 
-- <i class="fas fa-ad"></i> [tecplot 360](files/sponsors/hulinks/ad.pdf)
+- <i class="fas fa-ad"></i> [tecplot 360](hulinks/ad.pdf)
 
 :::

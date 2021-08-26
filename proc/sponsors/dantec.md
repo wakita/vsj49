@@ -16,10 +16,10 @@ title: '企業出展：ダンテック・ダイナミクス株式会社'
 
 # 広告
 
-- <i class="fas fa-ad"></i> [Flexシリーズ ・ DynamicStudio Version 7.3](files/sponsors/dantec/ad.pdf)
+- <i class="fas fa-ad"></i> [Flexシリーズ ・ DynamicStudio Version 7.3](dantec/ad.pdf)
 
 # カタログ
 
-- <i class="fas fa-book-open"></i> [Dantecdynamics社 流体計測カタログ（総合簡易版）](files/sponsors/dantec/catalog.pdf)
+- <i class="fas fa-book-open"></i> [Dantecdynamics社 流体計測カタログ（総合簡易版）](dantec/catalog.pdf)
 
 :::
