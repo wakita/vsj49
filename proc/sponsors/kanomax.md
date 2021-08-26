@@ -6,7 +6,7 @@ title: '企業出展：日本カノマックス株式会社'
 
 ![日本カノマックス株式会社](images/kanomax.png)
 
-# [日本カノマックス株式会社](http://kanomax...)
+# [日本カノマックス株式会社](http://www.kanomax.co.jp)
 
 # 広告
 

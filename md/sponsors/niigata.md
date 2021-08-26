@@ -7,7 +7,7 @@ title: '企業出展：ニイガタ株式会社'
 ![ニイガタ株式会社](images/niigata.png)
 
 
-# [ニイガタ株式会社](https://www.niigata.jp/)
+# [ニイガタ株式会社](https://ni-gata.co.jp/)
 
 # 機器展示<i class="fas fa-flask"></i>
 
