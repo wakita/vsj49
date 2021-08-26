@@ -4,7 +4,7 @@ title: 'プログラム'
 
 ::: {#main}
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月25日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月26日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -45,7 +45,7 @@ title: 'プログラム'
                     <th>12:00-13:20</th>
                     <td colspan="5">ランチョンセミナー(A室)<br>
                         12:00-12:40 LS-1:<a href="sponsors/hpc.html">株式会社HPCテック</a><br>
-						12:40-13:20 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a></td>
+                        12:40-13:20 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
@@ -115,8 +115,8 @@ title: 'プログラム'
                 <tr>
                     <th>12:00-13:20</th>
                     <td colspan="5">ランチョンセミナー(A室)<br>
-						12:00-12:40 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a><br>
-						12:40-13:20 LS-1:<a href="sponsors/hpc.html">株式会社HPCテック</a></td>
+                        12:00-12:40 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a><br>
+                        12:40-13:20 LS-1:<a href="sponsors/hpc.html">株式会社HPCテック</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
@@ -190,8 +190,8 @@ title: 'プログラム'
                 <tr>
                     <th>12:00-13:20</th>
                     <td colspan="5">ランチョンセミナー(A室)<br>
-						12:00-12:40 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a><br>
-						12:40-13:20 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a></td>
+                        12:00-12:40 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a><br>
+                        12:40-13:20 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
@@ -500,34 +500,34 @@ title: 'プログラム'
             <table class="t01">
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/hpc.html">株式会社HPCテック</a></strong></td>
+                    <td><strong><a href="sponsors/hpc.html">株式会社HPCテック</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/dantec.html">ダンテック・ダイナミクス株式会社</a></strong></td>
+                    <td><strong><a href="sponsors/dantec.html">ダンテック・ダイナミクス株式会社</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/niigata.html">ニイガタ株式会社</a></strong></td>
+                    <td><strong><a href="sponsors/niigata.html">ニイガタ株式会社</a></strong></td>
                 </tr>
             </table>
             <h4><a name="KS2" id="KS2"></a>14:50-16:30 企業展示</h4>
             <table class="t01">
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/photron.html">株式会社フォトロン</a></strong></td>
+                    <td><strong><a href="sponsors/photron.html">株式会社フォトロン</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/nac.html">株式会社ナックイメージテクノロジー</a></strong></td>
+                    <td><strong><a href="sponsors/nac.html">株式会社ナックイメージテクノロジー</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/nobby.html">株式会社ノビテック</a></strong></td>
+                    <td><strong><a href="sponsors/nobby.html">株式会社ノビテック</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/fel.html">株式会社西日本流体技研</a></strong></td>
+                    <td><strong><a href="sponsors/fel.html">株式会社西日本流体技研</a></strong></td>
                 </tr>
             </table>
             <h4><a name="OS9-1" id="OS9-1"></a> 16:50-18:10 OS9 ソーシャルデータの可視化</h4>
@@ -640,7 +640,7 @@ title: 'プログラム'
             <table class="t01">
                 <tr>
                     <th>[PDF]&#8195;</th>
-                    <td><strong>時系列データに対する説明的可視化</strong><br>〇牧 修平(東工大)</td>
+                    <td><strong>時系列データに対する説明的可視化</strong><br>〇牧 修平(東工大)、脇田 建(東工大)</td>
                 </tr>
                 <tr>
                     <th>[PDF]●</th>
@@ -839,30 +839,30 @@ title: 'プログラム'
             <table class="t01">
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/fel.html">株式会社西日本流体技研</a></strong></td>
+                    <td><strong><a href="sponsors/fel.html">株式会社西日本流体技研</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/nobby.html">株式会社ノビテック</a></strong></td>
+                    <td><strong><a href="sponsors/nobby.html">株式会社ノビテック</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/nac.html">株式会社ナックイメージテクノロジー</a></strong></td>
+                    <td><strong><a href="sponsors/nac.html">株式会社ナックイメージテクノロジー</a></strong></td>
                 </tr>
             </table>
             <h4><a name="KS4" id="KS4"></a>14:50-16:30 企業展示</h4>
             <table class="t01">
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/hpc.html">株式会社HPCテック</a></strong></td>
+                    <td><strong><a href="sponsors/hpc.html">株式会社HPCテック</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/dantec.html">ダンテック・ダイナミクス株式会社</a></strong></td>
+                    <td><strong><a href="sponsors/dantec.html">ダンテック・ダイナミクス株式会社</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
-					<td><strong><a href="sponsors/niigata.html">ニイガタ株式会社</a></strong></td>
+                    <td><strong><a href="sponsors/niigata.html">ニイガタ株式会社</a></strong></td>
                 </tr>
                 <tr>
                     <th></th>
