@@ -31,15 +31,6 @@ def download(args):
     with open(CACHE_SUB, 'wb') as w:
         sub.to_excel(w)
 
-    '''
-    print('参加申込状況の Google Spreadsheet をダウンロード中')
-    book = gc.open_by_key('147n__4QXF_xIEfXjPEAzxQpJTx18QrQO80TTtQ6_7ts')
-    reg = pd.DataFrame(book.get_worksheet(0).get_all_records())
-    sub.drop(reg[reg['REMARK'].isin(set(['test', 'duplicate', 'cancel']))].index, inplace=True)
-    with open(CACHE_REG, 'wb') as w:
-        reg.to_excel(w)
-    '''
-
 
 def download_papers(args):
     load()

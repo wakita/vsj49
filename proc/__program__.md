@@ -4,7 +4,7 @@ title: 'プログラム'
 
 ::: {#main}
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月26日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月27日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -215,11 +215,6 @@ title: 'プログラム'
             <table class="t01">
                 <tr>
                     <th>[PDF]&#8195;</th>
-                    <td><strong>プラズマ対向壁上の高速トリトン粒子衝突点のバーチャルリアリティ可視化</strong><br>
-                        〇大谷 寛明(NIFS)、増﨑 貴(NIFS)、小川 国大(NIFS)、石黒 静児(NIFS)</td>
-                </tr>
-                <tr>
-                    <th>[PDF]&#8195;</th>
                     <td><strong>Unity上での情報可視化フレームワークの開発</strong><br>
                         〇宮地 英生(都市大)、川原 慎太郎(JAMSTEC)、伊藤 貴之(お茶大)</td>
                 </tr>
@@ -227,6 +222,11 @@ title: 'プログラム'
                     <th>[PDF]&#8195;</th>
                     <td><strong>粒子ベースレンダリングによる数値シミュレーションデータ向け遠隔VR可視化システム</strong><br>
                         〇河村 拓馬(JAEA)、坂本 尚久(神戸大)</td>
+				<tr>
+                    <th>[PDF]&#8195;</th>
+                    <td><strong>プラズマ対向壁上の高速トリトン粒子衝突点のバーチャルリアリティ可視化</strong><br>
+                        〇大谷 寛明(NIFS)、増﨑 貴(NIFS)、小川 国大(NIFS)、石黒 静児(NIFS)</td>
+                </tr>
                 </tr>
             </table>
             <p>&nbsp;</p>
