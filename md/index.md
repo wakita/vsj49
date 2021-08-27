@@ -42,11 +42,17 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 
 ## 重要な期日
 
-講演申込開始日
-: 2021年4月16日
+参加申込締切日
+: 2021年9月3日(金) <span class="alert">（支払い完了まで）</span>
+
+講演者参加申込締切日
+: 2021年8月20日(金) <span class="alert">（支払い完了まで）</span>
 
 本論文投稿締切日
 : 2021年7月23日 ~~2021年7月9日~~
+
+講演申込開始日
+: 2021年4月16日
 
 
 ## 会場
