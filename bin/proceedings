@@ -25,7 +25,7 @@ echo ':::' >> md/program.md
 # md/program.md
 
 # スポンサー情報はウェブサイトからまるっとコピー
-cp -r md/art_contest.md md/sponsors md/support.md proc
+cp -r md/greeting.md md/art_contest.md md/sponsors md/support.md proc
 cp md/program.md proc/__program__.md
 
 ######################################################################

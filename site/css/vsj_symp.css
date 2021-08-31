@@ -705,3 +705,29 @@ table.t01 td {
     line-height: 1.2;
     width: 85%
 }
+
+#greeting h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#greeting div {
+    margin-bottom: 2em;
+}
+
+#greeting .greeting_header {
+    text-align: right;
+}
+
+#greeting .greeting_header p {
+    margin-bottom: 10pt;
+}
+
+#greeting .greeting_main p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+#greeting .greeting_committee p {
+    text-align: justify;
+}

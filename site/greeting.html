@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>プログラム</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/symp2021/css/vsj_symp.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="./images/favicon.ico" />
+  <script src="https://kit.fontawesome.com/73e303f659.js" crossorigin="anonymous"></script>
+
+  <meta name="description"
+    content="可視化情報シンポジウム 2021 in 神奈川, 開催日：2021年9月9日（木），10日（金），11日（土）, 主催：（社）可視化情報学会" />
+  <meta name="author"
+    content="可視化情報シンポジウム2021実行委員会" />
+  <meta name="copyright"
+    content="Copyright &copy; the Organising Committee of Visualization Symposium 2021" />
+
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  -->
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- production version, optimized for size and speed -->
+  <!-- script src="https://cdn.jsdelivr.net/npm/vue@2"></script -->
+  <div id="header">
+  <p><img src="/symp2021/images/vsjsympTopYokohama1.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama2.jpg" alt="可視化情報シンポジウム2021" /> <img src="/symp2021/images/vsjsympTopYokohama3.jpg" alt="可視化情報シンポジウム2021" /></p>
+  <div class="header_1">
+  <h2 id="第49回">第49回</h2>
+  <h1 id="可視化情報シンポジウム">可視化情報シンポジウム</h1>
+  <h3 id="年9月9日木10日金11日土-慶應義塾大学日吉キャンパス">2021年9月9日（木），10日（金），11日（土）<br>慶應義塾大学日吉キャンパス</h3>
+  </div>
+  <div class="header_2">
+  <h2 id="第49回-1">第49回</h2>
+  <h1 id="可視化情報シンポジウム-1">可視化情報シンポジウム</h1>
+  <h3 id="年9月9日木10日金11日土-慶應義塾大学日吉キャンパス-1">2021年9月9日（木），10日（金），11日（土）<br>慶應義塾大学日吉キャンパス</h3>
+  </div>
+  </div>
+</head>
+<body>
+<div id="sidemenu">
+<ul>
+<li><a href="/symp2021/index.html">ホーム</a></li>
+<li><a href="/symp2021/submission.html">発表申込</a></li>
+<li><a href="/symp2021/authoring.html">原稿執筆要項</a></li>
+<li><a href="/symp2021/registration.html">参加登録など</a></li>
+<li><a href="/symp2021/program.html">プログラム</a></li>
+<li><a href="/symp2021/presentation.html">講演時間</a></li>
+<li><a href="/symp2021/sessions.html">セッション一覧</a></li>
+<li><a href="/symp2021/art_contest.html">アートコンテスト</a></li>
+<li><a href="/symp2021/studentaward.html">学生プレゼン</a></li>
+<li><a href="/symp2021/sponsors/index.html">企業出展</a></li>
+<li><a href="/symp2021/support.html">協賛</a> <!--
+- [アクセス・会場案内](access.html)
+- [宿泊案内](hotel.html)
+- [実行委員](committee.html)
+--></li>
+<li><a href="index.html#contact">問い合わせ</a></li>
+</ul>
+<div id="sponsors">
+<script type="text/x-template" id="x-sponsors-template">
+  <ul id="sponsors">
+    <p class="header">協力企業<br/><span style="font-size: small">
+       <i class="fas fa-utensils"></i>: ランチョンセミナー<br/>
+       <i class="fas fa-flask"></i>: 機器展示<br/>
+       <i class="fas fa-book-open"></i>: カタログ<br/>
+       <i class="fas fa-ad"></i>: 広告</span>
+    </p>
+    <div class="sponsor" v-for="sponsor in this.sorted()" :key="sponsor.id">
+      <template v-if="sponsor['企業URL']">
+        <a class="sponsor" :href="sponsor['企業URL']" target="_blank">
+          <template v-if="sponsor['バナー']">
+            <img :src="'images/' + sponsor.id + '.png'"></img>
+          </template>
+          <template v-else>{{sponsor.略称}}</template>
+        </a>
+      </template>
+      <template v-else>
+        <template v-if="sponsor['バナー']">
+          <img :src="'images/' + sponsor.id + '.png'"></img>
+        </template>
+        <template v-else>{{sponsor.略称}}</template>
+      </template>
+      <p class="info">
+        <a :href="'sponsors/' + sponsor['id'] + '.html'">
+          <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
+          <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
+          <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
+          <span v-if="sponsor['広告']"><i class="fas fa-ad"></i></span>
+        </a>
+      </p>
+    </div>
+  </ul>
+</script>
+<div id="sponsors">
+
+</div>
+<script src="/symp2021/js/sponsors.js"></script>
+<script type="text/javascript">
+sponsors.forEach((sponsor) => sponsor.kw = sponsor.kw * (1 + 0.05 * Math.random()))
+
+console.log(sponsors);
+
+new Vue({
+  el: '#sponsors',
+  data: {
+    sponsors: sponsors
+  },
+  template: '#x-sponsors-template',
+  methods: {
+    sorted: function () {
+      const data = [];
+      this.sponsors.forEach((sponsor) => data.push(Object.assign({}, sponsor)))
+      return data.sort((a, b) => b.kw - a.kw);
+    }
+  }
+});
+</script>
+</div>
+</div>
+<header id="title-block-header">
+<h1 class="title">プログラム</h1>
+</header>
+<div id="main">
+<section id="greeting" class="level2">
+<h1>
+第49回可視化情報シンポジウムの開催にあたって
+</h1>
+<div class="greeting_header">
+<img src="images/people/Issei_Fujishiro.png" alt="藤代一成" width="15%">
+<p>
+一般社団法人 可視化情報学会 会長<br> 第49回可視化情報シンポジウム実行委員長<br> 藤代 一成
+</p>
+<p>
+Message from the President of VSJ and Chairman<br> for the Opening of the 49th Visualization Symposium<br> Issei FUJISHIRO
+</p>
+</div>
+<div class="greeting_main">
+<p>
+今回で第49回目を迎える可視化情報シンポジウムにようこそご参加いただきました．
+</p>
+<p>
+新型コロナウイルス感染が終息せず，昨年度に引き続きオンラインで開催するはこびとなりました．前回の実行委員長である渕脇 正樹先生（九工大）からオンライン開催のノウハウを伝授していただくとともに，実行委員会一同，どうすれば通常のリアル開催に近いイメージでプレゼンや質疑応答，意見交換が可能になるか，いろいろと検討してまいりました．至らない面もまだ多々あるかとは思いますが，計3日間のプログラムを，どうぞ満喫していただきますよう御期待申し上げます．
+</p>
+<p>
+今年度は特別講演を復活させました．時節柄，コロナウイルスに関係するシミュレーション・可視化2件とオリンピック・パラリンピックに関係するスポーツ可視化1件をテーマに採り上げたのがポイントです．お忙しいなかご講演を賜ることになりましたXiaoru Yuan教授（中国・北京大），小池 英樹教授（東工大），坪倉 誠教授（神戸大）に深謝申し上げます．
+</p>
+<p>
+オーガナイズドセッション,一般講演セッションは合わせて37セッション計134件の発表（内58件は学生プレゼンテーションコンテスト対象）が5トラックに分かれて実施されます．アートコンテストには16作品の応募がありました．各セッション・コンテストへ申し込まれた皆様にも心から御礼申し上げます．
+</p>
+<p>
+このように混沌とした社会状況のなかでも，本シンポジウムにご協力をいただいた企業は計12社に及びます．ランチョンセミナーや機器展示はもちろんのこと，オンラインのカタログや広告を通じても本学会との繋がりをご理解いただけるものと信じております．さらに，関連学協会39団体に協賛していただきました．誠にありがとうございます．
+</p>
+<p>
+実行委員会幹事・委員ならびに学生スタッフには各分担で大活躍していただきました．さらには学会理事や事務局スタッフ，シンポジウムの関係者一同のご理解と強力なバックアップがあったからこそ開催にまで漕ぎ着けたと強く実感しております．この場を借りて各位に衷心より御礼申し上げます．
+</p>
+<p>
+本学会は「流れの可視化」を基軸としながら，「情報の可視化」にも学会のスコープを拡げ，「可視化情報に関する研究の進展と知識の普及」と「我が国における学術の発展」という旗標のもと活動を展開してまいりました．3日間のプログラムを彩るセッション名や発表題目を見ていただければ一目瞭然ですが，機械・航空・宇宙・土木・海洋・気象などの理工学分野の諸分野での研究開発手法として活用されるだけでなく，人文科学・社会科学・アートを含む膨大な情報も取り扱う現象の認識・把握技術として，可視化情報研究は日々進化を遂げています．このように多様なバックグラウンドをおもちの研究者・技術者・学生の皆様が一堂に会する学際性こそ本学会最大の特長と財産です．<a href="https://www.vsj.jp/vsjinfo/president2021.html">会長就任メッセージ</a>（本学会Webページ，本学会誌今年度10月号参照）にも書かせていただきましたが，まさに『フロー可視化』を目の当たりにするような3日間であることを念願して止みません．
+</p>
+<p>
+来年は工学院大学で第50回の記念大会を迎えます．対面開催が復活し，オンラインと組み合わせた先進的なハイブリッド形式で盛大に開催されることを祈念しております．
+</p>
+</div>
+<div class="greeting_committee">
+<h2>
+第49回可視化情報シンポジウム実行委員会
+</h2>
+<p>
+藤代 一成（委員長・慶應義塾大学），伊藤 正彦（幹事・北海道情報大学），青木 滉一郎，加藤 千恵子（東洋大学），川口 達也（東京工業大学），関西 優美子（慶應義塾大学），竹島 由里子（東京工科大学），夏川 浩明（京都大学），平塚 将起（工学院大学），脇田 建（東京工業大学）
+</p>
+</div>
+</section>
+</div>
+</body>
+</html>
