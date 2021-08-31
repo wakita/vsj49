@@ -7,7 +7,7 @@ title: '企業出展'
 # 企業出展
 - [株式会社HPCテック](sponsor_hpc.html): <i class="fas fa-utensils"></i> <i class="fas fa-flask"></i>
 
-- [株式会社ナックイメージテクノロジー](sponsor_nac.html): <i class="fas fa-flask"></i>
+- [株式会社ナックイメージテクノロジー](sponsor_nac.html): <i class="fas fa-flask"></i> <i class="fas fa-book-open"></i>
 
 - [株式会社ノビテック](sponsor_nobby.html): <i class="fas fa-utensils"></i> <i class="fas fa-flask"></i>
 

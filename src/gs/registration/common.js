@@ -46,7 +46,8 @@ function log() {
 }
 
 const EMAIL_OC = 'symp2021@vsj.jp'
-const EMAIL_DEBUG = 'wakita@is.titech.ac.jp, imash@do-johodai.ac.jp'
+//const EMAIL_DEBUG = 'wakita@is.titech.ac.jp, imash@do-johodai.ac.jp, y.sekinishi@fj.ics.keio.ac.jp'
+const EMAIL_DEBUG = 'wakita.k.aa-vsjs49@ml.m.titech.ac.jp'
 const EMAIL_KW = 'wakita@is.titech.ac.jp';
 
 function info(r) {
@@ -94,6 +95,7 @@ Thank you for your registration. Registration has been accepted.
 　貯金種目：普通預金
 　口座番号：4110464
 　受取人：第49回可視化情報シンポジウム
+　振込先カナ名：タ゛イ49カイカシカシ゛ヨウホウシンホ゜シ゛ウム
  ［振込時のお願い］
 　1) 銀行振込の際、「参加登録番号、参加者（代表者）氏名」を続けてご入力下さい。
 　　 ATM、ネットバンキングの場合：「依頼人名」001カシカタロウ
@@ -118,5 +120,5 @@ Thank you for your registration. Registration has been accepted.
   [E-mail] <Email Address>
   [会員資格] <会員資格> (<会員番号>)
   [参加区分] <参加区分>
-  [参加形態] <参加形態>
+  [参加形態] <参加形態> (<論文番号>)
   [出展企業への情報提供] <出展企業への情報提供>`).replace('\t', ' ');

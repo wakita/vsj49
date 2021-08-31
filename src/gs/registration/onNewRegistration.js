@@ -1,5 +1,5 @@
 function onNewRegistration(e) {
-  const r = e ? e.range.getRow() - 2 : 0;
+  const r = e ? e.range.getRow() - 2 : 100;
 
   let id = get(r, 'ID');
   let status = 'edit';
@@ -16,14 +16,16 @@ function onNewRegistration(e) {
     sync();
   }
   
-  const from = get(r, 'Email Address');
+  const from = get(r, 'Email Address') + ', '+ EMAIL_DEBUG;
   const subject = '第49回可視化情報シンポジウム【参加登録】';
   const message = info(r);
 
   MailApp.sendEmail(from, subject, message);
 
+/*
   MailApp.sendEmail(
     EMAIL_DEBUG,
     status === 'newEntry' ? 'VSJS2021: 参加登録の通知' : 'VSJS2021: 参加登録情報の修正',
     message.split(/.*--記--*\n/)[1]);
+*/
 }

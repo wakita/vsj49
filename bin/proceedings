@@ -5,7 +5,6 @@
 rm -f md/program.md
 
 edition=`date '+（%m月%d日版）'`
-echo $edition
 
 cat > md/program.md <<EOMD
 ---

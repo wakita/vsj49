@@ -4,7 +4,7 @@ title: 'プログラム'
 
 ::: {#main}
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月27日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月31日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
