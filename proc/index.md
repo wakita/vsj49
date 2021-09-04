@@ -6,9 +6,7 @@ title: 'プログラム'
 
 - [ホーム](https://www.vsj.jp/symp2021/)
 
-- [会長挨拶](greeting.html)
-
-- [実行委員長挨拶](pdf/Chairman.pdf)
+- [会長／実行委員長挨拶](greeting.html)
 
 - [プログラム](program.html)
 

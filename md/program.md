@@ -4,7 +4,7 @@ title: 'プログラム'
 
 ::: {#main}
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（08月31日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月04日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -38,7 +38,7 @@ title: 'プログラム'
                     <td><a href="#OS12-1">OS12<br>人工知能と可視化</a><br>座長：宮地 英生(都市大)</td>
                     <td><a href="#OS1">OS1<br>ウェーブレットと知的可視化の応用</a><br>座長：田畑 隆英(鹿児島高専)</td>
                     <td><a href="#OS3-1">OS3<br>蛍光・燐光を用いた熱流体計測</a><br>座長：森 英男(九大)</td>
-                    <td><a href="#KS1"><br>企業展示</a></td>
+                    <td><a href="#KS1"><br>企業展示</a><br>座長：伊藤 正彦(道情報大)</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -64,7 +64,7 @@ title: 'プログラム'
                     <td><a href="#OS10-2">OS10<br>ビジュアルデータサイエンス</a><br>座長：夏川 浩明(京大)</td>
                     <td><a href="#OS15-1">OS15<br>医療に関わる可視化</a><br>座長：山崎 享子(東洋大)</td>
                     <td><a href="#OS8-1">OS8<br>サイエンティフィックアート＆スポーツ</a><br>座長：瀬尾 和哉(山形大)</td>
-                    <td><a href="#KS2"><br>企業展示</a></td>
+                    <td><a href="#KS2"><br>企業展示</a><br>座長：平塚 将起(工学院大)</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -77,7 +77,7 @@ title: 'プログラム'
                     <td><a href="#OS5-1">OS5<br>渦，はく離，後流の可視化</a><br>座長：高牟礼 光太郎(名大)</td>
                     <td><a href="#OS2-1">OS2<br>レーザ利用の可視化と計測</a><br>座長：西野 耕一(横浜国大)</td>
                     <td><a href="#OS9-1">OS9<br>ソーシャルデータの可視化</a><br>座長：伊藤 正彦(道情報大)</td>
-                    <td><a href="#GS1">GS1<br>一般講演</a><br>座長：〇〇〇〇(〇〇大学)</td>
+                    <td><a href="#GS1">GS1<br>一般講演</a><br>長谷川 浩司(工学院大)</td>
                 </tr>
             </table>
             <table class="time-table">
@@ -97,7 +97,7 @@ title: 'プログラム'
                     <td><a href="#OS10-3">OS10<br>ビジュアルデータサイエンス</a><br>座長：田中 覚(立命館大)</td>
                     <td><a href="#OS2-2">OS2<br>レーザ利用の可視化と計測</a><br>座長：細川 茂雄(関西大)</td>
                     <td><a href="#OS4-2">OS4<br>マイクロ・ナノ輸送現象の可視化</a><br>座長：山本 憲(阪大)</td>
-                    <td><a href="#GS2">GS2<br>一般講演</a><br>座長：〇〇〇〇(〇〇大学)</td>
+                    <td><a href="#GS2">GS2<br>一般講演</a><br>座長：伊藤 貴之(お茶大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -109,7 +109,7 @@ title: 'プログラム'
                     <td><a href="#OS7-2">OS7<br>生物・生体まわりの可視化</a><br>座長：窪田 佳寛(東洋大)</td>
                     <td><a href="#OS5-3">OS5<br>渦，はく離，後流の可視化</a><br>座長：舩谷 俊平(山梨大)</td>
                     <td><a href="#OS4-3">OS4<br>マイクロ・ナノ輸送現象の可視化</a><br>座長：元祐 昌廣(東理大)</td>
-                    <td><a href="#KS3"><br>企業展示</a></td>
+                    <td><a href="#KS3"><br>企業展示</a><br>座長：脇田 建(東工大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -135,7 +135,7 @@ title: 'プログラム'
                     <td><a href="#OS10-4">OS10<br>ビジュアルデータサイエンス</a><br>座長：坂本 尚久(神戸大)</td>
                     <td><a href="#OS14">OS14<br>乱流および乱流遷移現象の可視化</a><br>座長：長田 孝二(名大)</td>
                     <td><a href="#OS6">OS6<br>超音波を用いた流体計測</a><br>座長：大石義彦(室工大)、高橋秀治(東工大)</td>
-                    <td><a href="#KS4"><br>企業展示</a></td>
+                    <td><a href="#KS4"><br>企業展示</a><br>座長：竹島 由里子(東京工科大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -147,7 +147,7 @@ title: 'プログラム'
                     <td><a href="#OS9-2">OS9<br>ソーシャルデータの可視化</a><br>座長：美馬 秀樹(京大)</td>
                     <td><a href="#OS15-2">OS15<br>医療に関わる可視化</a><br>座長：吉田 崇将(東洋大)</td>
                     <td><a href="#OS3-2">OS3<br>蛍光・燐光を用いた熱流体計測</a><br>座長：満尾 和徳(JAXA)</td>
-                    <td><a href="#GS3">GS3<br>一般講演</a><br>座長：〇〇〇〇(〇〇大学)</td>
+                    <td><a href="#GS3">GS3<br>一般講演</a><br>座長：平塚 将起(工学院大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -222,11 +222,10 @@ title: 'プログラム'
                     <th>[PDF]&#8195;</th>
                     <td><strong>粒子ベースレンダリングによる数値シミュレーションデータ向け遠隔VR可視化システム</strong><br>
                         〇河村 拓馬(JAEA)、坂本 尚久(神戸大)</td>
-				<tr>
+                <tr>
                     <th>[PDF]&#8195;</th>
                     <td><strong>プラズマ対向壁上の高速トリトン粒子衝突点のバーチャルリアリティ可視化</strong><br>
                         〇大谷 寛明(NIFS)、増﨑 貴(NIFS)、小川 国大(NIFS)、石黒 静児(NIFS)</td>
-                </tr>
                 </tr>
             </table>
             <p>&nbsp;</p>
@@ -497,6 +496,7 @@ title: 'プログラム'
                 </tr>
             </table>
             <h4><a name="KS1" id="KS1"></a>10:50-11:50 企業展示</h4>
+            <p>座長：伊藤 正彦(道情報大)<br /></p>
             <table class="t01">
                 <tr>
                     <th></th>
@@ -512,6 +512,7 @@ title: 'プログラム'
                 </tr>
             </table>
             <h4><a name="KS2" id="KS2"></a>14:50-16:30 企業展示</h4>
+            <p>座長：平塚 将起(工学院大)<br /></p>
             <table class="t01">
                 <tr>
                     <th></th>
@@ -554,7 +555,7 @@ title: 'プログラム'
 
             <h3>［E室］</h3>
             <h4><a name="GS1" id="GS1"></a> 16:50-18:10 GS1 一般講演</h4>
-            <p>座長：〇〇〇〇(〇〇大学)<br /></p>
+            <p>座長：長谷川 浩司(工学院大)<br /></p>
             <table class="t01">
                 <tr>
                     <th>[PDF]●</th>
@@ -820,7 +821,7 @@ title: 'プログラム'
 
             <h3>［D室］</h3>
             <h4><a name="GS2" id="GS2"></a> 9:10-10:30 GS2 一般講演</h4>
-            <p>座長：〇〇〇〇(〇〇大学)<br /></p>
+            <p>座長：伊藤 貴之(お茶大)<br /></p>
             <table class="t01">
                 <tr>
                     <th>[PDF]&#8195;</th>
@@ -828,7 +829,7 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>[PDF]●</th>
-                    <td><strong>音響場中の試料の浮遊安定性に及ぼすリフレクタ形状の影響</strong><br>〇村田 愛美(工学院大)、長谷川 浩司(工学院大学)</td>
+                    <td><strong>音響場中の試料の浮遊安定性に及ぼすリフレクタ形状の影響</strong><br>〇村田 愛美(工学院大)、長谷川 浩司(工学院大)</td>
                 </tr>
                 <tr>
                     <th>[PDF]●</th>
@@ -836,6 +837,7 @@ title: 'プログラム'
                 </tr>
             </table>
             <h4><a name="KS3" id="KS3"></a>10:50-11:50 企業展示</h4>
+            <p>座長：脇田 建(東工大) <br /></p>
             <table class="t01">
                 <tr>
                     <th></th>
@@ -851,6 +853,7 @@ title: 'プログラム'
                 </tr>
             </table>
             <h4><a name="KS4" id="KS4"></a>14:50-16:30 企業展示</h4>
+            <p>座長：竹島 由里子(東京工科大)<br /></p>
             <table class="t01">
                 <tr>
                     <th></th>
@@ -870,7 +873,7 @@ title: 'プログラム'
                 </tr>
             </table>
             <h4><a name="GS3" id="GS3"></a> 16:50-18:10 GS3 一般講演</h4>
-            <p>座長：〇〇〇〇(〇〇大学)<br /></p>
+            <p>座長：平塚 将起(工学院大)<br /></p>
             <table class="t01">
                 <tr>
                     <th>[PDF]&#8195;</th>
@@ -886,7 +889,7 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>[PDF]●</th>
-                    <td><strong>3次元流れ場計測へのMRIの適用</strong><br>〇正木 華妃斗(徳島文理大院)、高津 安男(徳島文理大)、両角 亮(徳島文理大学院)、新関 良樹(徳島文理大)</td>
+                    <td><strong>3次元流れ場計測へのMRIの適用</strong><br>〇正木 華妃斗(徳島文理大院)、高津 安男(徳島文理大)、両角 亮(徳島文理大院)、新関 良樹(徳島文理大)</td>
                 </tr>
             </table>
             <p>&nbsp;</p>
