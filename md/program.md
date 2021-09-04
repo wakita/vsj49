@@ -38,7 +38,7 @@ title: 'プログラム'
                     <td><a href="#OS12-1">OS12<br>人工知能と可視化</a><br>座長：宮地 英生(都市大)</td>
                     <td><a href="#OS1">OS1<br>ウェーブレットと知的可視化の応用</a><br>座長：田畑 隆英(鹿児島高専)</td>
                     <td><a href="#OS3-1">OS3<br>蛍光・燐光を用いた熱流体計測</a><br>座長：森 英男(九大)</td>
-                    <td><a href="#KS1"><br>企業展示</a><br>座長：伊藤 正彦(道情報大)</td>
+                    <td><a href="#KS1"><br>機器展示</a><br>座長：伊藤 正彦(道情報大)</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -64,7 +64,7 @@ title: 'プログラム'
                     <td><a href="#OS10-2">OS10<br>ビジュアルデータサイエンス</a><br>座長：夏川 浩明(京大)</td>
                     <td><a href="#OS15-1">OS15<br>医療に関わる可視化</a><br>座長：山崎 享子(東洋大)</td>
                     <td><a href="#OS8-1">OS8<br>サイエンティフィックアート＆スポーツ</a><br>座長：瀬尾 和哉(山形大)</td>
-                    <td><a href="#KS2"><br>企業展示</a><br>座長：平塚 将起(工学院大)</td>
+                    <td><a href="#KS2"><br>機器展示</a><br>座長：平塚 将起(工学院大)</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -109,7 +109,7 @@ title: 'プログラム'
                     <td><a href="#OS7-2">OS7<br>生物・生体まわりの可視化</a><br>座長：窪田 佳寛(東洋大)</td>
                     <td><a href="#OS5-3">OS5<br>渦，はく離，後流の可視化</a><br>座長：舩谷 俊平(山梨大)</td>
                     <td><a href="#OS4-3">OS4<br>マイクロ・ナノ輸送現象の可視化</a><br>座長：元祐 昌廣(東理大)</td>
-                    <td><a href="#KS3"><br>企業展示</a><br>座長：脇田 建(東工大)</td>
+                    <td><a href="#KS3"><br>機器展示</a><br>座長：脇田 建(東工大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -135,7 +135,7 @@ title: 'プログラム'
                     <td><a href="#OS10-4">OS10<br>ビジュアルデータサイエンス</a><br>座長：坂本 尚久(神戸大)</td>
                     <td><a href="#OS14">OS14<br>乱流および乱流遷移現象の可視化</a><br>座長：長田 孝二(名大)</td>
                     <td><a href="#OS6">OS6<br>超音波を用いた流体計測</a><br>座長：大石義彦(室工大)、高橋秀治(東工大)</td>
-                    <td><a href="#KS4"><br>企業展示</a><br>座長：竹島 由里子(東京工科大)</td>
+                    <td><a href="#KS4"><br>機器展示</a><br>座長：竹島 由里子(東京工科大)</td>
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
@@ -495,7 +495,7 @@ title: 'プログラム'
                     <td><strong>ボルテックスチャックを利用した曲面形状をもつワークの搬送に関する研究</strong><br>〇谷口 英一郎(山梨大)、舩谷 俊平(山梨大院)、輿石 克洋(ハーモテック)、岩坂 斉(ハーモテック)</td>
                 </tr>
             </table>
-            <h4><a name="KS1" id="KS1"></a>10:50-11:50 企業展示</h4>
+            <h4><a name="KS1" id="KS1"></a>10:50-11:50 機器展示</h4>
             <p>座長：伊藤 正彦(道情報大)<br /></p>
             <table class="t01">
                 <tr>
@@ -511,7 +511,7 @@ title: 'プログラム'
                     <td><strong><a href="sponsors/niigata.html">ニイガタ株式会社</a></strong></td>
                 </tr>
             </table>
-            <h4><a name="KS2" id="KS2"></a>14:50-16:30 企業展示</h4>
+            <h4><a name="KS2" id="KS2"></a>14:50-16:30 機器展示</h4>
             <p>座長：平塚 将起(工学院大)<br /></p>
             <table class="t01">
                 <tr>
@@ -836,7 +836,7 @@ title: 'プログラム'
                     <td><strong>サンプリングモアレ法を用いた回転タイヤ変形の可視化</strong><br>〇布 翔伍(京工繊大院)、田中 洋介(京工繊大)、奥村 圭祐(京工繊大院)、村田 滋(京工繊大)</td>
                 </tr>
             </table>
-            <h4><a name="KS3" id="KS3"></a>10:50-11:50 企業展示</h4>
+            <h4><a name="KS3" id="KS3"></a>10:50-11:50 機器展示</h4>
             <p>座長：脇田 建(東工大) <br /></p>
             <table class="t01">
                 <tr>
@@ -852,7 +852,7 @@ title: 'プログラム'
                     <td><strong><a href="sponsors/nac.html">株式会社ナックイメージテクノロジー</a></strong></td>
                 </tr>
             </table>
-            <h4><a name="KS4" id="KS4"></a>14:50-16:30 企業展示</h4>
+            <h4><a name="KS4" id="KS4"></a>14:50-16:30 機器展示</h4>
             <p>座長：竹島 由里子(東京工科大)<br /></p>
             <table class="t01">
                 <tr>
