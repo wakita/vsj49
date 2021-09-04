@@ -11,7 +11,7 @@ cat > md/program.md <<EOMD
 title: 'プログラム'
 ---
 
-::: {#main}
+<div id="main">
 EOMD
 
 sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
@@ -21,7 +21,7 @@ sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
       -e "s/全体プログラム/全体プログラム$edition/" \
       | lv >> md/program.md
 
-echo ':::' >> md/program.md
+echo '</div>' >> md/program.md
 # md/program.md
 
 # スポンサー情報はウェブサイトからまるっとコピー

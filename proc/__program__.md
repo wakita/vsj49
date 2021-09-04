@@ -2,7 +2,7 @@
 title: 'プログラム'
 ---
 
-::: {#main}
+<div id="main">
 <section id="program" class="level2">
             <h1>第49回 可視化情報シンポジウム 全体プログラム（09月04日版）</h1>
             <table class="time-table">
@@ -1049,4 +1049,4 @@ title: 'プログラム'
             </table>
 
 </section>
-:::
+</div>
