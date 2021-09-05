@@ -60,4 +60,5 @@ cp site/css/vsj_symp.css proceedings/sponsors/css
 rm proceedings/Icon*
 
 rm -f proceedings.zip
-zip -r proceedings.zip --password vsjs49 proceedings
+zip -r proceedings.zip --password vsjs49 proceedings \
+  --exclude proceedings/program.html proceedings/program.files/ proceedings/program.files/*
