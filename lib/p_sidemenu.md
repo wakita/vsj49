@@ -1,9 +1,8 @@
 ::: {#sidemenu}
 
 - [HOME](index.html)
-- [会長挨拶](pdf/President.pdf)
-- [実行委員長挨拶](pdf/Chairman.pdf)
-- [プログラム](__program__.html)
+- [会長／実行委員長挨拶](greeting.html)
+- [プログラム](program.html)
 - [アートコンテスト](art_contest.html)
 - [協賛学協会](support.html)
 - [参加企業](sponsors/index.html)

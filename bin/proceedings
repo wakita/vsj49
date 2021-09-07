@@ -14,7 +14,7 @@ title: 'プログラム'
 <div id="main">
 EOMD
 
-sed -n '/ *<section/,/ *<\/section/p' proceedings/program.html | \
+sed -n '/ *<section/,/ *<\/section/p' proc/program.html | \
   sed -e 's/ *<section/<section/' \
       -e 's/ *<\/section/<\/section/' \
       -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' \
@@ -25,8 +25,8 @@ echo '</div>' >> md/program.md
 # md/program.md
 
 # スポンサー情報はウェブサイトからまるっとコピー
-cp -r md/greeting.md md/art_contest.md md/sponsors md/support.md proc
-cp md/program.md proc/__program__.md
+cp -r md/greeting.md md/sponsors md/support.md proc
+cp md/program.md proc/program.md
 
 ######################################################################
 # proc のなかの Markdown ファイルをそれぞれ HTML に変換
@@ -60,5 +60,4 @@ cp site/css/vsj_symp.css proceedings/sponsors/css
 rm proceedings/Icon*
 
 rm -f proceedings.zip
-zip -r proceedings.zip --password vsjs49 proceedings \
-  --exclude proceedings/program.html proceedings/program.files/ proceedings/program.files/*
+zip -r proceedings.zip --password vsjs49 proceedings

@@ -1,6 +1,8 @@
 /doc
 /lib/*.html
 !/lib/meta.html
+proc/program.files/
+proc/program.html
 /proceedings/
 /site/files
 /symp20*

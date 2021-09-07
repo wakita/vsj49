@@ -4,7 +4,7 @@ title: 'プログラム'
 
 <div id="main">
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月04日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月07日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -19,7 +19,7 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>9:10-9:25</th>
-                    <td colspan="5">オープニング(A室)</td>
+                    <td colspan="5">オープニング</td>
                 </tr>
                 <tr>
                     <th>9:30-10:30</th>
@@ -43,13 +43,13 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>12:00-13:20</th>
-                    <td colspan="5">ランチョンセミナー(A室)<br>
+                    <td colspan="5">ランチョンセミナー<br>
                         12:00-12:40 LS-1:<a href="sponsors/hpc.html">株式会社HPCテック</a><br>
                         12:40-13:20 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
-                    <td colspan="5">特別講演1(A室)<br>
+                    <td colspan="5">特別講演1<br>
                         Xiaoru Yuan 教授(北京大)<br>
                         「Visualizations during the COVID-19 Pandemic」<br>
                         座長：藤代 一成(慶大)
@@ -114,13 +114,13 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>12:00-13:20</th>
-                    <td colspan="5">ランチョンセミナー(A室)<br>
+                    <td colspan="5">ランチョンセミナー<br>
                         12:00-12:40 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a><br>
                         12:40-13:20 LS-1:<a href="sponsors/hpc.html">株式会社HPCテック</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
-                    <td colspan="5">特別講演2(A室)<br>
+                    <td colspan="5">特別講演2<br>
                         坪倉 誠 教授(神戸大)<br>
                         「「富岳」を用いた飛沫・エアロゾルの可視化による新型コロナ感染リスクとその対策の社会啓発)」<br>
                         座長：平塚 将起(工学院大)
@@ -151,8 +151,8 @@ title: 'プログラム'
                     <td><a href="art_contest.html">アートコンテスト</a></td>
                 </tr>
                 <tr>
-                    <th></th>
-                    <td colspan="5">懇親会（詳細未定）</td>
+                    <th>18:30-20:30</th>
+                    <td colspan="5">懇親会（Gather.town）</td>
                 </tr>
             </table>
             <table class="time-table">
@@ -189,20 +189,20 @@ title: 'プログラム'
                 </tr>
                 <tr>
                     <th>12:00-13:20</th>
-                    <td colspan="5">ランチョンセミナー(A室)<br>
+                    <td colspan="5">ランチョンセミナー<br>
                         12:00-12:40 LS-2:<a href="sponsors/photron.html">株式会社フォトロン</a><br>
                         12:40-13:20 LS-3:<a href="sponsors/nobby.html">株式会社ノビテック</a></td>
                 </tr>
                 <tr>
                     <th>13:30-14:30</th>
-                    <td colspan="5">特別講演3(A室)<br>
+                    <td colspan="5">特別講演3<br>
                         小池 英樹 教授(東工大)<br>
                         「スポーツ技能獲得支援のためのVR/AR視覚的トレーニングシステム」
                         座長：伊藤 正彦(道情報大)</td>
                 </tr>
                 <tr>
                     <th>14:30-15:10</th>
-                    <td colspan="5">閉会式・ベストプレゼンテーション賞　授賞式</td>
+                    <td colspan="5">閉会式・授賞報告</td>
                 </tr>
             </table>
 
