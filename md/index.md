@@ -188,6 +188,6 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 
 慶應義塾大学理工学部
 
-## [協賛（依頼中）](support.html)
+## [協賛](support.html)
 
 :::
