@@ -1,6 +1,8 @@
 /doc
 /lib/*.html
 !/lib/meta.html
+/files/sponsors/kk/full/
+/files/sponsors/kk/light/
 proc/program.files/
 proc/program.html
 /proceedings/
