@@ -96,12 +96,12 @@
         <template v-else>{{sponsor.略称}}</template>
       </template>
       <p class="info">
-        <a :href="'sponsors/' + sponsor['id'] + '.html'">
+        <!-- a :href="'sponsors/' + sponsor['id'] + '.html'" -->
           <span v-if="sponsor['ランチョンセミナー']"><i class="fas fa-utensils"></i></span>
           <span v-if="sponsor['機器展示']"><i class="fas fa-flask"></i></span>
           <span v-if="sponsor['カタログ']"><i class="fas fa-book-open"></i></span>
           <span v-if="sponsor['広告']"><i class="fas fa-ad"></i></span>
-        </a>
+        <!-- /a -->
       </p>
     </div>
   </ul>
