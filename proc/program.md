@@ -4,7 +4,7 @@ title: 'プログラム'
 
 <div id="main">
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月07日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月08日版）</h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -980,7 +980,7 @@ title: 'プログラム'
             <p>座長：稲垣 歩(大分高専)<br /></p>
             <table class="t01">
                 <tr>
-                    <th>[PDF]&#8195;</th>
+                    <th>[PDF]●</th>
                     <td><strong>ディンプルを有する平板上の流れの渦構造</strong><br>〇奥井 和志(兵庫県大)、高垣 直尚(兵庫県大)、河南 治(兵庫県大)、本田 逸郎(兵庫県大)</td>
                 </tr>
                 <tr>
