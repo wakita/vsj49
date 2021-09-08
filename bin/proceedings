@@ -12,13 +12,15 @@ title: 'プログラム'
 ---
 
 <div id="main">
+
+<p style="text-align: right;"><a href="program_for_print.pdf">印刷用プログラム</a></p>
 EOMD
 
 sed -n '/ *<section/,/ *<\/section/p' proc/program.html | \
   sed -e 's/ *<section/<section/' \
       -e 's/ *<\/section/<\/section/' \
       -e 's/<a href="[^"]*">\[PDF\]<\/a>/[PDF]/' \
-      -e "s/全体プログラム/全体プログラム$edition/" \
+      -e "s/全体プログラム/全体プログラム$edition -- <a href="program_for_print.pdf">印刷用プログラム<\/a>/" \
       | lv >> md/program.md
 
 echo '</div>' >> md/program.md
@@ -59,5 +61,5 @@ cp site/css/vsj_symp.css proceedings/sponsors/css
 
 rm proceedings/Icon*
 
-rm -f proceedings.zip
-zip -r proceedings.zip --password vsjs49 proceedings
+#rm -f proceedings.zip
+#zip -r proceedings.zip --password vsjs49 proceedings

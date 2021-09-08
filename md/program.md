@@ -3,8 +3,10 @@ title: 'プログラム'
 ---
 
 <div id="main">
+
+<p style="text-align: right;"><a href="program_for_print.pdf">印刷用プログラム</a></p>
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月08日版）</h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月08日版） -- <a href=program_for_print.pdf>印刷用プログラム</a></h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
