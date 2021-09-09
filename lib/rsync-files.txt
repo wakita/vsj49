@@ -17,3 +17,4 @@ sponsors/
 studentaward.html
 submission.html
 support.html
+program_for_print.pdf

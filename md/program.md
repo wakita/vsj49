@@ -4,6 +4,8 @@ title: 'プログラム'
 
 <div id="main">
 
+<p>オンライン会場 (Zoom) への入室方法、各種ソーシャルチャネルへの参加方法などについては 9/6 に送付された「第49回可視化情報シンポジウム ZOOMのURL等の連絡」と題したメールをご確認下さい。</p>
+
 <p style="text-align: right;"><a href="program_for_print.pdf">印刷用プログラム</a></p>
 <section id="program" class="level2">
             <h1>第49回 可視化情報シンポジウム 全体プログラム（09月08日版） -- <a href=program_for_print.pdf>印刷用プログラム</a></h1>
