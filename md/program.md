@@ -4,11 +4,9 @@ title: 'プログラム'
 
 <div id="main">
 
-<p>オンライン会場 (Zoom) への入室方法、各種ソーシャルチャネルへの参加方法などについては 9/6 に送付された「第49回可視化情報シンポジウム ZOOMのURL等の連絡」と題したメールをご確認下さい。</p>
-
 <p style="text-align: right;"><a href="program_for_print.pdf">印刷用プログラム</a></p>
 <section id="program" class="level2">
-            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月08日版） -- <a href=program_for_print.pdf>印刷用プログラム</a></h1>
+            <h1>第49回 可視化情報シンポジウム 全体プログラム（09月09日版） -- <a href=program_for_print.pdf>印刷用プログラム</a></h1>
             <table class="time-table">
                 <tr>
                     <th colspan="6" scope="col">第1日目　9月9日(木)</th>
@@ -880,7 +878,7 @@ title: 'プログラム'
             <p>座長：平塚 将起(工学院大)<br /></p>
             <table class="t01">
                 <tr>
-                    <th>[PDF]&#8195;</th>
+                    <th>[PDF]●</th>
                     <td><strong>ノズル入口旋回強さを変化させた場合の液滴飛散水噴流の可視化</strong><br>石戸 勉(宇都宮大)、〇稲積 諒至(宇都宮大)、長谷川 裕晃(宇都宮大)</td>
                 </tr>
                 <tr>
