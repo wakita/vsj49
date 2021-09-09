@@ -31,7 +31,7 @@ During the still ongoing COVID-19 pandemic, visualization has demonstrated its u
 :::
 
 ::: {#tsubokura}
-## 「富岳」を用いた飛沫・エアロゾルの可視化と新型コロナ感染リスク評価による社会啓発
+## 「富岳」を用いた飛沫・エアロゾルの可視化と新型コロナ感染リスク評価による社会啓発<br/>坪倉 誠 教授（神戸大学）
 
 <img width="200px" src="images/people/Makoto_Tsubokura.jpg" alt="坪倉 誠教授（神戸大学）"></img>
 
