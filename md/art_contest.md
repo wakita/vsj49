@@ -4,11 +4,9 @@ title: 'アートコンテスト'
 
 ::: {#main}
 
-<!--
 <div style="text-align: center; margin-top: 80px; margin-bottom: 80px;">
 <iframe src="https://player.vimeo.com/video/589619839?h=88bcd26661" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
--->
 
 # アートコンテスト
 
