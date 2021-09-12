@@ -1,0 +1,833 @@
+2021-09-11 fix: 小池先生の名前
+M	md/keynote.md
+
+2021-09-10 art contest greetings
+M	md/art_contest.md
+
+2021-09-09 fix: 学生発表
+M	md/program.md
+M	proc/program.md
+
+2021-09-09 ...
+M	md/keynote.md
+
+2021-09-09 program += participation
+M	lib/rsync-files.txt
+M	md/program.md
+
+2021-09-08 program_for_print.pdf
+M	bin/proceedings
+M	md/program.md
+M	proc/program.md
+M	proc/sponsors/kk.md
+
+2021-09-08 協賛/（依頼中）//
+M	md/index.md
+
+2021-09-08 onRegistration form
+M	src/gs/registration/common.js
+
+2021-09-08 issue: lfs problem
+M	.gitignore
+M	md/sponsors/kk.md
+
+2021-09-08 KK's ad link -> Dropbox
+M	.gitignore
+M	md/sponsors/kk.md
+
+2021-09-08 update: program
+M	md/program.md
+M	proc/program.md
+
+2021-09-08 disable link from event-type icons.
+M	lib/sidemenu.md
+
+2021-09-07 proceedings/{__program__.html -> program.html}
+M	.gitignore
+M	bin/proceedings
+M	lib/p_sidemenu.md
+M	md/program.md
+D	proc/art_contest.md
+R098	proc/__program__.md	proc/program.md
+
+2021-09-05 exclude program.* from proceedings.zip
+M	bin/proceedings
+
+2021-09-04 program updated
+M	md/program.md
+M	proc/__program__.md
+
+2021-09-04 fix: div #main
+M	bin/proceedings
+M	md/program.md
+M	proc/__program__.md
+
+2021-09-04 program update
+M	bin/proceedings
+M	md/program.md
+M	proc/__program__.md
+M	proc/index.md
+
+2021-08-31 実行委員長挨拶 (greeting.html)
+M	bin/proceedings
+M	lib/rsync-files.txt
+A	md/greeting.md
+A	proc/greeting.md
+M	proc/index.md
+
+2021-08-31 nac catalogues
+M	bin/proceedings
+M	js/sponsors.js
+M	md/exhibition.md
+M	md/program.md
+M	md/sponsors/nac.md
+M	proc/__program__.md
+M	proc/sponsors/nac.md
+M	src/gs/registration/common.js
+D	src/gs/registration/constants.js
+M	src/gs/registration/onNewRegistration.js
+
+2021-08-27 重要な期日に参加登録の追加
+M	md/index.md
+
+2021-08-27 update: program
+M	bin/db
+M	md/program.md
+M	proc/__program__.md
+
+2021-08-26 git rm
+
+2021-08-26 git rm
+D	bin/dl_papers
+D	bin/git-ftp-init
+D	bin/search
+
+2021-08-26 dantec catalog
+M	js/sponsors.js
+M	md/exhibition.md
+
+2021-08-26 fix: sponsor links
+M	md/sponsors/kanomax.md
+M	md/sponsors/laser.md
+M	md/sponsors/niigata.md
+M	proc/sponsors/kanomax.md
+M	proc/sponsors/laser.md
+M	proc/sponsors/niigata.md
+
+2021-08-26 nobby url
+M	md/sponsors/nobby.md
+M	proc/sponsors/nobby.md
+
+2021-08-26 スポンサー関連リンク切れの調整
+M	lib/rsync-files.txt
+M	md/sponsors/dantec.md
+M	md/sponsors/hulinks.md
+M	md/sponsors/kanomax.md
+M	md/sponsors/laser.md
+M	md/sponsors/photron.md
+M	md/sponsors/trs.md
+M	proc/sponsors/dantec.md
+M	proc/sponsors/hulinks.md
+M	proc/sponsors/kanomax.md
+M	proc/sponsors/laser.md
+M	proc/sponsors/photron.md
+M	proc/sponsors/trs.md
+
+2021-08-26 プログラム修正
+M	md/program.md
+M	proc/__program__.md
+
+2021-08-25 あれこれ
+M	bin/proceedings
+M	lib/p_sidemenu.md
+M	lib/s_sidemenu.md
+M	lib/sidemenu.md
+M	md/program.md
+M	md/sponsors/dantec.md
+M	md/sponsors/fel.md
+M	md/sponsors/hpc.md
+M	md/sponsors/hulinks.md
+M	md/sponsors/kanomax.md
+M	md/sponsors/kk.md
+M	md/sponsors/laser.md
+M	md/sponsors/nac.md
+M	md/sponsors/niigata.md
+M	md/sponsors/nobby.md
+M	md/sponsors/photron.md
+M	md/sponsors/trs.md
+M	proc/__program__.md
+M	proc/index.md
+M	proc/sponsors/dantec.md
+M	proc/sponsors/fel.md
+M	proc/sponsors/hpc.md
+M	proc/sponsors/hulinks.md
+M	proc/sponsors/kanomax.md
+M	proc/sponsors/kk.md
+M	proc/sponsors/laser.md
+M	proc/sponsors/nac.md
+M	proc/sponsors/niigata.md
+M	proc/sponsors/nobby.md
+M	proc/sponsors/photron.md
+M	proc/sponsors/trs.md
+
+2021-08-25 proceedings += menu
+M	bin/proceedings
+M	lib/meta.html
+A	lib/p_sidemenu.md
+M	lib/proceedings.yaml
+M	lib/rsync-files.txt
+A	lib/s_sidemenu.md
+M	lib/sidemenu.md
+A	lib/sponsors.yaml
+M	md/program.md
+A	proc/__program__.md
+A	proc/art_contest.md
+M	proc/index.md
+A	proc/sponsors/dantec.md
+A	proc/sponsors/fel.md
+A	proc/sponsors/hpc.md
+A	proc/sponsors/hulinks.md
+A	proc/sponsors/index.md
+A	proc/sponsors/kanomax.md
+A	proc/sponsors/kk.md
+A	proc/sponsors/laser.md
+A	proc/sponsors/nac.md
+A	proc/sponsors/niigata.md
+A	proc/sponsors/nobby.md
+A	proc/sponsors/photron.md
+A	proc/sponsors/trs.md
+R076	proc/supporters.md	proc/support.md
+
+2021-08-25 proceedings
+M	bin/proceedings
+A	lib/p_header.md
+M	lib/proceedings.yaml
+
+2021-08-25 fix & reorganize: sponsors
+M	bin/convert
+M	lib/header.md
+M	lib/pandoc.yaml
+M	lib/sidemenu.md
+D	md/_sponsors.md
+D	md/sponsor_hpc.md
+D	md/sponsor_nac.md
+D	md/sponsor_niigata.md
+D	md/sponsor_nobby.md
+D	md/sponsor_photron.md
+D	md/sponsors.md
+R083	md/sponsor_dantec.md	md/sponsors/dantec.md
+R061	md/sponsor_fel.md	md/sponsors/fel.md
+A	md/sponsors/hpc.md
+R100	md/sponsor_hulinks.md	md/sponsors/hulinks.md
+A	md/sponsors/index.md
+R067	md/sponsor_kanomax.md	md/sponsors/kanomax.md
+R100	md/sponsor_kk.md	md/sponsors/kk.md
+R100	md/sponsor_laser.md	md/sponsors/laser.md
+A	md/sponsors/nac.md
+A	md/sponsors/niigata.md
+A	md/sponsors/nobby.md
+A	md/sponsors/photron.md
+R100	md/sponsor_trs.md	md/sponsors/trs.md
+
+2021-08-25 update: art contest
+M	md/art_contest.md
+
+2021-08-25 fix: program style
+M	md/program.md
+
+2021-08-25 program
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+A	md/program.md
+
+2021-08-25 fix: sponsors pages
+M	md/sponsor_dantec.md
+M	md/sponsor_kanomax.md
+M	md/sponsor_laser.md
+M	md/sponsor_nobby.md
+
+2021-08-25 fix: niigata link
+M	js/sponsors.js
+M	md/exhibition.md
+
+2021-08-25 fix: スポンサーページ
+M	js/sponsors.js
+M	md/sponsor_kanomax.md
+M	md/sponsor_kk.md
+
+2021-08-24 sponsors
+M	md/sponsor_dantec.md
+M	md/sponsor_fel.md
+M	md/sponsor_hpc.md
+M	md/sponsor_hulinks.md
+M	md/sponsor_kanomax.md
+M	md/sponsor_kk.md
+M	md/sponsor_laser.md
+M	md/sponsor_niigata.md
+M	md/sponsor_nobby.md
+M	md/sponsor_trs.md
+
+2021-08-24 git-lfs
+2021-08-24 企業バナー
+A	.gitattributes
+M	js/sponsors.js
+A	md/exhibition.md
+
+2021-08-24 アートコンテスト投票について
+M	md/art_contest.md
+
+2021-08-24 Xiaoru's picture
+M	md/keynote.md
+
+2021-08-23 坪倉先生の特別講演
+M	lib/rsync-files.txt
+M	md/index.md
+M	md/keynote.md
+
+2021-08-23 講演時間
+M	lib/sidemenu.md
+M	md/presentation.md
+
+2021-08-20 art contest: オーガナイザと開会の挨拶
+M	.gitignore
+M	bin/convert
+A	bin/ftp
+M	md/art_contest.md
+
+2021-08-20 exhibition.md -> sponsors.md
+M	lib/sidemenu.md
+D	md/exhibition.md
+M	md/sponsors.md
+
+2021-08-20 sponsors
+M	bin/sponsor.py
+M	bin/sponsors
+M	js/sponsors.js
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+A	md/_sponsors.md
+M	md/exhibition.md
+A	md/sponsor_dantec.md
+A	md/sponsor_fel.md
+A	md/sponsor_hpc.md
+A	md/sponsor_hulinks.md
+A	md/sponsor_kanomax.md
+A	md/sponsor_kk.md
+A	md/sponsor_laser.md
+A	md/sponsor_nac.md
+A	md/sponsor_niigata.md
+A	md/sponsor_nobby.md
+A	md/sponsor_photron.md
+A	md/sponsor_trs.md
+A	md/sponsors.md
+
+2021-08-19 企業バナーにハイパーリンク
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+
+2021-08-18 学生プレセンテーションコンテストの追加
+M	lib/sidemenu.md
+M	md/studentaward.md
+
+2021-08-18 fix: style error
+
+2021-08-18 resolv merge conflict
+
+2021-08-18 exhibition.html の公開
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+
+2021-08-18 Merge branch 'sponsors'
+2021-08-18 photron banner
+M	js/sponsors.js
+M	md/exhibition.md
+
+2021-08-18 proceedings
+M	.gitignore
+M	bin/db
+A	bin/proceedings
+A	lib/proceedings.yaml
+A	proc/committee.md
+A	proc/help.md
+A	proc/index.md
+A	proc/supporters.md
+
+2021-08-18 fix: koike's image
+M	md/keynote.md
+
+2021-08-18 fix: keynote
+M	md/index.md
+M	md/keynote.md
+
+2021-08-16 小池先生の特別講演を追加
+M	md/index.md
+M	md/keynote.md
+
+2021-08-13 ノビテック、フォトロン += 機器展示
+M	bin/sponsor.py
+M	js/sponsors.js
+M	lib/sidemenu.md
+M	md/exhibition.md
+
+2021-08-13 サイドメニューに企業を追加
+A	bin/sponsors
+A	js/sponsors.js
+M	lib/pandoc.yaml
+M	lib/sidemenu.md
+
+2021-08-12 協賛 += 日本フルードパワーシステム学会
+M	md/support.md
+
+2021-08-12 remove duplicates
+M	md/index.md
+
+2021-08-12 Xiaru の特別講演データ追加
+M	bin/db
+A	bin/sponsors
+M	lib/banner.md
+M	lib/rsync-files.txt
+M	md/index.md
+A	md/keynote.md
+
+2021-08-09 「富岳」を用いた飛沫・エアロゾルの可視化による新型コロナ感染リスクとその対策の社会啓発
+M	md/index.md
+
+2021-08-09 特別講演：神戸大の坪倉誠教授
+M	bin/publish
+M	lib/rsync-files.txt
+M	md/index.md
+
+2021-08-09 特別講演
+M	md/index.md
+
+2021-08-09 参加登録
+M	lib/sidemenu.md
+M	src/gs/registration/common.js
+M	src/gs/registration/daily.js
+M	src/gs/registration/onNewRegistration.js
+
+2021-08-09 通知のメールが迷惑メールに分類さ「れ」た
+M	md/registration.md
+
+2021-08-09 参加費・講演論文集のみ
+M	md/registration.md
+
+2021-08-09 登録の注意点
+M	md/registration.md
+
+2021-08-09 Google Spreadsheet の複数のシートをまとめてひとつの Excel ファイルに変換
+M	bin/sponsor.py
+
+2021-08-07 スポンサーにリンクを追加
+M	bin/sponsor.py
+M	md/exhibition.md
+
+2021-08-07 展示・広告をサイドメニューに追加
+M	lib/sidemenu.md
+
+2021-08-07 展示・広告を追加
+A	bin/sponsor.py
+A	md/exhibition.md
+
+2021-08-07 参加登録サイト
+M	md/index.md
+A	md/registration.md
+
+2021-08-07 参加登録フォーム関連のスクリプト
+M	.gitignore
+M	bin/db
+A	src/Readme.md
+A	src/gs/Readme.md
+M	src/gs/main/common.js
+A	src/gs/main/package-lock.json
+A	src/gs/main/package.json
+M	src/gs/main/submission.js
+A	src/gs/package-lock.json
+A	src/gs/package.json
+A	src/gs/registration/.clasp.json
+A	src/gs/registration/appsscript.json
+A	src/gs/registration/common.js
+A	src/gs/registration/constants.js
+A	src/gs/registration/daily.js
+A	src/gs/registration/onNewRegistration.js
+A	src/gs/registration/package-lock.json
+A	src/gs/registration/package.json
+A	src/gs/submission/package-lock.json
+A	src/gs/submission/package.json
+
+2021-08-05 support += 日本伝熱学会
+M	bin/db
+M	md/support.md
+
+2021-07-29 DB commands
+M	bin/db
+M	bin/publish
+
+2021-07-28 3f97859 e55276c 48ac3c0 110a23c 【重要】慶應理工学部の共催が正式に認可されました．
+M	bin/publish
+
+2021-07-28 e55276c 48ac3c0 110a23c 【重要】慶應理工学部の共催が正式に認可されました．
+M	bin/publish
+
+2021-07-28 48ac3c0 110a23c 【重要】慶應理工学部の共催が正式に認可されました．
+M	bin/publish
+
+2021-07-28 110a23c 【重要】慶應理工学部の共催が正式に認可されました．
+M	bin/check_submission
+A	bin/db
+A	bin/dl_papers
+A	bin/search
+
+2021-07-28 【重要】慶應理工学部の共催が正式に認可されました．
+M	md/index.md
+
+2021-07-27 rename
+R100	bin/dl.py	bin/check_submission
+
+2021-07-27 自動ダウンロードのバグ修正
+M	bin/dl.py
+
+2021-07-27 毎日、スプレッドシートを自動ダウンロード
+M	bin/dl.py
+
+2021-07-27 未提出者の確認用スクリプトの追加
+A	bin/dl.py
+M	md/submission.md
+
+2021-07-20 開催形式をオンラインに
+M	md/index.md
+M	md/submission.md
+
+2021-07-15 comment
+M	md/index.md
+
+2021-07-15 協賛
+M	bin/git-ftp-init
+M	md/support.md
+
+2021-07-12 協賛
+M	md/support.md
+
+2021-07-12 art contest作品提出締切
+M	md/art_contest.md
+
+2021-07-08 原稿提出締切@index.html
+M	md/index.md
+
+2021-07-08 投稿締切延長
+M	md/submission.md
+
+2021-06-28 シンポ協賛団体の追加
+M	md/support.md
+
+2021-06-26 発表申込終了
+M	md/index.md
+M	md/submission.md
+
+2021-06-26 発表申し込み期限を若干延長
+M	md/index.md
+M	md/submission.md
+
+2021-06-26 発表申込期間終了
+M	md/index.md
+M	md/submission.md
+
+2021-06-21 協賛の追加
+M	md/support.md
+
+2021-06-17 協賛が3つ追加
+M	bin/support.py
+M	md/support.md
+
+2021-06-17 documentation
+M	bin/convert
+M	bin/publish
+
+2021-06-15 rsync --recursive
+M	bin/publish
+
+2021-06-15 fix: art contest awards
+M	md/art_contest.md
+
+2021-06-14 past art contest awards
+M	md/art_contest.md
+
+2021-06-14 fix: bin/support.py
+M	bin/support.py
+
+2021-06-11 art contest 締切延長
+M	md/art_contest.md
+
+2021-06-11 協賛追加，「共催，後援」の削除
+M	lib/sidemenu.md
+M	md/support.md
+
+2021-06-10 発表申込締切延長
+M	md/index.md
+M	md/submission.md
+
+2021-06-06 fix: sort(共催・協賛・後援)
+M	bin/support.py
+M	md/support.md
+
+2021-06-05 md/support.md (generated): A list of supporters updated
+M	md/support.md
+
+2021-06-05 fix (bin/support.py): read columns 1 and 4 only
+M	bin/support.py
+
+2021-06-04 協賛の追加
+M	bin/support.py
+A	js/vue.global.js
+A	js/vue.global.prod.js
+M	md/support.md
+
+2021-05-29 Excelシートの自動ダウンロード
+R088	bin/coop.py	bin/support.py
+
+2021-05-29 共催・協賛・後援 - 法人格の追加
+M	bin/coop.py
+M	md/support.md
+
+2021-05-28 cleanup
+M	bin/coop.py
+D	data/coop_orgs.json
+
+2021-05-28 support.html
+A	bin/coop.py
+A	data/coop_orgs.json
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+M	md/support.md
+
+2021-05-28 - 横浜市 += 港北区 - 慶應大 → 慶應義塾大学
+M	lib/header.md
+M	md/index.md
+
+2021-05-28 オーガナイズドセッションの削除 - OS7: 混相流の可視化 - OS8: 音と振動の可視化 - OS9: 流体機械に関連した物理現象の可視化
+M	data/js/os.js
+M	data/os.json
+M	js/sessions.js
+
+2021-05-28 セッション一覧から `OS#:` を削除
+M	md/sessions.md
+
+2021-05-28 submission.md
+M	md/submission.md
+
+2021-05-28 submission due date extended
+M	md/index.md
+
+2021-05-26 要旨の文字数@index: 400字 -> 200字
+M	md/index.md
+
+2021-05-26 英文アブストラクトの文字制限: 100 words -> 150 words
+M	md/index.md
+
+2021-05-25 template update
+M	md/sessions.md
+
+2021-05-25 style update
+M	lib/rsync-files.txt
+
+2021-05-25 「セッション一覧」の追加
+A	data/js/os.js
+A	data/os.json
+A	js/sessions.js
+M	lib/meta.html
+M	lib/sidemenu.md
+A	md/sessions.md
+
+2021-05-25 simplified conversion
+M	bin/convert
+M	bin/publish
+
+2021-05-17 アートイベントをサイドバーに追加
+M	lib/rsync-files.txt
+M	lib/sidemenu.md
+A	md/art_contest.md
+
+2021-05-06 画像へのパス指定の修正
+M	lib/header.md
+
+2021-05-06 Merge pull request #7 from wakita/feature_font_visibility
+2021-05-06 黒縁の微調整
+
+2021-05-06 タイトルに黒縁追加
+M	lib/header.md
+
+2021-05-06 画像へのパス指定の修正
+M	lib/header.md
+
+2021-05-06 Merge branch 'main' into pr/5
+2021-05-05 header画像表示の修正
+M	lib/header.md
+
+2021-04-30 rsync の設定に {authoring,submission}.html を追加
+M	lib/rsync-files.txt
+
+2021-04-30 サイドメニューの追加
+M	lib/sidemenu.md
+M	md/authoring.md
+M	md/index.md
+M	md/submission.md
+
+2021-04-30 バイナリーファイル群 (/files) に `rsync` 同期を対応
+M	lib/rsync-files.txt
+
+2021-04-30 バイナリーファイル群(/files)の追加とスクリプトの対応
+M	.gitignore
+M	bin/convert
+
+2021-04-09 発表申込フォーム関連の Google Apps Script
+A	src/gs/submission/.clasp.json
+A	src/gs/submission/Readme.js
+A	src/gs/submission/appsscript.json
+A	src/gs/submission/library.js
+A	src/gs/submission/makeform.js
+A	src/gs/submission/trigger.js
+A	src/gs/submission/workspace.js
+
+2021-04-09 ヘッダー画像の追加とCSSにスライドショーを追加
+
+2021-04-07 Google Apps Script を追加
+A	src/gs/main/.clasp.json
+A	src/gs/main/appsscript.json
+A	src/gs/main/common.js
+A	src/gs/main/register.js
+A	src/gs/main/submission.js
+A	src/gs/main/test.js
+
+2021-04-07 川口 達也先生を委員に追加
+M	md/index.md
+
+2021-04-07 藤代先生より慶應の活動制限レベルに関連した修正
+M	md/index.md
+
+2021-04-06 15 Organized Sessions
+M	md/index.md
+
+2021-04-06 「共催・協賛・後援」は依頼中
+M	md/index.md
+
+2021-04-06 藤代先生からのリクエストに対応 https://vsjsymp2021org.slack.com/archives/C01QDHQ7DC6/p1617676806145500 1. バナーの慶応大ですが，「慶應義塾大学」もしくは最もシンプルに「慶大」 2. 講演内容１　上記ホームページ→本ホームページ 3. OSですが，現在の15個を並べていただき，註として，変更・追加される場合があることを明記 4. 申込み方法ですが，「ホームページ」→「本ホームページ」 5. 論文募集日程も，「ホームページ」→「本ホームページ」 6. 藤代の姓名の間に半角空白を御願いします (^^; 7. 学生さんも所属を明記してよろしいかと思います． 8. 追加で，共催・協賛・後援を入れていただき，「依頼中」としていただけますか？ 以上，よろしく御願いいたします．
+M	lib/header.md
+M	md/index.md
+
+2021-04-03 委員 += 青木先生＠東洋大学
+M	md/index.md
+
+2021-04-03 中間的副産物を git rm
+M	.gitignore
+M	bin/publish
+D	lib/banner.html
+D	lib/header.html
+D	lib/sidemenu.html
+
+2021-04-03 rsync の設定の修正
+M	bin/publish
+D	lib/exclude.rsync
+A	lib/rsync-files.txt
+
+2021-04-03 fixed bin/publish bug
+M	bin/publish
+M	lib/exclude.rsync
+
+2021-04-03 「学生プレゼンテーションコンテスト」のページを追加
+A	md/studentaward.md
+
+2021-04-03 加藤千恵子先生@東洋大学を委員に追加
+M	md/index.md
+
+2021-04-03 来往舎へのリンクの削除
+M	md/index.md
+
+2021-04-02 info change
+M	md/index.md
+
+2021-04-02 commented out art contest
+M	md/index.md
+
+2021-04-02 aoki -= email
+M	md/index.md
+
+2021-04-02 committee
+M	.gitignore
+M	md/index.md
+
+2021-03-31 Readme
+M	README.md
+
+2021-03-31 organizational refactor
+M	bin/convert
+A	lib/banner.html
+R093	md/banner.html	lib/banner.md
+A	lib/header.html
+A	lib/header.md
+R100	md/meta.html	lib/meta.html
+R067	lib/symp2021.yaml	lib/pandoc.yaml
+A	lib/sidemenu.html
+A	lib/sidemenu.md
+D	lib/template.html
+M	md/authoring.md
+M	md/committee.md
+D	md/header.html
+M	md/index.md
+M	md/lodging.md
+M	md/presentation.md
+D	md/sidemenu.html
+M	md/submission.md
+M	md/support.md
+
+2021-03-31 ページの追加 - いずれ必要になりそうなページを追加しました - lib/exclude.rsync により，index.html 以外は公開を抑制しています．
+M	bin/convert
+M	bin/publish
+A	lib/exclude.rsync
+A	md/authoring.md
+A	md/committee.md
+A	md/lodging.md
+A	md/presentation.md
+A	md/submission.md
+A	md/support.md
+
+2021-03-31 bin/publish
+M	bin/publish
+
+2021-03-31 bin/publish
+M	bin/publish
+
+2021-03-30 doc
+M	.gitignore
+
+2021-03-30 Delete doc directory
+D	doc/form/kouen-entry.pdf
+D	doc/form/paper-upload.pdf
+D	doc/git-ftp.md
+D	doc/server.md
+
+2021-03-30 request from Fujishiro
+M	bin/convert
+A	bin/publish
+M	md/index.md
+
+2021-03-30 no jekyll
+A	.nojekyll
+
+2021-03-30 first commit
+A	.gitignore
+A	bin/convert
+A	bin/git-ftp-init
+A	doc/form/kouen-entry.pdf
+A	doc/form/paper-upload.pdf
+A	doc/git-ftp.md
+A	doc/server.md
+A	lib/symp2021.yaml
+A	lib/template.html
+A	md/banner.html
+A	md/header.html
+A	md/index.md
+A	md/meta.html
+A	md/sidemenu.html
+
+2021-03-29 Initial commit
+A	README.md

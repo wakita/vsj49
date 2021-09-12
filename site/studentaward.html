@@ -136,6 +136,67 @@ new Vue({
 <h1 class="title">学生プレゼンテーションコンテスト</h1>
 </header>
 <div id="main">
+<section id="学生プレゼンテーションコンテストベストプレゼンテーション賞" class="level1">
+<h1>学生プレゼンテーションコンテスト・ベストプレゼンテーション賞</h1>
+<p>厳正な審査のもとベストプレゼンテーション賞に選ばれた発表者に閉会式で授賞いたしました。受賞者のみなさん、おめでとうございます。今後のますますのご活躍を期待しています。</p>
+<div id="award">
+
+</div>
+<style>
+table {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 20%;
+  border-collapse: separate;
+  border-top: .1em solid;
+  border-bottom: .1em solid;
+}
+
+thead {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: x-large;
+  border-bottom: .1em solid;
+  text-align: left;
+}
+
+td {
+  vertical-align: top;
+}
+</style>
+<script type="text/x-template" id="x-award-template">
+<table>
+<thead><th v-for="item in title" :key="item">{{item}}</th></thead>
+<tbody>
+<tr v-for="award in data" :key="award[0]">
+<td v-for="item in award" :key="item[0]">{{item}}</td>
+</tr>
+</tbody>
+</table>
+</script>
+<script type="text/javascript">
+const data = `講演者,講演タイトル,ご所属
+翁 浩雲,固有直交分解法を用いた多噴孔燃料インジェクタ内における主要流場構造の分析,神戸大
+高木 森平,液膜上エレクトロウェッテイング(EWOLF)における液滴内部流動の可視化,東理大院
+大高 裕矢,感温塗料を用いた自励振動型ヒートパイプ内部における熱流動の可視化,青学大
+太田 彩,小説内の動的人物相関図を用いた読書システム,東工大
+岡田 皓輝,金ナノ構造体の光熱変換によって生成するマイクロバブルによる粒子集積メカニズムの解明,東理大院
+土田 夏実,歩行状態・滞留状態に基づいた歩行者群の空間分布とその時間変化の可視化,お茶大
+安倍 悠朔,細孔内におけるナノ粒子挙動の可視化計測,早大
+荘司 成熙,パルス超音波による漏洩流動の3次元可視化,東工大
+村田 愛美,音響場中の試料の浮遊安定性に及ぼすリフレクタ形状の影響,工学院大
+布 翔伍,サンプリングモアレ法を用いた回転タイヤ変形の可視化,京工繊大院`.split('\n').map((line) => line.split(','));
+
+new Vue({
+  el: '#award',
+  data: {
+    title: data[0],
+    data: data.slice(1)
+  },
+  template: '#x-award-template'
+});
+</script>
+</section>
 <section id="学生プレゼンテーションコンテスト" class="level1">
 <h1>学生プレゼンテーションコンテスト</h1>
 <p>可視化情報技術の未来を担う若い世代の啓蒙を目的として「学生プレゼンテーションコンテスト」を実施し、学生の優秀な学術講演に対して、厳正な審査のもとベストプレゼンテーション賞（BP賞）を授与します。 プレゼンテーションコンテストは、会期中の通常セッション講演を審査対象とします。<br /> 学生の皆さん、奮ってご応募ください。<br /> また、指導教員の先生におかれましては、ご指導のほど宜しくお願い申し上げます。<br /></p>
