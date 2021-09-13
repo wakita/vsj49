@@ -4,6 +4,28 @@ title: 'アートコンテスト'
 
 ::: {#main}
 
+# アートコンテスト入賞作品
+
+## 大賞　新型コロナウイルスゲノム系統樹の3次元可視化
+
+- 山辺 真幸 殿
+- 中川 草 殿
+- 脇田 玲 殿
+    （慶應義塾大学大学院）
+
+## 金賞　不透明度グラデーションを用いた舞鶴赤レンガ倉庫の透視可視化
+
+- 岸本 将弥 殿 （立命館大学大学院）
+
+## 銀賞　AJIMI
+
+- 依田 和真 殿
+- 山口 玲輔 殿
+    （東京理科大学）
+
+
+# 開催のご挨拶
+
 <div style="text-align: center; margin-top: 80px; margin-bottom: 80px;">
 <iframe src="https://player.vimeo.com/video/589619839?h=88bcd26661" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
