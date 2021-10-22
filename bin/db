@@ -31,7 +31,6 @@ def download(args):
     with open(CACHE_SUB, 'wb') as w:
         sub.to_excel(w)
 
-
 def download_papers(args):
     load()
     SUBMISSION = ROOT.joinpath('proceedings', 'papers')
@@ -50,13 +49,27 @@ def download_papers(args):
         if pdf_id != submissions.get(id, ''):
             print(f'Downloading paper: #{id}')
             gdown.download(f'https://drive.google.com/uc?id={pdf_id}',
-                           f'{SUBMISSION}/{id:03d}.pdf',
+                           f'{SUBMISSION}/paper-{id:03d}.pdf',
                            quiet=True)
             submissions[id] = pdf_id
 
     with open(SUBMISSION_PKL, 'wb') as w:
         pickle.dump(submissions, w)
 
+
+def download_surveys(args):
+    load()
+    SURVEYS = ROOT.joinpath('surveys')
+
+    for id, submission in sub.iterrows():
+        pdfs = submission['調査票']
+        if pd.isna(pdfs): continue
+        pdf = pdfs.split(', ')[-1]
+        pdf_id = pdf.split('id=')[-1]
+        print(f'Downloading survey: #{id}')
+        gdown.download(f'https://drive.google.com/uc?id={pdf_id}',
+                       f'{SURVEYS}/survey-{id:03d}.pdf',
+                       quiet=True)
 
 # スプレッドシートの読み込み
 
@@ -119,6 +132,9 @@ P_search.set_defaults(handler=search)
 
 P_papers = SP.add_parser('papers')
 P_papers.set_defaults(handler=download_papers)
+
+P_papers = SP.add_parser('surveys')
+P_papers.set_defaults(handler=download_surveys)
 
 P_remarks = SP.add_parser('remarks')
 P_remarks.set_defaults(handler=remarks)
